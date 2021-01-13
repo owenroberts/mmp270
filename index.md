@@ -3,31 +3,29 @@ layout: main
 title: Introduction to Video Game Design
 ---
 
-This is the class page of MEA 300 at BMCC.
+<!-- This is the class page of MEA 300 at BMCC.
 
-The class notes, schedule and assignments are all found here.
+The class notes, schedule and assignments are all found here. -->
+
+## Class links
 - [Schedule](schedule.html)
-- [Syllabus](
-https://docs.google.com/document/d/1XAmwL6OhTdM7VMpzXP8DvaXdy_NN0mJm076YAr5lXdM/edit?usp=sharing
-){:target="blank"}
-- [Blog](https://medium.com/mea-300-game-design){:target="blank"}
+- [Syllabus](https://docs.google.com/document/d/1gAlNLvo9mtHszOqO3E4LXsn8XCDywNiegs_RO6ok8rE/edit?usp=sharing){:target="blank"}
+<!-- - [Blog](https://medium.com/mea-300-game-design){:target="blank"} -->
 - [Student Work](student_work/)
-- [Public Pad](https://pad.riseup.net/p/mea300){:target="blank"}
+<!-- - [Public Pad](https://pad.riseup.net/p/mea300){:target="blank"} -->
 
 <!-- - <a href="https://mea300.slack.com/" target="blank">Slack channel</a> -->
 
-## Class Description
-MEA 300 will focus on a specific theme, concept, technology or methodology to be announced in advance. Topics for the following semester will be made available by the Media Arts and Technology Department during registration. Each section of the course will cover in depth a single special topic related to media arts and technology, such as one of the following: User Experience Design, Physical Computing, 3D and Laser Printing, Game Design, Documentary Film Production, Experimental Film, Journalism, Media Production, Project Management, Interactive Media, Augmented Reality, Virtual Reality, Television News Production. 
+## Software
+<!-- - Text Editor: [Brackets](http://brackets.io/){:target="blank"} -->
+<!-- - Browser: Chrome -->
+- [Godot Engine](https://godotengine.org/){:target="blank"}
+- [Audacity](https://www.audacityteam.org/){:target="blank"}
+- [Piskel](https://www.piskelapp.com/){:target="blank"}
+- [jfxr](https://jfxr.frozenfractal.com/){:target="blank"}
+- [Audio Tool](https://www.audiotool.com/app){:target="blank"} 
 
-## Fall 2018
-- Instructor: Owen Roberts
-- Email: oroberts AT bmcc DOT cuny  DOT edu
-- Office: S622J
-- Office extension: 8057
-- Office hours: Monday 2pm - 5pm, Wednesday afternoon by appointment
-- Class times: Tuesday & Thursday 4:00 - 5:40 PM
-- Fiterman 706
-
+<!--
 ## Turning in assignments
 - Assignments turned in on Blackboard
 - Late assignments are 25 points off
@@ -38,15 +36,7 @@ MEA 300 will focus on a specific theme, concept, technology or methodology to be
 - In comments at the top of include a link to the resource
 
 
-## Software
-- Text Editor: [Brackets](http://brackets.io/){:target="blank"}
-- Browser: Chrome
-- Audacity
-- [Piskel](https://www.piskelapp.com/){:target="blank"}
-- [jfxr](https://jfxr.frozenfractal.com/){:target="blank"}
-- [Audio Tool](https://www.audiotool.com/app){:target="blank"} 
-
-## Computer Labs
+ ## Computer Labs
 Computers are available for student usage in the locations listed on [http://www.bmcc.cuny.edu/it](http://www.bmcc.cuny.edu/it)
 
 ## Tutoring
@@ -68,3 +58,4 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 
 ## Resources
 
+ -->

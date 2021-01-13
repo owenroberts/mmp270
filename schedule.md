@@ -7,6 +7,8 @@ title: Schedule
 ## Week 1 **Introduction**
 - [Introduction to Game Design](notes/intro)
 - **Reading**:	<a href="readings/crawford.pdf" target="blank">Crawford - Chapter 1</a>
+
+<!-- 
 - [Publishing on Medium](notes/medium)
 - **Lab**: Set up development environment
 	- Using Brackets <a href="http://brackets.io/" target="blank">Download</a>
@@ -23,11 +25,14 @@ title: Schedule
 	- Write about one example of each
 	- Use screen shots to show how they are represented visually
 	- Write short descriptions of each and how they work in the game
+-->
 
 ## Week 2 **Character**
 - [Character Design](notes/character)
 - [Piskel App](https://www.piskelapp.com/){:target="blank"}
-- [Adobe Animate CC Guide](https://www.youtube.com/watch?v=3iXSQ8VcPcU){:target="blank"}
+
+
+<!-- - [Adobe Animate CC Guide](https://www.youtube.com/watch?v=3iXSQ8VcPcU){:target="blank"}
 - **Reading**: [McCloud - Chapter 2](readings/mccloud.pdf)
 - **Lab**: Add character to game
 	- Sprites, image and animation
@@ -42,12 +47,14 @@ title: Schedule
 	- Digital version of favorite sketch
 	- Design main character for endless runner game
 	- Create sprites for idle, running, jumping states
-	- Post screen shots / photos of everything on the blog
+	- Post screen shots / photos of everything on the blog -->
 
 ## Week 3 **Setting**
 - [Game Setting](notes/setting)
 - **Reading**: [The Designer's Notebook: Sorting Out the Genre Muddle](https://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php)
-- **Lab: Scenic Assets**
+
+
+<!-- - **Lab: Scenic Assets**
 	- Platform, foreground and background elements
 	- Random, more booleans, basic physics
 	- [Lab](labs/{{site.semester}}/week3/){:target="blank"} 
@@ -59,12 +66,13 @@ title: Schedule
 	- Create at least 1 foreground element (non interactive)
 	- Create at least 1 platforms that the player can stand on
 	- Create at least 2 more scenic elements (interactive or not)
-	- Post screen shots / photos of everything on the blog
+	- Post screen shots / photos of everything on the blog -->
 
 ## Week 4 **Genre**
 - [Game Genre](notes/genre)
 - **Reading**: Watch [Early Video Game History](https://www.youtube.com/watch?v=uuxoThzFPPw) and [A Brief History of Video Games](https://www.youtube.com/watch?v=GoyGlyrYb9c) and look at [Video Game History Timeline](http://www.museumofplay.org/about/icheg/video-game-history/timeline)
-- **Lab: Obstacles**
+
+<!-- - **Lab: Obstacles**
 	- Groups, loops
 	- Collisions, death
 	- "wrapping" sprites
@@ -75,14 +83,15 @@ title: Schedule
 	- Design 5 potential *obstacles* for your game
 	- Sketches/pixel art/Illustrator art all okay
 	- Explain how the obstacles interact with character
-	- Post images and explanations on blog
+	- Post images and explanations on blog -->
 
 ## Week 5 **Art**
 - [Video Games & Art](notes/art)
 - **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
+
 <!-- - **Blog**: How does Syoban Action play with video game expectations?
  -->
-- **Lab**
+<!-- - **Lab**
 	- Distributing platforms
 	- Camera position
 	- [Lab](labs/{{site.semester}}/week5/){:target="blank"} 
@@ -92,24 +101,26 @@ title: Schedule
 	- Design 5 potential *rewards* for your game
 	- Same idea as Assignment 4
 	- Post screen shots and explanation of how each reward could help the player advance in the game
-	- Post on Medium
+	- Post on Medium -->
 
 ## Week 6 **Indie games**
 - [Indie games](notes/indie)
 - **Reading**: Find a game on <a href="https://itch.io/" target="blank">itch.io</a> to play
-- **Lab**
+
+<!-- - **Lab**
 	- Settings file and variables
 	- Start and death scene
 	- Build and reset functions
 	- Text
 	- [Lab](labs/{{site.semester}}/week6/){:target="blank"} 
 	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week6/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week6/lab.html)
+	& [notes](labs/{{site.semester}}/week6/lab.html) -->
 
 	
 ## Week 7 **Sound**
 - [Sound effects](notes/sound)
-- **Lab**
+
+<!-- - **Lab**
 	- Sound with <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>
 	- Sound library <a href="https://raw.githubusercontent.com/processing/p5.js-sound/master/lib/p5.sound.js" target="blank">p5 sound library</a>
 	- Selecting random sounds/images
@@ -126,34 +137,39 @@ title: Schedule
 		- Player hit by obstacle
 		- Player collects reward
 	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
-	- ~~Post sounds on Medium~~ Post on Blackboard, medium doesn't allow sound files
+	- ~~Post sounds on Medium~~ Post on Blackboard, medium doesn't allow sound files -->
 
 ## Week 8/9 **Midterm**
 - In class workshop
-- See Blackboard for rubric
 - Create an [itch.io](https://itch.io/){:target="blank"} account
-- **Lab:** Rewards
+- See Blackboard for rubric
+
+<!-- - **Lab:** Rewards
 	- [Lab](labs/{{site.semester}}/week8/){:target="blank"} 
 	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week8/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week8/lab.html)
+	& [notes](labs/{{site.semester}}/week8/lab.html) -->
 
 ## Week 10 **User Testing**
 - [Browser Games](notes/browser)
 - [User Testing](notes/testing)
-- **Assignment 7: User Testing Form**
+
+<!-- - **Assignment 7: User Testing Form**
 	- Create a user testing form
-	- Send the game and form to 5 users not in the class
+	- Send the game and form to 5 users not in the class -->
 
 ## Week 11 **User Testing Workshop**
 - [Emergence & Progression](notes/emergence)
-- Test classmates games and fill out forms in class
-- **Lab: Progression**
+- Playtest games and fill out user testing surveys in class
+
+<!-- - **Lab: Progression**
 	- [Lab](labs/{{site.semester}}/week11/){:target="blank"} 
 	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week11/){:target="blank"} 
 	& [notes](labs/{{site.semester}}/week11/lab.html)
 - **Assignment 8: User Testing Report**
 	- Summarize feedback in Medium post
-	- Choose three things to work on for final
+	- Choose three things to work on for final -->
+
+<!-- 
 
 ## Week 12 **Background Music**
 - **Lab: Background Music**
@@ -173,7 +189,7 @@ title: Schedule
 	- [Lab](labs/{{site.semester}}/week14/){:target="blank"} 
 	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week14/){:target="blank"}
 
-<!-- 
+
 
 2018 labs
 - moving the character
