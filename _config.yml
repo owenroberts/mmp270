@@ -1,0 +1,14 @@
+description: MMP 270 Class Notes
+class: MMP 270
+semester: 21s
+layouts_dir: slides/_jeks/layouts
+includes_dir: slides/_jeks/includes
+background: true
+# http://downtothewire.io/2015/08/15/configuring-jekyll-for-user-and-project-github-pages/
+baseurl: /
+# Exclude these files from your production _site
+exclude:
+  - README.md
+  - mea300_flyer/
+  - update.sh
+  - students/

@@ -1,0 +1,5 @@
+body {
+	background: 
+		linear-gradient( rgba(206, 232, 255, 0.95), rgba(240, 248, 255, 1) 25%, rgba(206, 232, 255, 0.95) 90%), 
+		url(download.jpg);
+}
