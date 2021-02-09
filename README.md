@@ -1,2 +1,3 @@
-# MMP 300: Game Design
-Course site: http://owenroberts.github.io/mea300
+MMP 270
+
+[270.owen.cool](270.owen.cool)
