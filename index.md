@@ -3,13 +3,6 @@ layout: main
 title: Introduction to Video Game Design
 ---
 
-urls
-{{ site.url }}
-{{ site.baseurl }}
-{{ site.fullurl }}
-fuck fuck
-
-
 ## Class links
 - [Schedule](schedule.html)
 - [Syllabus](https://docs.google.com/document/d/1gAlNLvo9mtHszOqO3E4LXsn8XCDywNiegs_RO6ok8rE/edit?usp=sharing){:target="blank"}
