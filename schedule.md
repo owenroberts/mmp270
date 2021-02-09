@@ -4,6 +4,7 @@ title: Schedule
 ---
 
 
+
 ## Week 1 **Introduction**
 - [Introduction to Game Design](notes/intro)
 - **Reading**:	<a href="readings/crawford.pdf" target="blank">Crawford - Chapter 1</a>

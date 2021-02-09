@@ -4,3 +4,4 @@ _site/
 .jekyll-cache
 notes/intro/drawings/
 *.png~
+screen_casts/

@@ -3,9 +3,12 @@ layout: main
 title: Introduction to Video Game Design
 ---
 
-<!-- This is the class page of MEA 300 at BMCC.
+urls
+{{ site.url }}
+{{ site.baseurl }}
+{{ site.fullurl }}
+fuck fuck
 
-The class notes, schedule and assignments are all found here. -->
 
 ## Class links
 - [Schedule](schedule.html)
