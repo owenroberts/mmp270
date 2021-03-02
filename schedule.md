@@ -86,8 +86,7 @@ title: Schedule
 	- Explain how the obstacles interact with character
 	- Post images and explanations on blog -->
 
-## Week 5 **Art**
-
+## Week 5 **Indie games**
 - [Indie games](notes/indie)
 - **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
 
@@ -105,7 +104,7 @@ title: Schedule
 	- Post screen shots and explanation of how each reward could help the player advance in the game
 	- Post on Medium -->
 
-## Week 6 **Indie games**
+## Week 6 **Art**
 - [Video Games & Art](notes/art)
 <!-- - **Reading**: Find a game on <a href="https://itch.io/" target="blank">itch.io</a> to play -->
 
