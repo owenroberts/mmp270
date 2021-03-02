@@ -87,7 +87,8 @@ title: Schedule
 	- Post images and explanations on blog -->
 
 ## Week 5 **Art**
-- [Video Games & Art](notes/art)
+
+- [Indie games](notes/indie)
 - **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
 
 <!-- - **Blog**: How does Syoban Action play with video game expectations?
@@ -105,8 +106,8 @@ title: Schedule
 	- Post on Medium -->
 
 ## Week 6 **Indie games**
-- [Indie games](notes/indie)
-- **Reading**: Find a game on <a href="https://itch.io/" target="blank">itch.io</a> to play
+- [Video Games & Art](notes/art)
+<!-- - **Reading**: Find a game on <a href="https://itch.io/" target="blank">itch.io</a> to play -->
 
 <!-- - **Lab**
 	- Settings file and variables
