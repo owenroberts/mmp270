@@ -3,7 +3,7 @@ layout: notes
 title: Godot Lab 5
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8G-rC7Y_1XA?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8G-rC7Y_1XA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 This lab covers adding obstacles to the scene.  [Download the lab files here](lab-5.zip).
 
