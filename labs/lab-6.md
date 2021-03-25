@@ -131,3 +131,6 @@ func _on_Item_body_entered(body):
 		emit_signal("item_collected")
 		$CollectSound.play()  # <--- add sound here
 ```
+
+## 9. Test!
+- Do the sounds play?
