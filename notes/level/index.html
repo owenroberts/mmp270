@@ -1,0 +1,262 @@
+---
+layout: slides
+title: Level Design 
+---
+
+<div class="slide">
+	<h2>What is a level?</h2>
+	<p>In video games, a level is typically defined spatially.  A level, and the design of that level, includes all of the space that player can navigate at the current stage of the game.</p>
+</div>
+
+<div class="slide">
+	<p>In some games, the entire space is visible to the player at the beginning of the level.  In many games, the player must navigate through the space to reveal the bounds of the level.</p>
+</div>
+
+<div class="slide">
+	<img src="Pac-man.png" alt="Pac-Man">
+	<p class="source">Image source: <a href="https://en.wikipedia.org/wiki/Pac-Man">https://en.wikipedia.org/wiki/Pac-Man</a></p>
+</div>
+
+<div class="slide">
+	<p>Most games consist of a sequence of levels.</p>
+	<p>Levels can represent a section of a larger space or world.</p>
+	<p>A player typically has to solve puzzles or defeat challenges to finish one level and advance to the next.</p>
+	<p>Levels tend to increase in difficulty.</p>
+</div>
+
+<div class="slide">
+	<p>From a technical perspective, levels are collections of data that collect a series of references to the components that make up a game.</p>
+	<p>This data provides a sort of recipe for the game engine to recreate the designers level in the build of a game.</p>
+	<p>The level files contains references to all of the media (images and audio files), scripts, fonts, scenes and other resources that make up the level.</p>
+</div>
+
+<div class="slide">
+	<img src="godot-1.png" alt="godot file">
+	<p>This image is the text of the <em>MainScene.tscn</em> file from a Godot Engine lab.</p>
+</div>
+
+<div class="slide">
+	<img src="godot-2.png" alt="godot file">
+	<p>Notice anything familiar?</p>
+</div>
+
+<div class="slide">
+	<p>In theory, a designer could create an entire level for Godot with nothing other than a text editor and knowledge of the location of various assets.</p>
+	<p>But for the sake of practicality, there are many tools that allow designers to create levels visually.</p>
+</div>
+
+<div class="slide">
+	<img src="TIDE.png" alt="TIDE level editor">
+	<p class="source">Image source: <a href="https://en.wikipedia.org/wiki/Level_(video_games)#Level_editor" target="_blank">https://en.wikipedia.org/wiki/Level_(video_games)#Level_editor</a></p>
+</div>
+
+<div class="slide">
+	<p>In early video game development, interval editing tools were used for designers to create and add levels to be read by the game engine.</p>
+	<p>The level of sophistication of these tools has increased with the overall level of sophistication in games, allowing for the separation of roles among a design team.  Level designers no longer need to be programmers to use the tools.</p>
+</div>
+
+<div class="slide">
+	<img src="museumofzzt.png" alt="zzt level designer">
+	<p class="source">Image source: <a href="https://museumofzzt.com/article/175/closer-look-640x350x16-a-history-of-zzts-graphics" target="_blank">https://museumofzzt.com/article/175/closer-look-640x350x16-a-history-of-zzts-graphics</a></p>
+</div>
+
+<div class="slide">
+	<p>Some games, like <em>ZZT</em>, began to <a href="https://obscuritory.com/blog/dig-up-old-custom-worlds-in-the-groundbreaking-museum-of-zzt/" target="_blank">share their level editing tools with players</a>, leading to communities around user generated levels.</p>
+	<p>Popular games like <em>Doom</em> and <em>Half-Life</em> also shared tools leading to libraries of user created levels and full game mods.</p>
+</div>
+
+<div class="slide">
+	<img src="The_Stanley_Parable_-_Screenshot_03.jpg" alt="stanley parable">
+	<p class="source">Image source: <a href="https://en.wikipedia.org/wiki/The_Stanley_Parable" target="_blank">https://en.wikipedia.org/wiki/The_Stanley_Parable</a></p>
+</div>
+
+<div class="slide">
+	<p>Mods like <em>The Stanley Parable</em> have been authorized by the makers of the platforms they were built on and gone on to become commercially sold and historically important games.</p>
+</div>
+
+<div class="slide">
+	<img src="isaac_map2.png" alt="binding of isaac sprites">
+	<p class="source">Image source: <a href="https://www.boristhebrave.com/2020/09/12/dungeon-generation-in-binding-of-isaac/">https://www.boristhebrave.com/2020/09/12/dungeon-generation-in-binding-of-isaac/</a></p>
+</div>
+
+<div class="slide">
+	<p>Another style of level design, <em>procedural generation</em>, uses code to generate new levels based on a series of choices.</p>
+	<p>Games made in this style are often called <em>Roguelikes</em> after the procedurally generated dungeon crawler <em>Rogue</em>, which used the process in part to make the game file smaller to make it more easily distributed on early internet networks in the 1980s.</p>
+</div>
+
+
+<div class="slide">
+	<h2>Level design principles</h2>
+	<p>Level design principles are not rules, they are more like guidelines that will help a new designer in their process of designing.</p>
+	<p>Like any other art form, level design requires its own process of discovery through practice.</p>
+</div>
+
+<div class="slide">
+	<h2>Guidance</h2>
+	<p>The first thing a level must do in a game is introduce the mechanics of the game.</p>
+	<p>Some games use tutorial with explicit instructions.  Others use visual cues to guide the player to discover the mechanics.</p>
+</div>
+
+<div class="slide">
+	<img src="World_1-1_obstacle_schematic.png" alt="World 1-1 schematic">
+	<p class="source">Image source: <a href="https://en.wikipedia.org/wiki/World_1-1">https://en.wikipedia.org/wiki/World_1-1</a></p>
+</div>
+
+<div class="slide">
+	<p>It is also important to intoduce the goal of the game.</p>
+	<p>The goal of each level should always be clear to the player.</p>
+	<p>In cases where the ultimate goal of the game may be mysterious, there must be something else compelling the player to move forward, such as a narrative or visual interest.</p>
+</div>
+
+<div class="slide">
+	<h2>Obstacles and rewards</h2>
+	<p>Once the mechanics and goals are established, obstacles and rewards are introduced to complicate the experience of the level.</p>
+	<p>Obstacles or challenges should be fun and engage the player to progress through the game.</p>
+	<p>Rewards should reinforce the goals of the game and lead the player towards mastery of mechanics.</p>
+</div>
+
+<div class="slide">
+	<img src="SonicTheHedgehog1.png" alt="sonic">
+	<p class="source">Image source: <a href="https://en.wikipedia.org/wiki/Green_Hill_Zone">https://en.wikipedia.org/wiki/Green_Hill_Zone</a></p>
+</div>
+
+<div class="slide">
+	<h2>Perfect player principle</h2>
+	<p>This principle states that there should in theory be a perfect player that can complete a level without any prior knowledge of the mechanics or design of the level.</p>
+</div>
+
+<div class="slide">
+	<img src="n.gif" alt="N">
+	<p class="source">Image source: <a href="https://www.quora.com/If-you-had-to-play-one-computer-game-for-an-hour-or-two-every-single-day-which-one-would-you-pick-and-why" target="_blank">https://www.quora.com/If-you-had-to-play-one-computer-game-for-an-hour-or-two-every-single-day-which-one-would-you-pick-and-why</a></p>
+</div>
+
+<div class="slide">
+	<h2>Unique levels</h2>
+	<p>The levels within a game should have unique qualities.</p>
+	<p>A good level could be described easily to any player of the game and they should know which level is being described.</p>
+</div>
+
+<div class="slide">
+	<img src="Milkmanconspiracy.png" alt="milkman conspiracy">
+	<p class="source">Image source: <a href="https://en.wikipedia.org/wiki/Milkman_Conspiracy">https://en.wikipedia.org/wiki/Milkman_Conspiracy</a></p>
+</div>
+
+<div class="slide">
+	<h2>Pacing</h2>
+	<p>A level should offer a series of challenges without ending too quickly or requiring arduous or repetitive tasks.</p>
+</div>
+
+<div class="slide">
+	<img src="Water_Temple_map.jpg" alt="water temple">
+	<p class="source">Image source: <a href="https://en.wikipedia.org/wiki/Water_Temple_(Ocarina_of_Time)" target="_blank">https://en.wikipedia.org/wiki/Water_Temple_(Ocarina_of_Time)</a></p>
+</div>
+
+<div class="slide">
+	<h2>Level design techniques</h2>
+	<p>This is not an exhaustive list, but includes some common techniques used in level design.</p>
+</div>
+
+<div class="slide">
+	<h2>Signposting</h2>
+	<p>Signposting is using literal instructions, visual or audio clues, character dialog or narrative, or other signals to direct the player through a level.</p>
+</div>
+
+<div class="slide">
+	<img src="zelda-sign.jpg" alt=" Zelda sign">
+	<p class="source">Image source: <a href="https://www.eurogamer.net/articles/2019-09-20-zelda-links-awakening-walkthrough-guide-6812?page=22" target="_blank"> https://www.eurogamer.net/articles/2019-09-20-zelda-links-awakening-walkthrough-guide-6812?page=22</a></p>
+</div>
+
+<div class="slide">
+	<h2>Gating</h2>
+	<p>Gating is restricting areas of a level, requiring players to find literal or figurative keys to open doors.</p>
+</div>
+
+<div class="slide">
+	<img src="Ice_key.webp" alt="Ice Key">
+	<p class="source">Image source: <a href="https://banjotooie.fandom.com/wiki/Ice_key" target="_blank">https://banjotooie.fandom.com/wiki/Ice_key</a></p>
+</div>
+
+<div class="slide">
+	<h2>Risk vs reward</h2>
+	<p>Risk vs reward is a scenario where a reward or goal is placed in a dangerous area of a level.  The player must evaluate the value of the reward vs the danger of the risk.</p>
+</div>
+
+<div class="slide">
+	<img src="Blood_Gulch.png" alt="Blood Gultch">
+	<p class="source">Image source: <a href="https://en.wikipedia.org/wiki/Blood_Gulch" target="_blank">https://en.wikipedia.org/wiki/Blood_Gulch</a></p>
+</div>
+
+<div class="slide">
+	<h2>Safe zone</h2>
+	<p>The safe zone technique gives a player a safe area to move in and out of as they navigate a level.</p>
+</div>
+
+<div class="slide">
+	<img src="space-invaders.png" alt="space invaders">
+	<p class="source">Image source: <a href="https://www.smithsonianmag.com/science-nature/original-space-invaders-icon-1970s-America-180969393/" target="_blank">https://www.smithsonianmag.com/science-nature/original-space-invaders-icon-1970s-America-180969393/</a></p>
+</div>
+
+<div class="slide">
+	<h2>Foreshadowing</h2>
+	<p>Foreshadowing is revealing future rewards or challenges to the player before they reach them in the level.</p>
+</div>
+
+<div class="slide">
+	<img src="outer-wilds.jpg" alt="outer wilds">
+	<p class="source"><a href="https://innuendostudios.tumblr.com/post/617963920366452736/thoughts-on-outer-wilds" target="_blank">https://innuendostudios.tumblr.com/post/617963920366452736/thoughts-on-outer-wilds</a></p>
+</div>
+
+<div class="slide">
+	<h2>Branching</h2>
+	<p>Branching is giving a player multiple options to complete a challenge, avoid an obstacle, collect a reward or reach a goal.</p>
+</div>
+
+<!-- <div class="slide">
+	<img src="" alt="">
+	<p class="source"><a href="" target="_blank"></a></p>
+</div> -->
+
+<div class="slide">
+	<h2>Bottle necking</h2>
+	<p>Related to branching, bottle necking is when the possible paths coverge on one area or challenge.</p>
+</div>
+
+<div class="slide">
+	<img src="bottlebranch.png" alt="bottle necking">
+	<p class="source"><a href="https://heterogenoustasks.wordpress.com/2015/01/26/standard-patterns-in-choice-based-games/" target="_blank">https://heterogenoustasks.wordpress.com/2015/01/26/standard-patterns-in-choice-based-games/</a></p>
+</div>
+
+<div class="slide">
+	<h2>Layering</h2>
+	<p>Layering is when two or more previously introduced game mechanics are present in one level or scene.</p>
+</div>
+
+<div class="slide">
+	<img src="roadattacker.jpg" alt="mega man">
+	<p class="source"><a href="http://www.honestgamers.com/guides/mega-man-x/8/read/97.html" target="_blank">http://www.honestgamers.com/guides/mega-man-x/8/read/97.html</a></p>
+</div>
+
+
+<div class="slide">
+	<h2>Resources</h2>
+	<ul>
+		<li><a href="https://w.itch.io/level-design-lessons" target="_blank">Level Design Lessons</a></li>
+		<li><a href="https://www.youtube.com/watch?v=58WUEtoAlSw" target="_blank">Level Design in a Day: Level Design Histories and Futures</a></li>
+		<li><a href="https://www.youtube.com/watch?v=soalj7QuszI" target="_blank">2D Platformer Level Design With Bob Ross - Devlog 7</a></li>
+		<li><a href="https://www.youtube.com/watch?v=HyLL0W4mHncs" target="_blank">My Level Design Philosophy + Tips For Designing Levels</a></li>
+		<li><a href="https://www.gamasutra.com/blogs/AhmedKhalifa/20190610/344344/Level_Design_Patterns_in_2D_Games.php" target="_blank">Level Design Patterns in 2D Games</a></li>
+		<li><a href="http://level-design.org/" target="_blank">Level-Design.org</a></li>
+		<li><a href="https://www.worldofleveldesign.com/" target="_blank">World of Level Design</a></li>
+		<li><a href="https://www.gamasutra.com/blogs/NickDonnelly/20150629/247283/Procedural_Level_Generation_in_The_Dungeoning.php" target="_blank">Procedural Level Generation in The Dungeoning</a></li>
+	</ul>
+</div>
+
+<!-- 
+	https://files.meetup.com/17661852/Principles%20of%20Level%20Design.pdf
+
+	my maps
+	https://editor.p5js.org/owenroberts/sketches/3DdZqdCl
+	https://editor.p5js.org/owenroberts/sketches/jZskipYSa
+	http://infinite.owen.cool/map/
+
+ -->
