@@ -30,6 +30,24 @@ func _on_EndLevel_body_entered(body):
 		get_tree().change_scene(load_level_path)
 ```
 
+## Optional -- End Animation
+- Add a signal to the AnimatedSprite connecting animation_finished to the script
+- Modify the script to play the animation when player enters the area and then chance the scene when animation is done
+
+```
+extends Node2D
+
+export(String, FILE, "*.tscn") var load_level_path
+
+func _on_EndLevel_body_entered(body):
+	if body.name == 'Player':
+		$AnimationPlayer.play('End')
+
+func _on_AnimatedSprite_animation_finished():
+	get_tree().change_scene(load_level_path)
+```
+
+
 ## 3. Create new levels
 - Duplicate *Level1.tscn* and call it *Level2.tscn*
 - Duplicate either level to make *Level3.tscn*
