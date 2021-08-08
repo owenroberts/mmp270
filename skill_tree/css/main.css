@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "04b03";
+  src: url("../fonts/04B_03__.woff2") format("woff2"), url("../fonts/04B_03__.woff") format("woff"), url("../fonts/04B_03__.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-family: "04b03";
+  font-size: 16px;
+}
+
+header {
+  font-size: 24px;
+  text-align: center;
+  background-color: #ffc7e3;
+  line-height: 3;
+}
+
+#main #Apprentice-container {
+  background-color: #e3c7ff;
+}
+#main #Developer-container {
+  background-color: #c7e3ff;
+}
+#main #Artist-container {
+  background-color: #c7ffe3;
+}
+#main #Designer-container {
+  background-color: #e3ffc7;
+}
+#main #Sound-Design-container {
+  background-color: #e3c7ff;
+}
+#main #Publishing-container {
+  background-color: #c7e3ff;
+}
+#main #Quality-Assurance-container {
+  background-color: #c7ffe3;
+}
+
+.section {
+  padding: 0.5em;
+}
+.section h1 {
+  margin: 0;
+  line-height: 2;
+  font-size: 22px;
+  padding: 0 0.5em;
+  cursor: pointer;
+}
+.section .modules {
+  display: flex;
+  height: 0;
+  overflow: hidden;
+  padding: 0 0.5em;
+}
+.section .modules.open {
+  height: auto;
+}
+.section .module {
+  background: white;
+  padding: 0.25em 0.5em;
+  margin: 0.25em;
+  min-width: 8em;
+}
+.section .module .info {
+  display: grid;
+  grid-template-areas: "type title" "video points";
+  grid-gap: 0.25em;
+  margin: 0.25em 0;
+}
+.section .module .title {
+  display: inline-block;
+  grid-area: title;
+  text-align: right;
+}
+.section .module .type {
+  grid-area: type;
+}
+.section .module .video {
+  grid-area: video;
+}
+.section .module .points {
+  grid-area: points;
+  text-align: right;
+}
+.section .module input[type=checkbox] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2);
+  /* IE */
+  -moz-transform: scale(2);
+  /* FF */
+  -webkit-transform: scale(2);
+  /* Safari and Chrome */
+  -o-transform: scale(2);
+  /* Opera */
+  transform: scale(2);
+  padding: 0.5em;
+  margin: 0.5em;
+  cursor: pointer;
+}
+.section .module .completed,
+.section .module .available {
+  text-align: right;
+}
+
+/*# sourceMappingURL=main.css.map */

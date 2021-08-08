@@ -1,0 +1,137 @@
+@use 'fonts';
+
+$main-font: '04b03';
+
+$color-one: #ffc9ec;
+
+$main-hue: 330;
+$main-sat: 100;
+$main-lit: 89;
+$second-hue: $main-hue - 60;
+$third-hue: $second-hue - 60;
+$fourth-hue: $third-hue - 60;
+$fifth-hue: $fourth-hue - 60;
+
+
+body {
+	margin: 0;
+	font-family: $main-font;
+	font-size: 16px;
+}
+
+header {
+	font-size: 24px;
+	text-align: center;
+	background-color: hsl($main-hue, $main-sat, $main-lit);
+	line-height: 3;
+}
+
+#main {
+
+	#Apprentice-container {
+		background-color: hsl($second-hue, $main-sat, $main-lit);
+	}
+
+	#Developer-container {
+		background-color: hsl($third-hue, $main-sat, $main-lit);
+	}
+
+	#Artist-container {
+		background-color: hsl($fourth-hue, $main-sat, $main-lit);
+	}
+
+	#Designer-container {
+		background-color: hsl($fifth-hue, $main-sat, $main-lit);
+	}
+
+	#Sound-Design-container {
+		background-color: hsl($second-hue, $main-sat, $main-lit);
+	}
+
+	#Publishing-container {
+		background-color: hsl($third-hue, $main-sat, $main-lit);
+	}
+
+	#Quality-Assurance-container {
+		background-color: hsl($fourth-hue, $main-sat, $main-lit);
+	}
+}
+
+.section {
+
+	padding: 0.5em;
+
+	h1 {
+		margin: 0;
+		line-height: 2;
+		font-size: 22px;
+		padding: 0 0.5em;
+		cursor: pointer;
+	}
+
+	.modules {
+		display: flex;
+		height: 0;
+		overflow: hidden;
+		padding: 0 0.5em;
+		// justify-content: space-around;
+
+		&.open {
+			height: auto;
+		}
+	}
+
+	.module {
+		background: white;
+		padding: 0.25em 0.5em;
+		margin: 0.25em;
+		min-width: 8em;
+
+		.info {
+			display: grid;
+			grid-template-areas:
+				'type title'
+				'video points';
+			grid-gap: 0.25em;
+			margin: 0.25em 0;
+		}
+
+		.title {
+			display: inline-block;
+			grid-area: title;
+			text-align: right;
+		}
+
+		.type {
+			grid-area: type;
+		}
+
+		.video {
+			grid-area: video;
+		}
+
+		.points {
+			grid-area: points;
+			text-align: right;
+		}
+
+		input[type=checkbox] {
+			/* Double-sized Checkboxes */
+			-ms-transform: scale(2); /* IE */
+			-moz-transform: scale(2); /* FF */
+			-webkit-transform: scale(2); /* Safari and Chrome */
+			-o-transform: scale(2); /* Opera */
+			transform: scale(2);
+			padding: 0.5em;
+			margin: 0.5em;
+			cursor: pointer;
+		}
+
+		.completed,
+		.available {
+			text-align: right;
+		}
+
+	}
+}
+
