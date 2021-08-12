@@ -12,19 +12,70 @@ $third-hue: $second-hue - 60;
 $fourth-hue: $third-hue - 60;
 $fifth-hue: $fourth-hue - 60;
 
-
 body {
 	margin: 0;
 	font-family: $main-font;
 	font-size: 16px;
 }
 
-header {
-	font-size: 24px;
-	text-align: center;
+nav {
 	background-color: hsl($main-hue, $main-sat, $main-lit);
-	line-height: 3;
+	padding: 0 1rem;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	header {
+		font-size: 24px;
+		line-height: 2;
+	}
+
+	#points {
+		font-size: 1.5rem;
+		flex-basis: 100%;
+	}
+
+	#auth-button,
+	#user-name {
+		margin-left: auto;
+		font-size: 1.5rem;
+	}
+
+	#auth-button {
+		cursor: pointer;
+	}
+
 }
+
+#auth {
+	padding: 0 1rem;
+	background-color: hsl($fifth-hue, $main-sat, $main-lit);
+	text-align: right;
+
+	#login {
+		margin: 1rem 0;
+	}
+
+	#no-account,
+	#sign-up {
+		margin-bottom: 1rem;
+	}
+
+	#sign-up-message,
+	#login-message {
+		color: red;
+	}
+}
+
+.hidden {
+	height: 0;
+	overflow: hidden;
+}
+
+.open {
+	height: auto !important;
+}
+
 
 #main {
 
@@ -59,56 +110,58 @@ header {
 
 .section {
 
-	padding: 0.5em;
+	padding: 0.5rem;
 
 	h1 {
 		margin: 0;
 		line-height: 2;
 		font-size: 22px;
-		padding: 0 0.5em;
+		padding: 0 0.5rem;
 		cursor: pointer;
 	}
 
 	.modules {
 		display: flex;
-		height: 0;
-		overflow: hidden;
-		padding: 0 0.5em;
-		// justify-content: space-around;
-
-		&.open {
-			height: auto;
-		}
+		padding: 0 0.5rem;
 	}
 
 	.module {
 		background: white;
 		padding: 0.25em 0.5em;
-		margin: 0.25em;
+		margin: 0.25em 0;
+		margin-right: 0.5em;
 		min-width: 8em;
 
-		.info {
-			display: grid;
-			grid-template-areas:
-				'type title'
-				'video points';
-			grid-gap: 0.25em;
-			margin: 0.25em 0;
-		}
+		display: grid;
+		grid-template-areas:
+			'null available'
+			'type title'
+			'type points'
+			'video completed';
+		grid-gap: 0.25rem;
+		
 
 		.title {
 			display: inline-block;
 			grid-area: title;
-			text-align: right;
 		}
 
-		.type {
-			grid-area: type;
+		.title,
+		.points {
+			margin-top: 0;
 		}
 
-		.video {
-			grid-area: video;
+		.type { grid-area: type; }
+		.video { grid-area: video; }
+		.completed { 
+			grid-area: completed; 
+			margin-top: 1rem;
 		}
+		.available { 
+			grid-area: available; 
+			margin-bottom: 1rem;
+		}
+
 
 		.points {
 			grid-area: points;
@@ -128,7 +181,8 @@ header {
 		}
 
 		.completed,
-		.available {
+		.available,
+		.title {
 			text-align: right;
 		}
 

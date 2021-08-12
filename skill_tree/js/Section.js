@@ -8,6 +8,8 @@ import Module from './Module.js';
 export default class Section {
 	constructor(title, data, markTreeCallback) {
 
+		this.id = data.id;
+
 		this.container = makeElement({
 			id: `${title.replaceAll(' ', '-')}-container`,
 			className: 'section',
@@ -31,7 +33,7 @@ export default class Section {
 		// heading.appendChild(openBtn);
 
 		this.modules = makeElement({
-			className: 'modules',
+			className: 'modules hidden',
 		});
 		this.modules.isOpen = false;
 

@@ -5,13 +5,71 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MMP 270 Skill Tree Template</title>
 	<link rel="stylesheet" href="css/main.css">
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyAbx52VBeEoPPgg6_eysz_gT0cX8TcNSvM",
+			authDomain: "mmp-270-data.firebaseapp.com",
+			projectId: "mmp-270-data",
+			storageBucket: "mmp-270-data.appspot.com",
+			messagingSenderId: "493905133164",
+			appId: "1:493905133164:web:0242d0539b42ac2e406249",
+			measurementId: "G-MRF5DRVJ53"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
+
 </head>
 <body>
 	<div id="container">
-		<header>MMP 270 Skill Tree / Syllabus</header>
+		<nav>
+			<header>MMP 270 Syllabus / Skill Tree</header>
+
+			<div id='user-name'></div>
+			<div id='auth-button'>Login</div>
+			<div id="points">Total Points: <span id="points-number"></span></div>
+		</nav>
+
+		<div id='auth' class='hidden'>
+			<div id="login">
+				<input id="login-email" placeholder="Email">
+				<input id="login-password" placeholder="Password" type="password">
+				<button id="login-button">Login</button>
+				<p id="login-message"></p>
+			</div>
+
+			<div id="no-account">
+				<label>No account?</label>
+				<button id="sign-up-open">Sign Up</button>
+			</div>
+
+			<div id="sign-up" class="hidden">
+				<input type="text" id="sign-up-username" placeholder="Username">
+				<input type="text" id="sign-up-email" placeholder="Email">
+				<input type="password" id="sign-up-password" placeholder="Password">
+				<button id="submit-sign-up">Sign Up</button>
+				<p id="sign-up-message"></p>
+			</div>
+		</div>	
 		<main id="main"></main>
 	</div>
 	<script type="module" src="js/tree.js"></script>
+	<script type="module" src="js/auth.js"></script>
 </body>
 </html>
 

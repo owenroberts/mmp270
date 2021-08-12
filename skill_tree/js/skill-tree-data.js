@@ -13,27 +13,27 @@ export default function SkillTreeDataProvider() {
 					"video": "link to video",
 					"type": "Open Lab",
 					"assignment": "link to assignment?",
-					"points": 10,
+					"points": 1,
 					"parents": [],
-					"children": ['0.1', '0.2'],
+					"children": ['0-1', '0-2'],
 				},
 				"Art Intro": {
 					"id": 1,
 					"video": "link",
 					"assignment": "link",
 					"type": "Art",
-					"points": 10,
-					"parents": ['0.0'],
-					"children": ['1.0', '2.0', '3.0'],
+					"points": 1,
+					"parents": ['0-0'],
+					"children": ['1-0', '2-0', '3-0'],
 				},
 				"Godot Intro": {
 					"id": 2,
 					"video": "link",
 					"assignment": "link",
 					"type": "Godot",
-					"points": 10,
-					"parents": ['0.0'],
-					"children": ['1.0', '2.0', '3.0'],
+					"points": 1,
+					"parents": ['0-0'],
+					"children": ['1-0', '2-0', '3-0'],
 				}
 			}
 		},
@@ -44,31 +44,29 @@ export default function SkillTreeDataProvider() {
 					"id": 0,
 					"video": "link to video",
 					"assignment": "link to assignment?",
-					"points": 10,
-					"parents": ['0.1', '0.2'],
-					"children": ['0.1', '0.2'],
+					"points": 2,
+					"parents": ['0-1', '0-2'],
+					"children": ['0-1', '0-2'],
 					"type": "Godot",
-					// "sub": {
-					// 	"Platformer / Arcade": {
-					// 		"Physics": {
-					// 			"id": 1,
-					// 			"video": "link to video",
-					// 			"assignment": "link to assignment?",
-					// 			"points": 10,
-					// 			"parents": [1.0],
-					// 			"opens": [1.2],
-					// 		},
-					// 		"Mechanics": {
-					// 			"id": 2,
-					// 			"video": "link to video",
-					// 			"assignment": "link to assignment?",
-					// 			"points": 10,
-					// 			"parents": [1.0],
-					// 			"opens": [1.2],
-					// 		},
-					// 	}
-					// }
 				},
+
+				"Physics": {
+					"id": 1,
+					"video": "link to video",
+					"assignment": "link to assignment?",
+					"points": 2,
+					"parents": ['1-0'],
+					"opens": ['1-2'],
+				},
+				"Mechanics": {
+					"id": 2,
+					"video": "link to video",
+					"assignment": "link to assignment?",
+					"points": 2,
+					"parents": ['1-0'],
+					"opens": [],
+				},
+
 				
 			}
 		},

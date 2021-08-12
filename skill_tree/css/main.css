@@ -8,11 +8,54 @@ body {
   font-size: 16px;
 }
 
-header {
-  font-size: 24px;
-  text-align: center;
+nav {
   background-color: #ffc7e3;
-  line-height: 3;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav header {
+  font-size: 24px;
+  line-height: 2;
+}
+nav #points {
+  font-size: 1.5rem;
+  flex-basis: 100%;
+}
+nav #auth-button,
+nav #user-name {
+  margin-left: auto;
+  font-size: 1.5rem;
+}
+nav #auth-button {
+  cursor: pointer;
+}
+
+#auth {
+  padding: 0 1rem;
+  background-color: #e3ffc7;
+  text-align: right;
+}
+#auth #login {
+  margin: 1rem 0;
+}
+#auth #no-account,
+#auth #sign-up {
+  margin-bottom: 1rem;
+}
+#auth #sign-up-message,
+#auth #login-message {
+  color: red;
+}
+
+.hidden {
+  height: 0;
+  overflow: hidden;
+}
+
+.open {
+  height: auto !important;
 }
 
 #main #Apprentice-container {
@@ -38,46 +81,50 @@ header {
 }
 
 .section {
-  padding: 0.5em;
+  padding: 0.5rem;
 }
 .section h1 {
   margin: 0;
   line-height: 2;
   font-size: 22px;
-  padding: 0 0.5em;
+  padding: 0 0.5rem;
   cursor: pointer;
 }
 .section .modules {
   display: flex;
-  height: 0;
-  overflow: hidden;
-  padding: 0 0.5em;
-}
-.section .modules.open {
-  height: auto;
+  padding: 0 0.5rem;
 }
 .section .module {
   background: white;
   padding: 0.25em 0.5em;
-  margin: 0.25em;
-  min-width: 8em;
-}
-.section .module .info {
-  display: grid;
-  grid-template-areas: "type title" "video points";
-  grid-gap: 0.25em;
   margin: 0.25em 0;
+  margin-right: 0.5em;
+  min-width: 8em;
+  display: grid;
+  grid-template-areas: "null available" "type title" "type points" "video completed";
+  grid-gap: 0.25rem;
 }
 .section .module .title {
   display: inline-block;
   grid-area: title;
-  text-align: right;
+}
+.section .module .title,
+.section .module .points {
+  margin-top: 0;
 }
 .section .module .type {
   grid-area: type;
 }
 .section .module .video {
   grid-area: video;
+}
+.section .module .completed {
+  grid-area: completed;
+  margin-top: 1rem;
+}
+.section .module .available {
+  grid-area: available;
+  margin-bottom: 1rem;
 }
 .section .module .points {
   grid-area: points;
@@ -99,7 +146,8 @@ header {
   cursor: pointer;
 }
 .section .module .completed,
-.section .module .available {
+.section .module .available,
+.section .module .title {
   text-align: right;
 }
 

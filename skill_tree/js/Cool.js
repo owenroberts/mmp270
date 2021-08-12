@@ -7,7 +7,11 @@ function makeElement(params) {
 	const elem = document.createElement(tag || 'div');
 	if (text) elem.textContent = text;
 	if (id) elem.id = id;
-	if (className) elem.classList.add(className);
+	if (className) {
+		className.split(' ').forEach(cn => {
+			elem.classList.add(cn);
+		});
+	}
 	if (onclick) elem.addEventListener('click', onclick, false);
 	if (type) elem.type = type;
 	if (title) elem.title = title;
@@ -23,9 +27,11 @@ function makeElement(params) {
 		icon.appendChild(img);
 		elem.appendChild(icon);
 	}
-
 	return elem;
-
 }
 
-export { makeElement };
+function getElement(id) {
+	return document.getElementById(id);
+}
+
+export { makeElement, getElement };

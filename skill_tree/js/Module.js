@@ -3,10 +3,16 @@
 */
 
 import { makeElement } from './Cool.js';
+import SkillTreeDataProvider from './skill-tree-data.js';
+
+const data = SkillTreeDataProvider();
+console.log(data);
 
 export default class Module {
 	constructor(title, data, markTreeCallback) {
 
+		this.id = data.id;
+		this.points = data.points;
 		this.parents = data.parents;
 		this.children = data.children;
 		this.isAvailable = this.parents.length === 0;
@@ -35,10 +41,6 @@ export default class Module {
 			available.appendChild(check);
 		});
 
-		const info = makeElement({
-			className: 'info',
-		});
-
 		const header = makeElement({
 			tag: 'h3',
 			className: 'title',
@@ -65,17 +67,17 @@ export default class Module {
 		if (data.type === 'Art') typeIcon.src = './icons/art_icon.png';
 		typeContainer.appendChild(typeIcon);
 
-		info.appendChild(header);
-		info.appendChild(typeContainer);
-		info.appendChild(video);
-		info.appendChild(points);
-		this.container.append(info);
+		this.container.appendChild(header);
+		this.container.appendChild(typeContainer);
+		this.container.appendChild(video);
+		this.container.appendChild(points);
 
 		const completed = makeElement({
 			className: "completed",
 			text: "Completed ",
 			onclick: () => {
-				this.markComplete();
+				if (this.isCompleted) this.markCompleted(false);
+				else this.markCompleted(true);
 				markTreeCallback();
 			}
 		});
@@ -93,12 +95,13 @@ export default class Module {
 		// this.modules.appendChild(mc);
 	}
 
-	markAvailable(id) {
-		this.availableChecks[id].checked = true;
+	markAvailable(id, isAvailable) {
+		this.availableChecks[id].checked = isAvailable;
+		this.isAvailable = isAvailable;
 	}
 
-	markComplete() {
-		this.isCompleted = true;
-		this.completedCheck.checked = true;
+	markCompleted(isComplete) {
+		this.isCompleted = isComplete;
+		this.completedCheck.checked = isComplete;
 	}
 }
