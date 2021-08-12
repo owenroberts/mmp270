@@ -5,8 +5,15 @@
 import { makeElement } from './Cool.js';
 import SkillTreeDataProvider from './skill-tree-data.js';
 
-const data = SkillTreeDataProvider();
-console.log(data);
+const skillTreeData = SkillTreeDataProvider();
+const skillTree = {};
+for (const sectionTitle in skillTreeData) {
+	const section = skillTreeData[sectionTitle];
+	for (const modTitle in section.modules) {
+		const mod = section.modules[modTitle];
+		skillTree[section.id + '-' + mod.id] = `${sectionTitle} ~ ${modTitle}`;
+	}
+}
 
 export default class Module {
 	constructor(title, data, markTreeCallback) {
@@ -15,7 +22,7 @@ export default class Module {
 		this.points = data.points;
 		this.parents = data.parents;
 		this.children = data.children;
-		this.isAvailable = this.parents.length === 0;
+		this.isAvailable = false
 		this.isCompleted = false;
 		
 		this.container = makeElement({
@@ -35,7 +42,9 @@ export default class Module {
 			const check = makeElement({
 				tag: 'input',
 				type: 'checkbox',
-				title: 'Needs ' + id,
+				title: id.includes('@') ?
+					'One from Art, Dev, Design or Sound' :
+					'Requires ' + skillTree[id],
 			});
 			this.availableChecks[id] = check;
 			available.appendChild(check);
@@ -49,7 +58,9 @@ export default class Module {
 
 		const video = makeElement({
 			className: 'video',
-			video: data.video, 
+			text: 'Lab Video',
+			tag: 'a',
+			href: data.video, 
 		});
 
 		const points = makeElement({
@@ -65,6 +76,8 @@ export default class Module {
 		if (data.type === 'Open Lab') typeIcon.src = './icons/openlab_icon.png';
 		if (data.type === 'Godot') typeIcon.src = './icons/godot_icon.png';
 		if (data.type === 'Art') typeIcon.src = './icons/art_icon.png';
+		if (data.type === 'Audio') typeIcon.src = './icons/audio_icon.png';
+		if (data.type === 'Itch') typeIcon.src = './icons/itch_icon.png';
 		typeContainer.appendChild(typeIcon);
 
 		this.container.appendChild(header);
@@ -85,7 +98,9 @@ export default class Module {
 		this.completedCheck = makeElement({
 			tag: 'input',
 			type: 'checkbox',
-			title: "Unlocks "
+			title:  this.children ? 
+				'Unlocks ' + this.children.map(id => { return `${skillTree[id]}`; }).join(', ') :
+				'',
 		});
 
 		completed.appendChild(this.completedCheck);

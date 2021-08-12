@@ -16,10 +16,11 @@ body {
 	margin: 0;
 	font-family: $main-font;
 	font-size: 16px;
+	background-color: hsl($main-hue, $main-sat, $main-lit);
 }
 
 nav {
-	background-color: hsl($main-hue, $main-sat, $main-lit);
+	// background-color: hsl($main-hue, $main-sat, $main-lit);
 	padding: 0 1rem;
 	display: flex;
 	align-items: center;
@@ -122,6 +123,7 @@ nav {
 
 	.modules {
 		display: flex;
+		flex-wrap: wrap;
 		padding: 0 0.5rem;
 	}
 
@@ -136,10 +138,19 @@ nav {
 		grid-template-areas:
 			'null available'
 			'type title'
+			'type video'
 			'type points'
-			'video completed';
+			'type completed';
 		grid-gap: 0.25rem;
 		
+
+		.completed,
+		.available,
+		.title,
+		.video {
+			text-align: right;
+		}
+
 
 		.title {
 			display: inline-block;
@@ -148,7 +159,8 @@ nav {
 
 		.title,
 		.points {
-			margin-top: 0;
+			// margin-top: 0;
+			margin: 0;
 		}
 
 		.type { grid-area: type; }
@@ -157,11 +169,11 @@ nav {
 			grid-area: completed; 
 			margin-top: 1rem;
 		}
+
 		.available { 
 			grid-area: available; 
-			margin-bottom: 1rem;
+			margin-bottom: 0.5rem;
 		}
-
 
 		.points {
 			grid-area: points;
@@ -180,11 +192,6 @@ nav {
 			cursor: pointer;
 		}
 
-		.completed,
-		.available,
-		.title {
-			text-align: right;
-		}
 
 	}
 }

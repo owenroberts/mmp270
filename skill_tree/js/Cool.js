@@ -3,7 +3,7 @@
 */
 
 function makeElement(params) {
-	const { tag, text, className, id, onclick, video, type, title } = params;
+	const { tag, text, className, id, onclick, href, type, title } = params;
 	const elem = document.createElement(tag || 'div');
 	if (text) elem.textContent = text;
 	if (id) elem.id = id;
@@ -15,18 +15,11 @@ function makeElement(params) {
 	if (onclick) elem.addEventListener('click', onclick, false);
 	if (type) elem.type = type;
 	if (title) elem.title = title;
-
-	if (video) {
-		const icon = makeElement({
-			tag: 'a',
-			className: 'video-icon',
-		});
-		icon.href = video;
-		const img = new Image();
-		img.src = './icons/youtube_icon.png';
-		icon.appendChild(img);
-		elem.appendChild(icon);
+	if (href) { 
+		elem.href = href;
+		elem.target = '_blank';
 	}
+
 	return elem;
 }
 

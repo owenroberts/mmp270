@@ -6,10 +6,10 @@ body {
   margin: 0;
   font-family: "04b03";
   font-size: 16px;
+  background-color: #ffc7e3;
 }
 
 nav {
-  background-color: #ffc7e3;
   padding: 0 1rem;
   display: flex;
   align-items: center;
@@ -92,6 +92,7 @@ nav #auth-button {
 }
 .section .modules {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 0.5rem;
 }
 .section .module {
@@ -101,8 +102,14 @@ nav #auth-button {
   margin-right: 0.5em;
   min-width: 8em;
   display: grid;
-  grid-template-areas: "null available" "type title" "type points" "video completed";
+  grid-template-areas: "null available" "type title" "type video" "type points" "type completed";
   grid-gap: 0.25rem;
+}
+.section .module .completed,
+.section .module .available,
+.section .module .title,
+.section .module .video {
+  text-align: right;
 }
 .section .module .title {
   display: inline-block;
@@ -110,7 +117,7 @@ nav #auth-button {
 }
 .section .module .title,
 .section .module .points {
-  margin-top: 0;
+  margin: 0;
 }
 .section .module .type {
   grid-area: type;
@@ -124,7 +131,7 @@ nav #auth-button {
 }
 .section .module .available {
   grid-area: available;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .section .module .points {
   grid-area: points;
@@ -144,11 +151,6 @@ nav #auth-button {
   padding: 0.5em;
   margin: 0.5em;
   cursor: pointer;
-}
-.section .module .completed,
-.section .module .available,
-.section .module .title {
-  text-align: right;
 }
 
 /*# sourceMappingURL=main.css.map */

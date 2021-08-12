@@ -1,6 +1,7 @@
 .DS_Store
 tests/
 _site/
+_dev/
 .jekyll-cache
 notes/intro/drawings/
 *.png~

@@ -33,6 +33,13 @@ function markTree() {
 
 			for (let i = 0; i < parents.length; i++) {
 				const pid = parents[i];
+
+				if (pid.includes('@')) {
+					const keys = Object.keys(completed).filter(k => +k.charAt(0) > 0);
+					if (keys.length >= i) mod.markAvailable('@' + i, true);
+					continue;
+				}
+
 				const [s, m] = pid.split('-');
 				if (skillTree[s].skillTree[m].isCompleted) {
 					mod.markAvailable(pid, true);
