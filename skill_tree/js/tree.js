@@ -10,7 +10,7 @@ const data = SkillTreeDataProvider();
 const main = getElement('main');
 const pointsSpan = getElement('points-number');
 const skillTree = [];
-let completed;
+let completed = {};
 let totalPoints = 0;
 
 for (const sectionTitle in data) {
