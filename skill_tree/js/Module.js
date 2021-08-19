@@ -16,7 +16,7 @@ for (const sectionTitle in skillTreeData) {
 }
 
 export default class Module {
-	constructor(title, data, markTreeCallback) {
+	constructor(parentId, title, data, markTreeCallback) {
 
 		this.id = data.id;
 		this.points = data.points;
@@ -32,8 +32,8 @@ export default class Module {
 		const available = makeElement({
 			className: "available",
 			text: this.parents.length === 0 ? 
-				"Start Here ☟" :
-				"Available ",
+				"0.0 Start Here ☟" :
+				`${parentId}.${this.id} Available `,
 		});
 		this.container.appendChild(available);
 		this.availableChecks = {};

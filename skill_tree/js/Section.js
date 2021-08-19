@@ -43,7 +43,7 @@ export default class Section {
 		this.skillTree = [];
 
 		for (const m in data.modules) {
-			const mod = new Module(m, data.modules[m], markTreeCallback);
+			const mod = new Module(this.id, m, data.modules[m], markTreeCallback);
 			this.modules.appendChild(mod.container);
 			this.skillTree[data.modules[m].id] = mod;
 		}

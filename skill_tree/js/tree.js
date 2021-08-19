@@ -12,6 +12,7 @@ const pointsSpan = getElement('points-number');
 const skillTree = [];
 let completed = {};
 let totalPoints = 0;
+pointsSpan.textContent = totalPoints;
 
 for (const sectionTitle in data) {
 	let section = new Section(sectionTitle, data[sectionTitle], markTree);
