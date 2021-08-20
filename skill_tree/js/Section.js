@@ -24,14 +24,6 @@ export default class Section {
 			}
 		});
 
-		const openBtn = makeElement({
-			tag: 'span',
-			className: `open-${title.replaceAll(' ', '-')}`,
-			text: '⌄'
-		});
-
-		// heading.appendChild(openBtn);
-
 		this.modules = makeElement({
 			className: 'modules hidden',
 		});

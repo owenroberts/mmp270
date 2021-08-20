@@ -105,15 +105,35 @@ nav #auth-button {
   grid-template-areas: "null available" "type title" "type video" "type points" "type completed";
   grid-gap: 0.25rem;
 }
+.section .module .title:hover .dek {
+  opacity: 1;
+  height: auto;
+  padding: 0.5rem;
+  border: 5px solid blue;
+}
+.section .module .dek {
+  color: black;
+  position: absolute;
+  background: white;
+  max-width: 200px;
+  z-index: 1;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  text-align: left;
+  margin: 0;
+}
 .section .module .completed,
 .section .module .available,
 .section .module .title,
-.section .module .video {
+.section .module .video,
+.section .module .dek-link {
   text-align: right;
 }
 .section .module .title {
   display: inline-block;
   grid-area: title;
+  cursor: s-resize;
 }
 .section .module .title,
 .section .module .points {
@@ -137,7 +157,7 @@ nav #auth-button {
   grid-area: points;
   text-align: right;
 }
-.section .module input[type=checkbox] {
+.section .module .completed input[type=checkbox] {
   /* Double-sized Checkboxes */
   -ms-transform: scale(2);
   /* IE */

@@ -33,7 +33,7 @@ export default class Module {
 			className: "available",
 			text: this.parents.length === 0 ? 
 				"0.0 Start Here ☟" :
-				`${parentId}.${this.id} Available `,
+				`${parentId}.${this.id} Available`,
 		});
 		this.container.appendChild(available);
 		this.availableChecks = {};
@@ -80,10 +80,26 @@ export default class Module {
 		if (data.type === 'Itch') typeIcon.src = './icons/itch_icon.png';
 		typeContainer.appendChild(typeIcon);
 
+		const dek = makeElement({
+			tag: 'p',
+			className: 'dek',
+			text: data.dek,
+		});
+
+		// const dekLink = makeElement({
+		// 	tag: 'a',
+		// 	className: 'dek-link',
+		// 	text: 'Description'
+		// })
+
 		this.container.appendChild(header);
 		this.container.appendChild(typeContainer);
 		this.container.appendChild(video);
 		this.container.appendChild(points);
+		// this.container.appendChild(dekLink);
+		// dekLink.appendChild(dek);
+		header.appendChild(dek);
+
 
 		const completed = makeElement({
 			className: "completed",
