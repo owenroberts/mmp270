@@ -6,16 +6,17 @@ schedule: false
 
 ## Labs
 - Apprentice
-    - [Godot Intro]
-    - [Piskel Intro]
-    - [Open Lab Intro]
-- Aritst
+    <!-- - [Godot Intro] -->
+    <!-- - [Piskel Intro] -->
+    - [Open Lab Intro](labs/0-0_Open_Lab_Intro)
+    
+<!-- - Artist
 - Developer
 - Designer
 - Sound
 - Publishing
 - QA
-
+ -->
 
 ## Lectures
 - [Introduction to Game Design](notes/intro)
