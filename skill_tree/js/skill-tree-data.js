@@ -179,29 +179,29 @@ export default function SkillTreeDataProvider() {
 					"dek": "Adding portals to go to new levels in Godot."
 				},
 				"Level Design 2": {
-					"id": 6,
+					"id": 3,
 					"points": 3,
 					"type": "Godot",
 					"parents": ['3-0'],
 					"dek": "Design a second level in Godot."
 				},
 				"User Interface Design": {
-					"id": 3,
+					"id": 4,
 					"points": 2,
 					"type": "Art",
-					"parents": ['0-1', '0-2'],
+					"parents": ['0-2'],
 					"children": ['3-4', '3-5'],
 					"dek": "Create visual assets to use for interface like buttons and title screens."
 				},
 				"User Interface Layout": {
-					"id": 4,
+					"id": 5,
 					"points": 3,
 					"type": "Godot",
 					"parents": ['3-3'],
 					"dek": "Adding visual assets for UI into Godot and overview of Godot UI layout."
 				},
 				"Metrics": {
-					"id": 5,
+					"id": 6,
 					"points": 3,
 					"type": "Godot",
 					"parents": ['3-3'],
