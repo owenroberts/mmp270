@@ -31,6 +31,18 @@ function updateUserDisplay(name) {
 }
 
 
+const loginButton = document.getElementById("login-button");
+const emailInput = document.getElementById("login-email");
+const passwordInput = document.getElementById("login-password");
+const message = document.getElementById("login-message");
+loginButton.onclick = function(event) {
+	const promise = firebase.auth().signInWithEmailAndPassword(emailInput.value, passwordInput.value);
+	promise.catch(function(error) {
+		message.textContent = error.message;
+	});
+};
+
+
 const signupOpenButton = getElement('sign-up-open');
 signupOpenButton.onclick = function() {
 	const signupDiv = getElement('sign-up');
@@ -56,7 +68,7 @@ signupOpenButton.onclick = function() {
 			.then(credential => {
 				const ref = firebase.database().ref('users').child(credential.user.uid);
 				ref.update({ displayName: signupUsername.value });
-				ref.child('completed').update({ '0-0': true });
+				ref.child('completed').update({ '0-0': false });
 				authDiv.classList.remove('open');
 
 			})
