@@ -6,7 +6,7 @@ title: Art Intro
 In this lab we will cover using the Piskel pixel art editor and create an icon for your Open Lab profile.
 
 ## 1. Download Piskel
-- [Download page](https://www.piskelapp.com/){:target="_blank"}
+- [Download](https://www.piskelapp.com/){:target="_blank"}
 
 ## 2. Design an Open Lab icon
 - Use something unique to you to make it easy to identify you
