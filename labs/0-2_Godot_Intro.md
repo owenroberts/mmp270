@@ -22,7 +22,15 @@ In this lab we will go over the basics of the Godot Game engine and add a simple
 - In the *Scene* panel, click the 2D Node button and rename it default scene
 - Name is `DefaultScene`
 
-## 5. Create a Player scene
+## 5. Add some sprites
+- Click the `+` button to add a new node
+- Choose `Node2D` and name it `Scenery`
+- Rick-click on the `Scenery` node and click `Add Node`
+- Choose `Sprite`
+- In the `Inspector` menu, click the `[empty]` box next to `Texture` and click `Load`
+- Choose one of the tree sprites
+
+## 6. Create a Player scene
 - Right click on the Scenes folder and click `New Scene`
 - Make sure it is in the `Scenes` folder
 - Name it `Player`
@@ -30,21 +38,20 @@ In this lab we will go over the basics of the Godot Game engine and add a simple
 - Rename the main node `Player`
 - Click the `+` button to add a new node
 - Choose a `Sprite`
-- In the `Inspector` menu, click the `[empty]` box next to `Texture` and click `Load`
-- Choose the avatar image
+- Add your avatar image to the sprite texture
 
-## 6. Add the Player Script to the Player
+## 7. Add the Player Script to the Player
 - [Download the lab zip file](0-2_Godot_Intro.zip)
 - Extract the `PlayerController.gd` file and drag into the Scripts folder
 - In the Player scene `Inspector` click the `[empty]` next to `Script` and then choose the player script
 - Adjust the properties in the `Script Variables`
 
-## 7. Add Player to Default Scene
+## 8. Add Player to Default Scene
 - Switch back to the DefaultScene
 - Click the `Instance Child Scene` button that looks like a chain link
 - Choose `Player.tscn`
 
-## 8. Setup the input
+## 9. Setup the input
 - Open `Project > Settings`
 - Go to the `Input Map` tab
 - Type in `move_right` into the `Action` bar and click `Add`
@@ -52,16 +59,16 @@ In this lab we will go over the basics of the Godot Game engine and add a simple
 - Press `Right Arrow` or `D` and then click Enter (don't hit the Enter button it will change the mapping)
 - Continue with input for `move_left`, `move_up`, `move_down`
 
-## 9. Add a camera
+## 10. Add a camera
 - Click the `+` button to add a new node
 - Choose Camera2D
 - Add the `CameraController.gd` script
 - Adjust the properties in the `Script Variables`
 - Add the `Player` scene instance to the `Player Path` variable
 
-## 10. Preview the scene
+## 11. Preview the scene
 - Click the Play button or Play Scene button
 - Screen shot the window for documentation
 
-## 11. Bonus: Add some scenery
+## 12. Bonus: Add some scenery
 - To make your scene a little more interesting, draw some sprites for scenery and add them into the scene
