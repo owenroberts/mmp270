@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: Art Intro
+title: Godot Intro
 ---
 
 In this lab we will go over the basics of the Godot Game engine and add a simple character to a Godot scene.
