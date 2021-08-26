@@ -3,6 +3,8 @@ layout: notes
 title: Godot Intro
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ka59alsDpHg?rel=0" frameborder="0" allowfullscreen></iframe>
+
 In this lab we will go over the basics of the Godot Game engine and add a simple character to a Godot scene.
 
 ## 1. Download Godot
@@ -72,3 +74,9 @@ In this lab we will go over the basics of the Godot Game engine and add a simple
 
 ## 12. Bonus: Add some scenery
 - To make your scene a little more interesting, draw some sprites for scenery and add them into the scene
+
+## Resources
+- [The Godot Game Engine Explained in 5 Minutes](https://www.youtube.com/watch?v=KjX5llYZ5eQ){:target="_blank"}
+- [Godot Basics Tutorial Series](https://www.youtube.com/playlist?list=PLJ690cxlZTgIsmdEhFufnB7O6KWoMS8M6){:target="_blank"}
+- [Learn the GODOT Game Engine in 50 MINUTES](https://www.youtube.com/watch?v=QftpPI5iYrY){:target="_blank"}
+- [2D Camera Tracking](https://www.youtube.com/watch?v=AJq5jrAo4EY){:target="_blank"}

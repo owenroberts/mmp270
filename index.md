@@ -4,37 +4,13 @@ title: Introduction to Video Game Design
 schedule: false
 ---
 
-## Labs
-- Apprentice
-    <!-- - [Godot Intro] -->
-    <!-- - [Piskel Intro] -->
-    - [Open Lab Intro](labs/0-0_Open_Lab_Intro)
-    
-<!-- - Artist
-- Developer
-- Designer
-- Sound
-- Publishing
-- QA
- -->
-
-## Lectures
-- [Introduction to Game Design](notes/intro)
-- [Character Design](notes/character)
-- [Game Setting](notes/setting)
-- [Game Genre](notes/genre)
-- [Indie games](notes/indie)
-- [Video Games & Art](notes/art)
-- [Sound effects](notes/sound)
-- [Browser Games](notes/browser)
-- [User Testing](notes/testing)
-- [Emergence & Progression](notes/emergence)
-- [Violence in Video Games](notes/violence)
-- [Representations of Race and Gender in Video Games](notes/representation)
 
 ## Class links
-- [Open Lab](){:target="blank"}
-- [Discord](){:target="blank"}
+- [Labs](labs)
+- [Lecture notes](notes)
+- [Open Lab](https://openlab.bmcc.cuny.edu/mmp-270-fall-2021/){:target="blank"}
+- [Discord](https://discord.gg/Kb3bm2dcZQ){:target="blank"}
+- [itch.io](https://itch.io/){:target="blank"}
 
 ## Software
 - [Godot Engine](https://godotengine.org/){:target="blank"}
@@ -42,7 +18,3 @@ schedule: false
 - [Piskel](https://www.piskelapp.com/){:target="blank"}
 - [jfxr](https://jfxr.frozenfractal.com/){:target="blank"}
 - [Audio Tool](https://www.audiotool.com/app){:target="blank"} 
-
-## Links
-- [itch.io](https://itch.io/){:target="blank"}
-

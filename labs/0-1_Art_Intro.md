@@ -3,6 +3,8 @@ layout: notes
 title: Art Intro
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sLFiYtlCRGs?rel=0" frameborder="0" allowfullscreen></iframe>
+
 In this lab we will cover using the Piskel pixel art editor and create an icon for your Open Lab profile.
 
 ## 1. Download Piskel
@@ -22,3 +24,6 @@ In this lab we will cover using the Piskel pixel art editor and create an icon f
 - Add your avatar image
 - Write a sentence or two explaining why it is unique to you
 - Publish
+
+## Resources
+- [Piskel Tutorials](https://www.youtube.com/playlist?list=PLO3K3VFvlU6Akj3W29_nMLZFnwNOVbAzI){:target="_blank"}

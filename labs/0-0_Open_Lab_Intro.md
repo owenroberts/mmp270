@@ -3,12 +3,16 @@ layout: notes
 title: Open Lab Intro
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tLUm5UnBU94?rel=0" frameborder="0" allowfullscreen></iframe>
+
 This lab is an overview of using Open Lab class site, the MMP 270 Skill Tree and posting documenation on the Open Lab.
 
 ## 1. Login to Open Lab.
-- Use the link from Blackboard or the link in lab video description
+- Go to [Open Lab](https://openlab.bmcc.cuny.edu/){:target="blank"} and click Login or Sign Up
 - Sign Up if you don't have an account
 - Use BMCC email and password
+- Go to the [MMP 270 course](https://openlab.bmcc.cuny.edu/groups/mmp-270-fall-2021/){:target="blank"} and click `Join` button
+- Click visit site to go to the [class site](https://openlab.bmcc.cuny.edu/mmp-270-fall-2021/){:target="blank"}
 
 ## 2. Open the Skill Tree
 - Click on the Skill Tree link and create an account
@@ -24,3 +28,8 @@ This lab is an overview of using Open Lab class site, the MMP 270 Skill Tree and
 
 ## 5. Publish your first post on Open Lab
 - Add the correct category for the Open Lab post and click Publish
+
+## Resources
+- [Signing up on the BMCC Open Lab](https://openlab.bmcc.cuny.edu/blog/help/how-to-sign-up-and-log-in-to-bmcc-openlab-students-staff-faculty/){:target="blank"}
+- [Help and Tips for Students](https://openlab.bmcc.cuny.edu/blog/help/bmcc-openlab-help-for-students/){:target="blank"}
+- [How to Add a Photo to your OpenLab Profile](https://openlab.bmcc.cuny.edu/blog/help/how-to-add-a-photo-to-your-openlab-profile-video-tutorial/){:target="blank"}
