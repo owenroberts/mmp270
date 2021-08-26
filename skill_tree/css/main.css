@@ -173,4 +173,9 @@ nav #auth-button {
   cursor: pointer;
 }
 
+#admin #users,
+#admin #hello {
+  margin: 0 2rem;
+}
+
 /*# sourceMappingURL=main.css.map */

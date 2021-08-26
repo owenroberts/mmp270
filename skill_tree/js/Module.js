@@ -53,15 +53,14 @@ export default class Module {
 		const header = makeElement({
 			tag: 'h3',
 			className: 'title',
-			text: title,
 		});
 
-		const video = makeElement({
-			className: 'video',
-			text: 'Lab Video',
+		const link = makeElement({
 			tag: 'a',
-			href: data.video, 
-		});
+			className: 'link',
+			text: title,
+			href: data.link
+		})
 
 		const points = makeElement({
 			tag: 'p',
@@ -86,18 +85,10 @@ export default class Module {
 			text: data.dek,
 		});
 
-		// const dekLink = makeElement({
-		// 	tag: 'a',
-		// 	className: 'dek-link',
-		// 	text: 'Description'
-		// })
-
 		this.container.appendChild(header);
 		this.container.appendChild(typeContainer);
-		this.container.appendChild(video);
 		this.container.appendChild(points);
-		// this.container.appendChild(dekLink);
-		// dekLink.appendChild(dek);
+		header.appendChild(link);
 		header.appendChild(dek);
 
 

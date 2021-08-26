@@ -16,7 +16,7 @@ function makeElement(params) {
 	if (type) elem.type = type;
 	if (title) elem.title = title;
 	if (href) { 
-		elem.href = href;
+		elem.href = "../labs/" + href;
 		elem.target = '_blank';
 	}
 

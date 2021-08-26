@@ -1,6 +1,8 @@
 ---
 layout: notes
 title: Art Intro
+return: ./labs
+label: Labs
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sLFiYtlCRGs?rel=0" frameborder="0" allowfullscreen></iframe>

@@ -1,6 +1,8 @@
 ---
 layout: notes
 title: Open Lab Intro
+return: ./labs
+label: Labs
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tLUm5UnBU94?rel=0" frameborder="0" allowfullscreen></iframe>

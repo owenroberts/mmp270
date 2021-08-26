@@ -10,7 +10,7 @@ export default function SkillTreeDataProvider() {
 			"modules": {
 				"Open Lab Intro": {
 					"id": 0,
-					"video": "link to video",
+					"link": "0-0_Open_Lab_Intro",
 					"type": "Open Lab",
 					"points": 1,
 					"parents": [],
@@ -19,7 +19,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Art Intro": {
 					"id": 1,
-					"video": "link",
+					"link": "0-1_Art_Intro",
 					"type": "Art",
 					"points": 1,
 					"parents": ['0-0'],
@@ -28,7 +28,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Godot Intro": {
 					"id": 2,
-					"video": "link",
+					"link": "0-2_Godot_Intro",
 					"type": "Godot",
 					"points": 1,
 					"parents": ['0-1'],
