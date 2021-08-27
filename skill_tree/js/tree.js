@@ -91,8 +91,8 @@ function setCompleteStatus(id, isComplete) {
 		let update = {};
 		update[id] = isComplete;
 		const up = firebase.database().ref('users').child(uid).child('plan').update(update);
-		up.then(snapshot => { console.log(snapshot)});
-		up.catch(error => { console.log(error)});
+		// up.then(snapshot => { console.log(snapshot)});
+		// up.catch(error => { console.log(error)});
 	}
 
 	if (!isComplete && isPlan) {
