@@ -45,6 +45,9 @@ export default class Module {
 				title: id.includes('@') ?
 					'One from Art, Dev, Design or Sound' :
 					'Requires ' + skillTree[id],
+				onclick: ev => {
+					ev.preventDefault();
+				}
 			});
 			this.availableChecks[id] = check;
 			available.appendChild(check);
@@ -95,26 +98,34 @@ export default class Module {
 		const completed = makeElement({
 			className: "completed",
 			text: "Completed ",
-			onclick: () => {
-				if (this.isCompleted) this.markCompleted(false);
-				else this.markCompleted(true);
-				markTreeCallback();
-			}
 		});
 
+		let clickCount = 0;
 		this.completedCheck = makeElement({
 			tag: 'input',
 			type: 'checkbox',
 			title:  this.children ? 
 				'Unlocks ' + this.children.map(id => { return `${skillTree[id]}`; }).join(', ') :
 				'',
+			onclick: ev => {
+				// ev.preventDefault();
+				if (this.isAvailable) this.markCompleted(true);
+				markTreeCallback();
+
+				if (!this.isAvailable) {
+					this.completedCheck.checked = false;
+					clickCount++;
+				}
+
+				if (clickCount >= 3) {
+					alert(title + " is not available.  Complete " + this.parents.map(id => skillTree[id]).join(', ') + ' first.');
+					clickCount = 0;
+				}
+			}
 		});
 
 		completed.appendChild(this.completedCheck);
 		this.container.appendChild(completed);
-
-
-		// this.modules.appendChild(mc);
 	}
 
 	markAvailable(id, isAvailable) {
@@ -123,7 +134,12 @@ export default class Module {
 	}
 
 	markCompleted(isComplete) {
+		// console.log('mark', this.id, isComplete);
 		this.isCompleted = isComplete;
+		// console.log(this.completedCheck);
+		// console.log(this.completedCheck.checked);
 		this.completedCheck.checked = isComplete;
+		// console.log(this.completedCheck.checked);
+
 	}
 }

@@ -143,14 +143,7 @@ nav {
 			'type completed';
 		grid-gap: 0.25rem;
 
-		// .dek-link {
-		// 	grid-area: dek;
-		// 	cursor: pointer;
-		// 	color: blue;
-		// 	text-decoration: underline;
-		// }
-
-		.title:hover .dek {
+		.link:hover + .dek {
 			opacity: 1;
 			height: auto;
 			padding: 0.5rem;
@@ -228,6 +221,12 @@ nav {
 	#users,
 	#hello {
 		margin: 0 2rem;
+	}
+
+	#users {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
 	}
 }
 

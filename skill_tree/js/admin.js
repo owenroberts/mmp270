@@ -25,18 +25,18 @@ function getUsers() {
 }
 
 function displayUser(uid, data) {
+	const user = makeElement({ className: 'user' });
 	const name = makeElement({
 		tag: 'p',
 		text: data.displayName,
 	});
 
+	const completedLabs = Object.keys(data.completed).filter(index => data.completed[index]).join(', ');
+
 	const comp = makeElement({
 		tag: 'p',
-		text: 'Completed: ' + Object.keys(data.completed).filter(index => data.completed[index]).join(', ')
+		text: 'Completed: ' + completedLabs
 	});
-
-	usersDiv.appendChild(name);
-	usersDiv.appendChild(comp);
 
 	const addLabInput = makeElement({
 		tag: 'input',
@@ -53,9 +53,11 @@ function displayUser(uid, data) {
 		}
 	});
 
+	user.appendChild(name);
+	if (completedLabs) user.appendChild(comp);
+	user.appendChild(addLabInput);
+	user.appendChild(addLabButton);
 
-	usersDiv.appendChild(addLabInput);
-	usersDiv.appendChild(addLabButton);
-
+	usersDiv.appendChild(user);
 
 }

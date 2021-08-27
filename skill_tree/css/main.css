@@ -105,7 +105,7 @@ nav #auth-button {
   grid-template-areas: "null available" "type title" "type video" "type points" "type completed";
   grid-gap: 0.25rem;
 }
-.section .module .title:hover .dek {
+.section .module .link:hover + .dek {
   opacity: 1;
   height: auto;
   padding: 0.5rem;
@@ -176,6 +176,11 @@ nav #auth-button {
 #admin #users,
 #admin #hello {
   margin: 0 2rem;
+}
+#admin #users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
