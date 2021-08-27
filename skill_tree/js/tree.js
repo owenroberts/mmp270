@@ -97,10 +97,12 @@ function setCompleteStatus(id, isComplete) {
 
 	if (!isComplete && isPlan) {
 		let mod = getMod(id);
-		mod.children.forEach(childId => {
-			let child = getMod(childId);
-			if (child.isCompleted) child.markCompleted(false);
-		});
+		if (mod.children) {
+			mod.children.forEach(childId => {
+				let child = getMod(childId);
+				if (child.isCompleted) child.markCompleted(false);
+			});
+		}
 	}
 }
 
