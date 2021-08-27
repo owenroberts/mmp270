@@ -6,10 +6,15 @@
 	<title>MMP 270 Skill Tree Template</title>
 	<link rel="stylesheet" href="css/main.css">
 
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
 
+
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
 	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
 
 	<script>
@@ -33,12 +38,19 @@
 <body>
 	<div id="container">
 		<nav>
-			<header>MMP 270 Admin</header>
+			<header>MMP 270 Syllabus / Skill Tree</header>
+
 			<div id='user-nav'>
-				<div id='user-name'></div>
+				<div id="user-name"></div>
+				<div id="links">
+					<a href="index.html">Progress</a>
+					<a href="plan.html" class="current">Plan</a>
+				</div>				
 			</div>
 			<div id='auth-button'>Login</div>
+			<div id="points">Total Points: <span id="points-number"></span></div>
 		</nav>
+
 		<div id='auth' class='hidden'>
 			<div id="login">
 				<input id="login-email" placeholder="Email">
@@ -46,19 +58,30 @@
 				<button id="login-button">Login</button>
 				<p id="login-message"></p>
 			</div>
-		</div>	
-		<main id="admin">
-			<p id="hello"></p>
-			<div id="users"></div>
-		</main>
+		</div>
+
+		<main id="main"></main>
+		
+		<div id="grade-scale" class="section">
+			<h1 class="title">Grading Scale</h1>
+			<div id="grade-scale-mod" class="modules hidden">
+				<ul>
+					<li>A: 35 or more</li>
+					<li>B: 30 or more</li>
+					<li>C: 25 or more</li>
+					<li>D: 20 or more</li>
+					<li>F: under 20</li>
+				</ul>
+			</div>
+		</div>
 	</div>
+
+	<script type="module" src="js/tree.js"></script>
 	<script type="module" src="js/auth.js"></script>
-	<script type="module" src="js/admin.js"></script>
+
 
 </body>
 </html>
-
-
 
 <!-- 
 	04b03 font by Yuji Oshimoto

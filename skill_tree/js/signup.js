@@ -28,6 +28,7 @@ signupOpenButton.onclick = function() {
 				ref.update({ displayName: signupUsername.value });
 				ref.child('completed').update({ '0-0': false });
 				ref.child('collabs').update({ '0-0': false });
+				ref.child('plan').update({ '0-0': false });
 				ref.child('roles').update({
 					'user': true,
 					'admin': false,

@@ -11,25 +11,38 @@ body {
 
 nav {
   padding: 0 1rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas: "header login" "points login";
 }
 nav header {
   font-size: 24px;
   line-height: 2;
+  grid-area: header;
 }
 nav #points {
   font-size: 1.5rem;
   flex-basis: 100%;
+  grid-area: points;
+}
+nav #user-nav {
+  display: none;
+  text-align: right;
 }
 nav #auth-button,
-nav #user-name {
+nav #user-nav {
   margin-left: auto;
   font-size: 1.5rem;
+  grid-area: login;
+  align-self: center;
 }
 nav #auth-button {
   cursor: pointer;
+}
+nav a {
+  color: blue;
+}
+nav a.current {
+  color: black;
 }
 
 #auth {

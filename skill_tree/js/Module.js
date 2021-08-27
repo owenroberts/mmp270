@@ -22,7 +22,7 @@ export default class Module {
 		this.points = data.points;
 		this.parents = data.parents;
 		this.children = data.children;
-		this.isAvailable = false
+		this.isAvailable = parentId === 0 && data.id === 0 ? true : false;
 		this.isCompleted = false;
 		
 		this.container = makeElement({
@@ -109,7 +109,8 @@ export default class Module {
 				'',
 			onclick: ev => {
 				// ev.preventDefault();
-				if (this.isAvailable) this.markCompleted(true);
+				if (this.isCompleted) this.markCompleted(false); // checked off
+				else if (this.isAvailable) this.markCompleted(true);
 				markTreeCallback();
 
 				if (!this.isAvailable) {
@@ -134,12 +135,7 @@ export default class Module {
 	}
 
 	markCompleted(isComplete) {
-		// console.log('mark', this.id, isComplete);
 		this.isCompleted = isComplete;
-		// console.log(this.completedCheck);
-		// console.log(this.completedCheck.checked);
 		this.completedCheck.checked = isComplete;
-		// console.log(this.completedCheck.checked);
-
 	}
 }

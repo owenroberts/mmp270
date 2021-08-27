@@ -22,30 +22,49 @@ body {
 nav {
 	// background-color: hsl($main-hue, $main-sat, $main-lit);
 	padding: 0 1rem;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
+	// display: flex;
+	// align-items: center;
+	// flex-wrap: wrap;
+
+	display: grid;
+	grid-template-areas: 
+		"header login"
+		"points login";
+
 
 	header {
 		font-size: 24px;
 		line-height: 2;
+		grid-area: header;
 	}
 
 	#points {
 		font-size: 1.5rem;
 		flex-basis: 100%;
+		grid-area: points;
+	}
+
+	#user-nav {
+		display: none;
+		text-align: right;
 	}
 
 	#auth-button,
-	#user-name {
+	#user-nav {
 		margin-left: auto;
 		font-size: 1.5rem;
+		grid-area: login;
+		align-self: center;
 	}
 
 	#auth-button {
 		cursor: pointer;
 	}
 
+	a {
+		color: blue;
+		&.current { color: black; }
+	}
 }
 
 #auth {

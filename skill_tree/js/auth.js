@@ -6,6 +6,7 @@ import { getElement } from './Cool.js';
 
 const authButton = getElement('auth-button');
 const authDiv = getElement('auth');
+const userNav = getElement('user-nav');
 const userName = getElement('user-name');
 authDiv.isOpen = false;
 
@@ -27,6 +28,7 @@ firebase.auth().onAuthStateChanged(user => {
 
 function updateUserDisplay(name) {
 	userName.textContent = 'Hi, ' + name;
+	userNav.style.display = 'block';
 	authButton.style.display = 'none';
 }
 
