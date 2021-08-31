@@ -126,6 +126,10 @@ nav {
 	#Quality-Assurance-container {
 		background-color: hsl($fourth-hue, $main-sat, $main-lit);
 	}
+
+	#Research-container {
+		background-color: hsl($fifth-hue, $main-sat, $main-lit);
+	}
 }
 
 .section {
@@ -158,6 +162,7 @@ nav {
 			'null available'
 			'type title'
 			'type video'
+			'type resource'
 			'type points'
 			'type completed';
 		grid-gap: 0.25rem;
@@ -187,8 +192,13 @@ nav {
 		.available,
 		.title,
 		.video,
-		.dek-link {
+		.dek-link,
+		.resource {
 			text-align: right;
+		}
+
+		.resource {
+			grid-area: resource;
 		}
 
 

@@ -3,7 +3,7 @@
 */
 
 function makeElement(params) {
-	const { tag, text, className, id, onclick, href, type, title } = params;
+	const { tag, text, className, id, onclick, href, external, type, title } = params;
 	const elem = document.createElement(tag || 'div');
 	if (text) elem.textContent = text;
 	if (id) elem.id = id;
@@ -17,6 +17,10 @@ function makeElement(params) {
 	if (title) elem.title = title;
 	if (href) { 
 		elem.href = "../labs/" + href;
+		elem.target = '_blank';
+	}
+	if (external) {
+		elem.href = external;
 		elem.target = '_blank';
 	}
 

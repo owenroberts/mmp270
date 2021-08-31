@@ -14,7 +14,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Open Lab",
 					"points": 1,
 					"parents": [],
-					"children": ['0-1'],
+					"children": ['0-1', '7-0'],
 					"dek": "Overview of posting assignments on the Open Lab.  Covers first assigment using skill tree and Open Lab."
 				},
 				"Art Intro": {
@@ -264,6 +264,22 @@ export default function SkillTreeDataProvider() {
 					"parents": ['5-1'],
 					"dek": "Create a user testing survey and share with classmates.  Write an Open Lab post analyzing the survey results."
 				}
+			}
+		},
+		"Research": {
+			"id": 7,
+			"modules": {
+				"Crawford Chapter 1": {
+					"id": 0,
+					"type": "Reading",
+					"link": '7_Research',
+					"points": 1,
+					"parents": ['0-0'],
+					"research": "https://www.digitpress.com/library/books/book_art_of_computer_game_design.pdf",
+					"isAvailable": true,
+					"dek": "The Art of Computer Game Design by Chris Crawford, Chapter 1: What is a Game?"
+				}
+
 			}
 		}
 	};

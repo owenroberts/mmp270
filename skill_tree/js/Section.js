@@ -35,6 +35,9 @@ export default class Section {
 		this.skillTree = [];
 
 		for (const m in data.modules) {
+			if (data.modules[m].isAvailable !== undefined) {
+				if (!data.modules[m].isAvailable) return;
+			}
 			const mod = new Module(this.id, m, data.modules[m], markTreeCallback);
 			this.modules.appendChild(mod.container);
 			this.skillTree[data.modules[m].id] = mod;

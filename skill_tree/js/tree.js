@@ -73,8 +73,8 @@ firebase.auth().onAuthStateChanged(user => {
 			for (const k in copy) {
 				completed[k] = copy[k];
 				if (copy[k]) {
-					let [s, m] = k.split('-');
-					skillTree[s].skillTree[m].markCompleted(true);
+					let mod = getMod(k);
+					mod.markCompleted(true);
 				}
 			}
 			markTree();

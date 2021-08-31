@@ -92,6 +92,9 @@ nav a.current {
 #main #Quality-Assurance-container {
   background-color: #c7ffe3;
 }
+#main #Research-container {
+  background-color: #e3ffc7;
+}
 
 .section {
   padding: 0.5rem;
@@ -115,7 +118,7 @@ nav a.current {
   margin-right: 0.5em;
   min-width: 8em;
   display: grid;
-  grid-template-areas: "null available" "type title" "type video" "type points" "type completed";
+  grid-template-areas: "null available" "type title" "type video" "type resource" "type points" "type completed";
   grid-gap: 0.25rem;
 }
 .section .module .link:hover + .dek {
@@ -140,8 +143,12 @@ nav a.current {
 .section .module .available,
 .section .module .title,
 .section .module .video,
-.section .module .dek-link {
+.section .module .dek-link,
+.section .module .resource {
   text-align: right;
+}
+.section .module .resource {
+  grid-area: resource;
 }
 .section .module .title {
   display: inline-block;

@@ -80,6 +80,8 @@ export default class Module {
 		if (data.type === 'Art') typeIcon.src = './icons/art_icon.png';
 		if (data.type === 'Audio') typeIcon.src = './icons/audio_icon.png';
 		if (data.type === 'Itch') typeIcon.src = './icons/itch_icon.png';
+		if (data.type === 'Reading') typeIcon.src = './icons/reading_icon.png';
+
 		typeContainer.appendChild(typeIcon);
 
 		const dek = makeElement({
@@ -93,6 +95,16 @@ export default class Module {
 		this.container.appendChild(points);
 		header.appendChild(link);
 		header.appendChild(dek);
+
+		if (data.research) {
+			const researchLink = makeElement({
+				tag: 'a',
+				className: 'resource',
+				text: 'Source Link',
+				external: data.research
+			});
+			this.container.appendChild(researchLink);
+		}
 
 
 		const completed = makeElement({
