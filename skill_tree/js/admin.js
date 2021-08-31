@@ -31,7 +31,10 @@ function displayUser(uid, data) {
 		text: data.displayName,
 	});
 
-	const completedLabs = Object.keys(data.completed).filter(index => data.completed[index]).join(', ');
+	const completedLabs = Object.keys(data.completed)
+		.filter(index => data.completed[index])
+		.map(index => { return index.replace('-', '.') })
+		.join(', ');
 
 	const comp = makeElement({
 		tag: 'p',
