@@ -54,7 +54,7 @@ function displayUser(uid, data) {
 	});
 
 	user.appendChild(name);
-	if (completedLabs) user.appendChild(comp);
+	user.appendChild(comp); 
 	user.appendChild(addLabInput);
 	user.appendChild(addLabButton);
 
