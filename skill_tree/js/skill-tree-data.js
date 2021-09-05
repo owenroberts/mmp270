@@ -95,6 +95,7 @@ export default function SkillTreeDataProvider() {
 				"Character Design": {
 					"id": 0,
 					"type": "Art",
+					"link": "2-0_Character_Design",
 					"points": 2,
 					"parents": ['0-2'],
 					"children": ['2-1', '2-2', '2-3'],
@@ -278,8 +279,17 @@ export default function SkillTreeDataProvider() {
 					"research": "https://www.digitpress.com/library/books/book_art_of_computer_game_design.pdf",
 					"isAvailable": true,
 					"dek": "The Art of Computer Game Design by Chris Crawford, Chapter 1: What is a Game?"
+				},
+				"Understanding Comics Chapter 2": {
+					"id": 1,
+					"type": "Reading",
+					"link": "7_Research",
+					"points": 1,
+					"parents": ['0-0'],
+					"research": "http://270.owen.cool/notes/character/readings/mccloud.pdf",
+					"isAvailable": true,
+					"dek": "Understanding Comics by Scott McCloud, Chapter 2: The Vocabulary of Comics"
 				}
-
 			}
 		}
 	};

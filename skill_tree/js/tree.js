@@ -74,7 +74,7 @@ firebase.auth().onAuthStateChanged(user => {
 				completed[k] = copy[k];
 				if (copy[k]) {
 					let mod = getMod(k);
-					mod.markCompleted(true);
+					if (mod) mod.markCompleted(true);
 				}
 			}
 			markTree();
@@ -108,6 +108,7 @@ function setCompleteStatus(id, isComplete) {
 
 function getMod(id) {
 	let [s, m] = id.split('-');
+	if (isNaN(+s) || isNaN(+m)) return false;
 	return skillTree[s].skillTree[m];
 }
 

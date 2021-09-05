@@ -8,6 +8,8 @@ title: Labs
 - [Art Intro](0-1_Art_Intro)
 - [Godot Intro](0-2_Godot_Intro)
    
+## Artist
+- [Character Design](2-0_Character_Design)
     
 <!-- - Artist
 - Developer

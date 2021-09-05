@@ -5,7 +5,7 @@ return: ./labs
 label: Labs
 ---
 
-This lab covers creating variations on a character design.0
+In this lab we will create three variations of a character design.
 
 ## 1. Inspiration
 - Look at some characters from games that you like
@@ -22,3 +22,7 @@ This lab covers creating variations on a character design.0
 ## 4. Explain the character in Open Lab post
 - Create an open lab post and explain the choices you made for each variation of the character
 
+## Resources
+- [Character Design](../notes/character){:target="_blank"}
+- [Character Design Tips by Tomatatoro](https://tomatatoro.tumblr.com/post/154791597753/some-people-have-asked-how-i-went-about-drawing){:target="_blank"}
+- [Understanding Comics](../notes/character/readings/mccloud.pdf){:target="_blank"}
