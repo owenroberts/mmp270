@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: Godot Intro
+title: Programming Intro
 return: ./labs
 label: Labs
 ---
