@@ -10,7 +10,10 @@ title: Labs
    
 ## Artist
 - [Character Design](2-0_Character_Design)
-    
+
+## Developer
+- [Programming Intro](1-0_Programming_Intro)
+
 <!-- - Artist
 - Developer
 - Designer
