@@ -41,11 +41,15 @@ This lab covers making Global, PlayerContoller and CameraController scripts, whi
 ```
 extends Node
 
-# save values that need to exist for multiple levels
+# comments
+# anything after # is ignored by godot
+# use it to make notes for yourself, other developers
 
-var total_lives = 3 # default lives to start with
-var player_lives = 3 # counts lives 
-var item_count = 0 # counts generic items, can add more, could be specific like apple_count
+# Global saves values that are tracked throughout all game scenes
+
+var total_lives = 3 # how many lives player starts with
+var player_lives = total_lives # use this to keep track of player lives
+var item_count = 0 # count generic items, can add more, use specific names like apple_count
 
 ```
 
@@ -53,99 +57,72 @@ var item_count = 0 # counts generic items, can add more, could be specific like 
 ```
 extends KinematicBody2D
 
-# physics settings for player
+# controls player movement
+
+# physics settings 
 export var speed = 100
-export var use_gravity = false
+export var use_gravity = true # default
 export var gravity = 800
 export var jump_force = 400
 export var wall_jump_enabled = false
 
-# "private" vars 
-var is_alive = true # to allow scene to run without character updating
-var is_jumping = false # track if jumping for landing sound
-var velocity : Vector2 = Vector2()
-signal player_hit # signal if player is hit by obstacle
+# "private" vars
+var is_alive = true
+var velocity = Vector2()
 
-func _ready():
-	if not is_on_floor():
-		is_jumping = true
-
-# this function will run every time the game engine updates physics
 func _physics_process(delta):
 	if is_alive:
 		player_update(delta)
-
+	
 func player_update(delta):
-	velocity.x = 0 # start by assuming player is not moving
+	# assume player not moving
+	velocity.x = 0
+	
 	if not use_gravity:
 		velocity.y = 0
 	
-	# capture user input
+	if Input.is_action_pressed("move_right"):
+		velocity.x += speed # += is x = x + speed
 	if Input.is_action_pressed("move_left"):
 		velocity.x -= speed
-	if Input.is_action_pressed("move_right"):
-		velocity.x += speed
 	if Input.is_action_pressed("move_up") and not use_gravity:
 		velocity.y -= speed
 	if Input.is_action_pressed("move_down") and not use_gravity:
 		velocity.y += speed
-
-	# apply player velocity
-	velocity = move_and_slide(velocity, Vector2.UP)
-	# experiment with other movement functions 
 	
-	# apply gravity to player
+	velocity = move_and_slide(velocity, Vector2.UP)
+	
 	if use_gravity:
 		velocity.y += gravity * delta
 	
-	# detect landing before jump starts
-	# remove comments to play sfx
-	# if is_jumping and (is_on_floor() or is_on_wall()):
-	#	is_jumping = false
-	#	$LandSound.play()
-	
-	# jump input
 	var can_jump = is_on_floor() or (wall_jump_enabled and is_on_wall())
 	if Input.is_action_just_pressed("jump") and can_jump:
 		velocity.y -= jump_force
-		is_jumping = true
-		$AnimatedSprite.frame = 0
+	
+	# falls below the window
+	if use_gravity and position.y > get_viewport().size.y * 2 and is_alive:
+		# place holder
+		position = Vector2(0, 0)
 		
-		# remove comments to play sfx
-		# $JumpSound.play()
-	
-	# update animation
-	
-	if use_gravity and not is_on_floor():
-		$AnimatedSprite.play("Jump")
-	elif (use_gravity and abs(velocity.x) > 0.25) or (!use_gravity and abs(velocity.x) + abs(velocity.y) > 0.1):
-		$AnimatedSprite.play("Walk")
+	# set animation
+	if use_gravity:
+		if not is_on_floor():
+			$AnimatedSprite.play("Jump")
+		elif abs(velocity.x) > 0.25: # else if
+			$AnimatedSprite.play("Walk")
+		else:
+			$AnimatedSprite.play("Idle")
 	else:
-		$AnimatedSprite.play("Idle")
+		if abs(velocity.x) + abs(velocity.y) > 0.25:
+			$AnimatedSprite.play("Walk")
+		else:
+			$AnimatedSprite.play("Idle")
 
-#	if use_gravity:
-#		if not is_on_floor():
-#			$AnimatedSprite.play("Jump")
-#		elif abs(velocity.x) > 0.25:
-#			$AnimatedSprite.play("Walk")
-#		else:
-#			$AnimatedSprite.play("Idle")
-#	else:
-#		if abs(velocity.x) + abs(velocity.y) > 0.25:
-#			$AnimatedSprite.play("Walk")
-#		else:
-#			$AnimatedSprite.play("Idle")
-		
-	# change sprite direction
-	if velocity.x < -0.1:
-		$AnimatedSprite.flip_h = true
 	if velocity.x > 0.1:
 		$AnimatedSprite.flip_h = false
-		
-	# if player falls below screen
-	if use_gravity and position.y > get_viewport().size.y * 2 and is_alive:
-		is_alive = false
-		emit_signal("player_hit", is_alive) # player is dead -- change to remove life
+	
+	if velocity.x < -0.1:
+		$AnimatedSprite.flip_h = true
 
 ```
 
@@ -154,48 +131,44 @@ func player_update(delta):
 ```
 extends Camera2D
 
-# get reference to player to track/follow position
+# track or follow player 
+
 export (NodePath) var player_path
 onready var player = get_node(player_path)
 
-# track camera copies the player position as soon as player moves
-export var track_horizontal = true
+# track player, camera moves with player
+export var track_horizontal = true # default
 export var track_vertical = true
 
-# follow allows player to move until outside of a certain area
-# more typical for RPG game
+# follow player, allow player to move within range before camera moves
 export var follow_horizontal = false
 export var follow_vertical = false
 
-# how far from camera before it moves
-# should be about 1/4 of window dimension, or less, can't be over 1/2
+# how far player can move before camera follows
+# can't be more that 1/2 the window dimensions
 export var follow_distance = Vector2(100, 100)
 
-# speed to catch up to player
+# how fast the camera moves
 # can't be faster than player
-export var follow_speed = 100 
-	
-func _process(delta):
+export var follow_speed = 100
 
-	if follow_horizontal:
-		# if the player is in the right or left quarter of screen, 
-		# start moving to center player
-		var d = position.x - player.position.x
-		if abs(d) > follow_distance.x:
-			position.x -= delta * follow_speed * sign(d)
+func _process(delta):
 	
-	# follow horizontal ignores track setting
+	if follow_horizontal:
+		# get distance of player from camera
+		var distance = position.x - player.position.x
+		if abs(distance) > follow_distance.x:
+			position.x -= delta * follow_speed * sign(distance)
+	
 	elif track_horizontal:
 		position.x = player.position.x
 	
-	# same thing for vertical
 	if follow_vertical:
-		var d = position.y - player.position.y
-		if abs(d) > follow_distance.y:
-			position.y -= delta * follow_speed * sign(d)
+		var distance = position.y - player.position.y
+		if abs(distance) > follow_distance.y:
+			position.y -= delta * follow_speed * sign(distance)
 			
 	elif track_vertical:
 		position.y = player.position.y
-
 
 ```
