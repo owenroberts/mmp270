@@ -45,46 +45,55 @@ export default function SkillTreeDataProvider() {
 					"video": "link to video",
 					"points": 2,
 					"parents": ['0-2'],
-					"children": ['0-1', '0-2'],
+					"children": ['1-1', '1-5'],
 					"type": "Godot",
 					"dek": "Covers basics of adding scripts to Godot.  This will add a global score variable and number of lives for the player."
 				},
-				"Obstacles and Collisions": {
+				"Player Physics": {
 					"id": 1,
 					"video": "link to video",
 					"points": 2,
 					"parents": ['1-0'],
-					"children": ['1-4', '1-5'],
+					"children": ['1-2', '1-3'],
+					"type": "Godot",
+					"dek": "Adding platformer physics to the PlayerController."
+				},
+				"Obstacles and Collisions": {
+					"id": 2,
+					"video": "link to video",
+					"points": 2,
+					"parents": ['1-1'],
+					"children": ['1-4'],
 					"dek": "Covers scripting for basic obstacles and collisions between the player and other components in the game."
 				},
 				"Collecting Items": {
-					"id": 2,
+					"id": 3,
 					"type": "Godot",
 					"points": 2,
-					"parents": ['1-0'],
+					"parents": ['1-1'],
 					"dek": "Covers writing a script to collect items."
 				},
 				"Physics": {
-					"id": 5,
+					"id": 4,
 					"type": "Godot",
 					"points": 3,
-					"parents": ['1-1'],
+					"parents": ['1-2'],
 					"dek": "Overview of physics in scripts and adding projectiles."
 				},
 
 				// switch these??
 				"Dialog System and Plugins": {
-					"id": 3,
+					"id": 5,
 					"type": "Godot",
 					"points": 2,
 					"parents": ['1-0'],
 					"dek": "Using a Godot Plugin, this adds the ability to add dialog to NPCs."
 				},
 				"NPCs": {
-					"id": 4,
+					"id": 6,
 					"type": "Godot",
 					"points": 3,
-					"parents": ['1-1'],
+					"parents": ['1-5'],
 					"dek": "Adding NPCs (non-player-characters) to an RPG game."
 				}
 			}
