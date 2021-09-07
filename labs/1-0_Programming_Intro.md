@@ -5,7 +5,7 @@ return: ./labs
 label: Labs
 ---
 
-This lab covers making Global, PlayerContoller and CameraController scripts, while covering programming basics.
+This lab covers making Global and PlayerContoller scripts, while covering programming basics.
 
 ## 1. Adding scripts to Godot
 - Download the [Assets_MMP270](./Assets_MMP270.zip) folder
