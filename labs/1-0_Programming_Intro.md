@@ -10,17 +10,16 @@ This lab covers making Global, PlayerContoller and CameraController scripts, whi
 ## 1. Adding scripts to Godot
 - Download the [Assets_MMP270](./Assets_MMP270.zip) folder
 - Create a new Godot Project or use an existing one
+- Add folders for Scripts, Scenes, Sprites and TileSets
+- For this lab we need the character animation sprites, the tree for scenery, the Player scene and 1-0_Programming_Intro scenes
 
 ## 2. Create the Global.gd script
 - Go to the Script view
 - Create a new Script called Global.gd
 - Add Global.gd to Project Settings > AutoLoad
-- Take a look at the documentation by right-clicking on `Node` and click `Lookup Symbol`
-- Add a comment using `#`
-- Add some variables like `item_count` and `player_lives`
 
-## 3. Open the LabScenes/1-0_Programming_Intro
-- This has some platforms, a Player and a Camera2D
+## 3. Open 1-0_Programming_Intro
+- This default scene has a player and some scenery
 - Remove the PlayerController script from the Player, we're going to write this from scratch
 
 ## 4. Add movement to Player
