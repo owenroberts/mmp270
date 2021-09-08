@@ -28,6 +28,9 @@ This lab covers making Global and PlayerContoller scripts, while covering progra
 - Update movement
 - Update animations to follow movement
 
+## Bonus
+- Add new animations for walking up and down
+
 ## Resources
 - [Godot API](https://docs.godotengine.org/en/stable/classes/index.html){:target="_blank"}
 

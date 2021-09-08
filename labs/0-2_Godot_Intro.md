@@ -5,7 +5,7 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ka59alsDpHg?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K_0DMqfsAs4?rel=0" frameborder="0" allowfullscreen></iframe>
 
 In this lab we will go over the basics of the Godot Game engine and add a simple character to a Godot scene.
 
