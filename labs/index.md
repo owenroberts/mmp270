@@ -10,14 +10,17 @@ title: Labs
    
 ## Artist
 - [Character Design](2-0_Character_Design)
+- [Character Animation](2-1_Character_Animation)
 
 ## Developer
 - [Programming Intro](1-0_Programming_Intro)
 
-<!-- - Artist
-- Developer
+## Sound Design
+
+## Research
+
+<!--
 - Designer
-- Sound
 - Publishing
 - QA
  -->
