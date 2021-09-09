@@ -5,6 +5,8 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jyrkFqSJRyc?rel=0" frameborder="0" allowfullscreen></iframe>
+
 This lab covers doing and posting research.  The same steps apply to any reading, game or viewing.
 
 ## 1. Read, play or view the linked resource

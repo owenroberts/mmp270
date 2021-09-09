@@ -14,7 +14,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Open Lab",
 					"points": 1,
 					"parents": [],
-					"children": ['0-1', '7-0'],
+					"children": ['0-1', '6-0'],
 					"dek": "Overview of posting assignments on the Open Lab.  Covers first assigment using skill tree and Open Lab."
 				},
 				"Art Intro": {
@@ -32,7 +32,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Godot",
 					"points": 1,
 					"parents": ['0-1'],
-					"children": ['1-0', '2-0', '3-0'],
+					"children": ['1-0', '2-0', '3-0', '4-0', '4-1', '4-2'],
 					"dek": "Overview of Godot game engine editor and interface.  Add your avatar into a simple Godot game."
 				}
 			}
@@ -262,13 +262,8 @@ export default function SkillTreeDataProvider() {
 					"parents": ['5-0'],
 					"dek": "Creating an Itch account to publish a Godot project."
 				},
-			}
-		},
-		"Quality Assurance": {
-			"id": 6,
-			"modules": {
 				"User Testing": {
-					"id": 0,
+					"id": 2,
 					"type": "Open Lab",
 					"points": 5,
 					"parents": ['5-1'],
@@ -277,12 +272,12 @@ export default function SkillTreeDataProvider() {
 			}
 		},
 		"Research": {
-			"id": 7,
+			"id": 6,
 			"modules": {
 				"Crawford Chapter 1": {
 					"id": 0,
 					"type": "Reading",
-					"link": '7_Research',
+					"link": '6-0_Research',
 					"points": 1,
 					"parents": ['0-0'],
 					"research": "https://www.digitpress.com/library/books/book_art_of_computer_game_design.pdf",
@@ -292,7 +287,7 @@ export default function SkillTreeDataProvider() {
 				"Understanding Comics Chapter 2": {
 					"id": 1,
 					"type": "Reading",
-					"link": "7_Research",
+					"link": '6-0_Research',
 					"points": 1,
 					"parents": ['0-0'],
 					"research": "http://270.owen.cool/notes/character/readings/mccloud.pdf",

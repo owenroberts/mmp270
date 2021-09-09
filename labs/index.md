@@ -15,9 +15,10 @@ title: Labs
 ## Developer
 - [Programming Intro](1-0_Programming_Intro)
 
-## Sound Design
+<!-- ## Sound Design -->
 
 ## Research
+- [Research](6-0_Research)
 
 <!--
 - Designer

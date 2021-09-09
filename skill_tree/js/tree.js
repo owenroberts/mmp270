@@ -45,7 +45,9 @@ function markTree() {
 				const pid = parents[i];
 
 				if (pid.includes('@')) {
-					const keys = Object.keys(completed).filter(k => +k.charAt(0) > 0);
+					console.log(completed, mod);
+					const keys = Object.keys(completed).filter(k => +k.charAt(0) > 0 && completed[k]);
+					console.log(keys);
 					if (keys.length > i) mod.markAvailable('@' + i, true);
 					continue;
 				}
@@ -111,7 +113,6 @@ function getMod(id) {
 	if (isNaN(+s) || isNaN(+m)) return false;
 	return skillTree[s].skillTree[m];
 }
-
 
 /* grade scale */
 const gradeScale = getElement('grade-scale');
