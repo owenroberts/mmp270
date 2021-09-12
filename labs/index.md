@@ -15,7 +15,8 @@ title: Labs
 ## Developer
 - [Programming Intro](1-0_Programming_Intro)
 
-<!-- ## Sound Design -->
+## Sound Design
+- [Gameplay Sound Effects](4-0_Gameplay_Sound_Effects)
 
 ## Research
 - [Research](6-0_Research)
