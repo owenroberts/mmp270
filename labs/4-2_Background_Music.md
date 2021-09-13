@@ -5,7 +5,7 @@ return: ./labs
 label: Labs
 ---
 
-This lab covers sourcing background music and adding it to a Godot scene.0
+This lab covers sourcing background music and adding it to a Godot scene.
 
 ## 1. Find (or create) background music 
 - Find music on the [Free Music Archive](https://freemusicarchive.org/search){:target="_blank"} or [Open Game Art](https://opengameart.org/art-search-advanced?keys=&field_art_type_tid%5B%5D=12&sort_by=count&sort_order=DESC){:target="_blank"} or another Creative Commons licensed source
