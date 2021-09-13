@@ -8,7 +8,7 @@ label: Labs
 This lab covers making Global and PlayerContoller scripts, while covering programming basics.
 
 ## 1. Adding scripts to Godot
-- Download the [Assets_MMP270](./Assets_MMP270.zip) folder
+- Download the [Assets](./Assets.zip) folder
 - Create a new Godot Project or use an existing one
 - Add folders for Scripts, Scenes, Sprites and TileSets
 - For this lab we need the character animation sprites, the tree for scenery, the Player scene and 1-0_Programming_Intro scenes
@@ -27,6 +27,9 @@ This lab covers making Global and PlayerContoller scripts, while covering progra
 - Add variables for movement
 - Update movement
 - Update animations to follow movement
+
+## 5. Documentation
+- Add screen shots or video on Open Lab
 
 ## Bonus
 - Add new animations for walking up and down
