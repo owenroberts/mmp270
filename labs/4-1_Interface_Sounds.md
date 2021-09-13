@@ -32,3 +32,11 @@ After:
 func _on_button_down():
 	$ClickSound.play()
 ```
+
+## 3. Documentation
+- Post either the sound files or links to the resources on the Open Lab
+
+## Resources
+- [AudioStreamPlayer](https://docs.godotengine.org/en/stable/classes/class_audiostreamplayer.html){:target="_blank"}
+- [sfxr](https://www.drpetter.se/project_sfxr.html){:target="_blank"}
+- [Audacity](https://www.audacityteam.org/){:target="_blank"}

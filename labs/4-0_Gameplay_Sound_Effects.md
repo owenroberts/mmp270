@@ -36,7 +36,8 @@ After:
 $JumpSound.play()
 ```
 
-## 3. Post documentation and sound effects on Open Lab
+## 3. Documentation
+- Post either the sound files or links to the resources on the Open Lab
 
 ## Resources
 - [AudioStreamPlayer](https://docs.godotengine.org/en/stable/classes/class_audiostreamplayer.html){:target="_blank"}
