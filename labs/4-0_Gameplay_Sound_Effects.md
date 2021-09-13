@@ -16,7 +16,7 @@ This lab covers creating sound effects using JFXR and adding them to a Godot sce
 	- Portal and checkpoint
 
 ## 2. Add SFX to Godot
-- Use a previous project and add the assets or download the [Sound Default](./Sound_Default_MMP270.zip) folder 
+- Use a previous project and add the assets or download the [Sound Default](./Sound_Default.zip) folder 
 - Create a folder for `Audio` and copy your sound files
 - Find or Add an `AudioStreamPlayer` node for each sound effect in the Player, Obstacle and Item scenes
 - Find the code to play each sound by searching for the sound names
