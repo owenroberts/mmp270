@@ -27,7 +27,8 @@ This lab covers creating sprite animations in Piskel and adding them into a Godo
 - Use the AnimatedSprite node in Player scene
 - Name animations, make sure they match the code
 
-## 4. Document with screen shots or video
+## 3. Documentation
+- Add screen shots or video on Open Lab
 
 ## Resources
 - [Simple 8-Frame Run Cycle](https://www.youtube.com/watch?v=y6Igao5Uvu8){:target="_blank"} (Aseprite)
