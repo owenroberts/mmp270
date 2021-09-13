@@ -107,7 +107,7 @@ export default function SkillTreeDataProvider() {
 					"link": "2-0_Character_Design",
 					"points": 2,
 					"parents": ['0-2'],
-					"children": ['2-1', '2-2', '2-3'],
+					"children": ['2-1', '2-6', '2-7'],
 					"dek": "Overivew of designing characters.  Create three versions of a character design."
 				},
 				"Character Animation": {
@@ -117,15 +117,22 @@ export default function SkillTreeDataProvider() {
 					"parents": ['2-0'],
 					"dek": "Overview of creating a Sprite animation.  Create character animations for idle, walk, and jump states.  Add animations into Godot using Animation editor."
 				},
-				"Rewards": {
+				"Platforms": {
 					"id": 2,
 					"type": "Art",
 					"points": 3,
-					"parents": ['2-0'],
+					"parents": ['2-1'],
+					"dek": "Design platforms and add a Tilemap in Godot."
+				},
+				"Rewards": {
+					"id": 3,
+					"type": "Art",
+					"points": 3,
+					"parents": ['2-1'],
 					"dek": "Design three types of rewards.  Create one Sprite animation and add to Godot."
 				},
 				"Obstacles and Enemies": {
-					"id": 3,
+					"id": 4,
 					"type": "Art",
 					"points": 3,
 					"parents": ['2-0'],
@@ -133,33 +140,25 @@ export default function SkillTreeDataProvider() {
 					"dek": "Design three enemies and/or obstacles.  Create one Sprite animation and add to Godot."
 				},
 				"NPCs": {
-					"id": 4,
+					"id": 5,
 					"type": "Art",
 					"points": 4,
-					"parents": ['2-3'],
+					"parents": ['2-4'],
 					"dek": "Design an NPC character.  Create an Idle sprite animation and add to Godot."
 				},
 				"Scenery": {
-					"id": 5,
-					"type": "Art",
-					"points": 3,
-					"parents": ['2-0'],
-					"children": ['2-6', '2-7'],
-					"dek": "Design three scenic elements and add to Godot using Godot Canvas layers."
-				},
-				"Backgrounds": {
 					"id": 6,
 					"type": "Art",
 					"points": 3,
 					"parents": ['2-0'],
-					"dek": "Add a background and setup paralax scrolling"
+					"dek": "Design three scenic elements and add to Godot using Godot Canvas layers."
 				},
-				"Platforms": {
+				"Backgrounds": {
 					"id": 7,
 					"type": "Art",
 					"points": 3,
-					"parents": ['2-5'],
-					"dek": "Design platforms and add a Tilemap in Godot."
+					"parents": ['2-0'],
+					"dek": "Add a background and setup paralax scrolling"
 				}
 			}
 		},

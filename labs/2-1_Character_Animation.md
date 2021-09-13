@@ -22,9 +22,8 @@ This lab covers creating sprite animations in Piskel and adding them into a Godo
 - Import to Godot
 
 ## 3. Adding new Animations
-- Download the [Assets_MMP270](./Assets_MMP270.zip) folder
-- Use a previous project and add the assets or download the [Blank Template](./Blank_Template_MMP270.zip) folder  and add in necessary assets
-- We need the Player scene, 2-1_Character_Animation scene, TileSets, PlayerController.gd and SceneSimple.gd scripts
+- Use a previous project and add the assets or download the [Artist Default](./Artist_Default_MMP270.zip) folder
+- Add your character animation sprites to the `Sprites` folder
 - Use the AnimatedSprite node in Player scene
 - Name animations, make sure they match the code
 

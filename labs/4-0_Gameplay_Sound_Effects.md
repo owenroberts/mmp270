@@ -37,3 +37,8 @@ $JumpSound.play()
 ```
 
 ## 3. Post documentation and sound effects on Open Lab
+
+## Resources
+- [AudioStreamPlayer](https://docs.godotengine.org/en/stable/classes/class_audiostreamplayer.html){:target="_blank"}
+- [sfxr](https://www.drpetter.se/project_sfxr.html){:target="_blank"}
+- [Audacity](https://www.audacityteam.org/){:target="_blank"}
