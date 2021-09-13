@@ -5,7 +5,7 @@ return: ./labs
 label: Labs
 ---
 
-This lab continues the PlayerController script started in the [Programming Intro](1-0_Programming_Intro), and adds platformer phyiscs.
+This lab continues the PlayerController script started in the [Programming Intro](1-0_Programming_Intro), and adds platformer phyiscs.  We're also going to write a simple SceneManager script.
 
 ## 1. Setting up the Godot Project
 - Start with the project created in the previous lab, or Download the [Developer Default](./Developer_Default.zip) folder
@@ -18,6 +18,10 @@ This lab continues the PlayerController script started in the [Programming Intro
 - Update the physics and animations for the player
 - Add a game over condition for the player falling below a platform
 - Add function for when the player dies
+
+## 4. Create SceneManager.gd script
+- This script is used to communicate between objects and events in the scene
+- Add a signal to the player to trigger game over
 
 ## 3. Documentation
 - Add screen shots or video on Open Lab
@@ -109,4 +113,27 @@ func dies():
 	
 	# remove comment to play sfx
 	# $DiesSound.play()
+```
+
+## Full SceneManager.gd script
+```
+extends Node
+
+export (NodePath) var player_path
+onready var player = get_node(player_path)
+
+export (NodePath) var game_over_path
+onready var game_over_ui = get_node(game_over_path)
+
+_ready():
+	game_over_ui.visible = false
+
+func game_over():
+	game_over_ui.visible = true
+	player.dies()
+
+func _on_player_hit(is_alive):
+	if not is_alive:
+		game_over()
+
 ```
