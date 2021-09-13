@@ -17,6 +17,7 @@ title: Labs
 
 ## Sound Design
 - [Gameplay Sound Effects](4-0_Gameplay_Sound_Effects)
+- [Interface Sounds](4-1_Interface_Sounds)
 
 ## Research
 - [Research](6-0_Research)
