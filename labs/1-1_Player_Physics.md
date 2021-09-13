@@ -25,7 +25,7 @@ This lab continues the PlayerController script started in the [Programming Intro
 ## Bonus
 - Add a double jump
 
-## Full PlayerControll.gd script
+## Full PlayerController.gd script
 ```
 extends KinematicBody2D
 
