@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: Interface Sounds
+title: Background Music
 return: ./labs
 label: Labs
 ---
