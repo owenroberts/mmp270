@@ -11,6 +11,8 @@ title: Labs
 ## Artist
 - [Character Design](2-0_Character_Design)
 - [Character Animation](2-1_Character_Animation)
+- [Platforms](2-2_Platforms)
+
 
 ## Developer
 - [Programming Intro](1-0_Programming_Intro)
@@ -21,9 +23,16 @@ title: Labs
 - [Interface Sounds](4-1_Interface_Sounds)
 - [Background Music](4-2_Background_Music)
 
-
 ## Research
 - [Research](6-0_Research)
+
+## Assets
+- [Assets Folder](./Assets.zip)
+- [Blank Template](./Blank_Template.zip)
+- [Artist Default Project](./Artist_Default.zip)
+- [Deveoper Default Project](./Developer_Default.zip)
+- [Sound Design Default Project](./Sound_Default.zip)
+
 
 <!--
 - Designer

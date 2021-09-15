@@ -7,6 +7,7 @@ title: Lecture notes
 - [Character Design](character)
 - [Game Setting](setting)
 - [Game Genre](genre)
+- [Level Design](level)
 - [Indie games](indie)
 - [Video Games & Art](art)
 - [Sound effects](sound)

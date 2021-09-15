@@ -23,6 +23,7 @@ This lab covers creating sprite animations in Piskel and adding them into a Godo
 
 ## 3. Adding new Animations
 - Use a previous project and add the assets or download the [Artist Default](./Artist_Default.zip) folder
+- Download [Assets Folder](./Assets.zip) if needed
 - Add your character animation sprites to the `Sprites` folder
 - Use the AnimatedSprite node in Player scene
 - Name animations, make sure they match the code
