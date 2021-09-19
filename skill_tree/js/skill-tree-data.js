@@ -117,7 +117,7 @@ export default function SkillTreeDataProvider() {
 					"parents": ['2-0'],
 					"dek": "Overview of creating a Sprite animation.  Create character animations for idle, walk, and jump states.  Add animations into Godot using Animation editor."
 				},
-				"Platforms": {
+				"Tilesets and Platforms": {
 					"id": 2,
 					"type": "Art",
 					"points": 3,
@@ -165,55 +165,63 @@ export default function SkillTreeDataProvider() {
 		"Designer": {
 			"id": 3,
 			"modules": {
-				"Level Design": {
+				"Designing with TileMaps": {
 					"id": 0,
 					"points": 2,
 					"type": "Godot",
 					"parents": ['0-2'],
-					"children": ['3-1', '3-2'],
+					"children": ['3-1'],
+					"dek": "TileMaps are the basic level design starting point for Godot.  Overview of creating a TileMap and TileSets for Single and Auto Tiles."
+				},
+				"Level Design": {
+					"id": 1,
+					"points": 2,
+					"type": "Godot",
+					"parents": ['3-0'],
+					"children": ['3-2', '3-3', '3-4'],
 					"dek": "Overview of Level Design and creating a level in Godot."
 				},
 				"Checkpoints": {
-					"id": 1,
-					"points": 3,
-					"type": "Godot",
-					"parents": ['3-0'],
-					"dek": "Adding check points to save level progress in Godot."
-				},
-				"Portals": {
 					"id": 2,
 					"points": 3,
 					"type": "Godot",
-					"parents": ['3-0'],
-					"dek": "Adding portals to go to new levels in Godot."
+					"parents": ['3-1'],
+					"dek": "Adding check points to save level progress in Godot."
 				},
-				"Level Design 2": {
+				"Portals": {
 					"id": 3,
 					"points": 3,
 					"type": "Godot",
-					"parents": ['3-0'],
+					"parents": ['3-1'],
+					"dek": "Adding portals to go to new levels in Godot."
+				},
+				"Level Design 2": {
+					"id": 4,
+					"points": 3,
+					"type": "Godot",
+					"parents": ['3-1'],
 					"dek": "Design a second level in Godot."
 				},
 				"User Interface Design": {
-					"id": 4,
+					"id": 5,
 					"points": 2,
 					"type": "Art",
 					"parents": ['0-2'],
-					"children": ['3-4', '3-5'],
+					"children": ['3-5', '3-6'],
 					"dek": "Create visual assets to use for interface like buttons and title screens."
 				},
 				"User Interface Layout": {
-					"id": 5,
-					"points": 3,
-					"type": "Godot",
-					"parents": ['3-3'],
-					"dek": "Adding visual assets for UI into Godot and overview of Godot UI layout."
-				},
-				"Metrics": {
 					"id": 6,
 					"points": 3,
 					"type": "Godot",
-					"parents": ['3-3'],
+					"parents": ['3-5'],
+					"dek": "Adding visual assets for UI into Godot and overview of Godot UI layout."
+				},
+				"Metrics": {
+					"id": 7,
+					"points": 3,
+					"type": "Godot",
+					"parents": ['3-5'],
 					"dek": "Art for metrics like score and player lives and layout for Metrics in Godot."
 				}
 			}
