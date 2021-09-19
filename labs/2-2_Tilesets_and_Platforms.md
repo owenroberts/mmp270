@@ -17,7 +17,7 @@ This lab covers designing platforms to be used in a platformer style game.  The 
 - Export tiles as a sprite sheet
 
 ## 3. Documentation 
-- Post sprite sheets on Godot
+- Post sprite sheets on Open Lab
 
 ## Resources
 - [My Tileset Workflow (Pixel Art & Gamedev Tutorial)](https://www.youtube.com/watch?v=btnH0x7_1g8){:target="_blank"}
