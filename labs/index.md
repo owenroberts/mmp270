@@ -11,8 +11,10 @@ title: Labs
 ## Artist
 - [Character Design](2-0_Character_Design)
 - [Character Animation](2-1_Character_Animation)
-- [Platforms](2-2_Platforms)
+- [Tilesets and Platforms](2-2_Tilesets_and_Platforms)
 
+## Designer
+- [Designing with TileMaps](3-0_Designing_with_TileMaps)
 
 ## Developer
 - [Programming Intro](1-0_Programming_Intro)
@@ -30,7 +32,8 @@ title: Labs
 - [Assets Folder](./Assets.zip)
 - [Blank Template](./Blank_Template.zip)
 - [Artist Default Project](./Artist_Default.zip)
-- [Deveoper Default Project](./Developer_Default.zip)
+- [Designer Default Project](./Designer_Default.zip)
+- [Developer Default Project](./Developer_Default.zip)
 - [Sound Design Default Project](./Sound_Default.zip)
 
 
