@@ -7,12 +7,14 @@ label: Labs
 
 This lab covers designing platforms to be used in a platformer style game.  The same process can be used for obstacles/walls in a RPG style game.  We'll create the platforms in Piskel which can be implemented with a TileMap in Godot to make collisions with the player and other moving objects.
 
-## 1. Design the platforms
-- Using Piskel or another art editor, create a set of repeatable tiles to use for platsorms
+## 1. Design Tilesets
+- Using Piskel or another art editor, create a set of repeatable tiles
+- Tilesets can be used for platforms or basic scenery
+- Choose a size: 32x32 or 64x64 are good starting points
 - First we'll make platforms for single tiles and one for a simple auto tile demonstration
 
 ## 2. Export sprite sheets
-- Export our tiles as a sprite sheet
+- Export tiles as a sprite sheet
 
 ## Resources
 - [My Tileset Workflow (Pixel Art & Gamedev Tutorial)](https://www.youtube.com/watch?v=btnH0x7_1g8){:target="_blank"}
