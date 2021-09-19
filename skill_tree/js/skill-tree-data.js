@@ -113,6 +113,7 @@ export default function SkillTreeDataProvider() {
 				"Character Animation": {
 					"id": 1,
 					"type": "Art",
+					"link": "2-1_Character_Animation",
 					"points": 3,
 					"parents": ['2-0'],
 					"dek": "Overview of creating a Sprite animation.  Create character animations for idle, walk, and jump states.  Add animations into Godot using Animation editor."
@@ -120,6 +121,7 @@ export default function SkillTreeDataProvider() {
 				"Tilesets and Platforms": {
 					"id": 2,
 					"type": "Art",
+					"link": "2-2_Tilesets_and_Platforms",
 					"points": 3,
 					"parents": ['2-1'],
 					"dek": "Design platforms and add a Tilemap in Godot."
@@ -168,6 +170,7 @@ export default function SkillTreeDataProvider() {
 				"Designing with TileMaps": {
 					"id": 0,
 					"points": 2,
+					"link": "3-0_Designing_with_TileMaps",
 					"type": "Godot",
 					"parents": ['0-2'],
 					"children": ['3-1'],
