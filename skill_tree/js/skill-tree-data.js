@@ -303,6 +303,16 @@ export default function SkillTreeDataProvider() {
 					"research": "http://270.owen.cool/notes/character/readings/mccloud.pdf",
 					"isAvailable": true,
 					"dek": "Understanding Comics by Scott McCloud, Chapter 2: The Vocabulary of Comics"
+				},
+				"Video Game History Timeline": {
+					"id": 2,
+					"type": "Reading",
+					"link": '6-0_Research',
+					"points": 1,
+					"parents": ['0-0'],
+					"research": "https://www.museumofplay.org/about/icheg/video-game-history/timeline",
+					"isAvailable": true,
+					"dek": "Video Game History Timeline.  Consider how technological changes have effected the development of video games."
 				}
 			}
 		}
