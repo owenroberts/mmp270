@@ -22,7 +22,7 @@ This lab continues the PlayerController script started in the [Programming Intro
 ## 3. Connect to the SceneManager
 - Add a signal to connect the scene manager when the Player falls below the game window
 
-## 3. Documentation
+## 4. Documentation
 - Add screen shots or video on Open Lab
 
 ## Bonus
