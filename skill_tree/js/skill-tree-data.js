@@ -49,51 +49,60 @@ export default function SkillTreeDataProvider() {
 					"type": "Godot",
 					"dek": "Covers basics of adding scripts to Godot.  This will add a global score variable and number of lives for the player."
 				},
-				"Player Physics": {
+				"Scene Manager": {
 					"id": 1,
 					"video": "link to video",
 					"points": 2,
 					"parents": ['1-0'],
 					"children": ['1-2', '1-3'],
 					"type": "Godot",
-					"dek": "Adding platformer physics to the PlayerController."
-				},
-				"Obstacles and Collisions": {
-					"id": 2,
-					"video": "link to video",
-					"points": 2,
-					"parents": ['1-1'],
-					"children": ['1-4'],
-					"dek": "Covers scripting for basic obstacles and collisions between the player and other components in the game."
+					"dek": "Covers basics of adding scripts to Godot.  This will add a global score variable and number of lives for the player."
 				},
 				"Collecting Items": {
-					"id": 3,
+					"id": 2,
 					"type": "Godot",
 					"points": 2,
 					"parents": ['1-1'],
 					"dek": "Covers writing a script to collect items."
 				},
-				"Physics": {
+				"Player Physics": {
+					"id": 3,
+					"video": "link to video",
+					"points": 2,
+					"parents": ['1-1'],
+					"children": ['1-4'],
+					"type": "Godot",
+					"dek": "Adding platformer physics to the PlayerController."
+				},
+				"Obstacles and Collisions": {
 					"id": 4,
+					"video": "link to video",
+					"points": 2,
+					"parents": ['1-3'],
+					"children": ['1-5'],
+					"dek": "Covers scripting for basic obstacles and collisions between the player and other components in the game."
+				},
+				"Projectile Physics": {
+					"id": 5,
 					"type": "Godot",
 					"points": 3,
-					"parents": ['1-2'],
+					"parents": ['1-4'],
 					"dek": "Overview of physics in scripts and adding projectiles."
 				},
 
 				// switch these??
 				"Dialog System and Plugins": {
-					"id": 5,
+					"id": 6,
 					"type": "Godot",
 					"points": 2,
 					"parents": ['1-0'],
 					"dek": "Using a Godot Plugin, this adds the ability to add dialog to NPCs."
 				},
 				"NPCs": {
-					"id": 6,
+					"id": 7,
 					"type": "Godot",
 					"points": 3,
-					"parents": ['1-5'],
+					"parents": ['1-6'],
 					"dek": "Adding NPCs (non-player-characters) to an RPG game."
 				}
 			}
