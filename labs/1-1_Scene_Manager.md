@@ -5,7 +5,7 @@ return: ./labs
 label: Labs
 ---
 
-This lab covers adding a simple SceneManager script to a Godot scene and the NodePath and Signal concepts in Godot.0
+This lab covers adding a simple SceneManager script to a Godot scene and the NodePath and Signal concepts in Godot.
 
 ## 1. Setting up the Godot Project
 - Start with the project created in the previous lab, or Download the [Developer Default](./Developer_Default.zip) folder
