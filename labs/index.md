@@ -18,7 +18,8 @@ title: Labs
 
 ## Developer
 - [Programming Intro](1-0_Programming_Intro)
-- [Player Physics](1-1_Player_Physics)
+- [Scene Manager](1-1_Scene_Manager)
+- [Player Physics](1-3_Player_Physics)
 
 ## Sound Design
 - [Gameplay Sound Effects](4-0_Gameplay_Sound_Effects)
