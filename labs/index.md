@@ -39,7 +39,5 @@ title: Labs
 
 
 <!--
-- Designer
 - Publishing
-- QA
  -->

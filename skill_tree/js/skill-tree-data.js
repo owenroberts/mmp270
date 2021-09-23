@@ -42,7 +42,7 @@ export default function SkillTreeDataProvider() {
 			"modules": {
 				"Programming Intro": {
 					"id": 0,
-					"video": "link to video",
+					"link": "1-0_Programming_Intro",
 					"points": 2,
 					"parents": ['0-2'],
 					"children": ['1-1', '1-5'],
@@ -51,7 +51,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Scene Manager": {
 					"id": 1,
-					"video": "link to video",
+					"link": "1-1_Scene_Manager",
 					"points": 2,
 					"parents": ['1-0'],
 					"children": ['1-2', '1-3'],
@@ -67,7 +67,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Player Physics": {
 					"id": 3,
-					"video": "link to video",
+					"link": "1-3_Player_Physics",
 					"points": 2,
 					"parents": ['1-1'],
 					"children": ['1-4'],
@@ -244,6 +244,7 @@ export default function SkillTreeDataProvider() {
 				"Gameplay Sound Effects": {
 					"id": 0,
 					"points": 2,
+					"link": "4-0_Gameplay_Sound_Effects",
 					"type": "Audio",
 					"parents": ['0-2'],
 					"dek": "Creating sound effects and adding them into Godot scene."
