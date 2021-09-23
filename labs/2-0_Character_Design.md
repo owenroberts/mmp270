@@ -5,6 +5,9 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D5c1wNo1GdQ?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
 In this lab we will create three variations of a character design.
 
 ## 1. Inspiration

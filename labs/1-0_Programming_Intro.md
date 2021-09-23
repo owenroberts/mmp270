@@ -5,6 +5,8 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/go0W1zRwJlw?rel=0" frameborder="0" allowfullscreen></iframe>
+
 This lab covers making Global and PlayerContoller scripts, while covering programming basics.
 
 ## 1. Adding scripts to Godot

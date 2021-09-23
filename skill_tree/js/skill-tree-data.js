@@ -132,7 +132,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Art",
 					"link": "2-2_Tilesets_and_Platforms",
 					"points": 3,
-					"parents": ['2-1'],
+					"parents": ['2-0'],
 					"dek": "Design platforms and add a Tilemap in Godot."
 				},
 				"Rewards": {
@@ -146,7 +146,7 @@ export default function SkillTreeDataProvider() {
 					"id": 4,
 					"type": "Art",
 					"points": 3,
-					"parents": ['2-0'],
+					"parents": ['2-1'],
 					"children": ['2-4'],
 					"dek": "Design three enemies and/or obstacles.  Create one Sprite animation and add to Godot."
 				},

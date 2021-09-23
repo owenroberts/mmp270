@@ -16,6 +16,7 @@ firebase.auth().onAuthStateChanged(user => {
 });
 
 function getUsers() {
+	// order ?
 	const usersRef = firebase.database().ref('users');
 	usersRef.once('value', snapshot => {
 		for (const uid in snapshot.val()) {

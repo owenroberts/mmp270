@@ -5,6 +5,9 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/624ug8rWzWw?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
 This lab covers creating sound effects using JFXR and adding them to a Godot scene.
 
 ## 1. Create sound effects
@@ -43,3 +46,4 @@ $JumpSound.play()
 - [AudioStreamPlayer](https://docs.godotengine.org/en/stable/classes/class_audiostreamplayer.html){:target="_blank"}
 - [sfxr](https://www.drpetter.se/project_sfxr.html){:target="_blank"}
 - [Audacity](https://www.audacityteam.org/){:target="_blank"}
+- [Audacity: Complete Tutorial Guide to Audacity for Beginners](https://www.youtube.com/watch?v=aCisC3sHneM){:target="_blank"}

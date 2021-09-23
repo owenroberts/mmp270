@@ -5,6 +5,9 @@ return: ./labs
 label: Labs
 ---
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BDZTr_oVEEM?rel=0" frameborder="0" allowfullscreen></iframe>
+
 This lab covers creating sprite animations in Piskel and adding them into a Godot Animated Sprite.  We'll be applying this to the player character in a game, but it is the same process for any animation in Godot.
 
 ## 1. Create Sprite Animations in Piskel
