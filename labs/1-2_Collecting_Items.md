@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: Scene Manager
+title: Collecting Items
 return: ./labs
 label: Labs
 ---
@@ -8,7 +8,7 @@ label: Labs
 This lab covers collecting items in Godot.
 
 ## 1. Setting up the Godot Project
-- Continue working with a previous project, or Download the [Developer Default](./Developer_Default.zip) folder
+- Continue working with a previous project, or download the [Developer Default](./Developer_Default.zip) folder
 - If necessary, download the [Assets Folder](./Assets.zip) and get the *MetricsManager.gd*, *MetricCount.gd* and *MetricToggle.gd* scripts and add them to the `Scripts` folder
 - Add in a `CanvasLayer` called *UI* with the `GameOver` and `Metrics` scenes 
 
@@ -23,19 +23,23 @@ This lab covers collecting items in Godot.
 ## 4. Documentation
 - Document with a screen shot or video and post on Open Lab
 
+## Bonus
+- What other types of items might be useful in your game? Add an extra item and explain what it would be used for in the documentation.
+
 ## Full ItemManager.gd script
 ```
 extends Area2D
 
-# support multiple "type" of items, 
-# need to duplicate the original scene instance and replace animations
-
+# support for multiple item types
 export var item_type = "apple"
+# duplicate scene and replace art for new items
 
-# "private" vars
+# when item is collected send signal to scene manager and update metrics
+signal item_collected
 
-signal item_collected # send signal to metrics or other places
-var item_is_collected = false # prevents item from being collected during exit animation
+# prevents item being collected multiple times
+var item_is_collected = false
+
 
 # when player body enters item area -- area2d does not cause collisions
 
