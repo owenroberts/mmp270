@@ -19,6 +19,7 @@ title: Labs
 ## Developer
 - [Programming Intro](1-0_Programming_Intro)
 - [Scene Manager](1-1_Scene_Manager)
+- [Collecting Items](1-2_Collecting_Items)
 - [Player Physics](1-3_Player_Physics)
 
 ## Sound Design
