@@ -12,6 +12,8 @@ title: Labs
 - [Character Design](2-0_Character_Design)
 - [Character Animation](2-1_Character_Animation)
 - [Tilesets and Platforms](2-2_Tilesets_and_Platforms)
+- [Scenery](2-6_Scenery)
+- [Backgrounds](2-7_Backgrounds)
 
 ## Designer
 - [Designing with TileMaps](3-0_Designing_with_TileMaps)
