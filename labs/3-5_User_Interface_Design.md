@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: Open Lab Intro
+title: User Interface Design
 return: ./labs
 label: Labs
 ---
