@@ -7,6 +7,8 @@ label: Labs
 
 This lab covers collecting items in Godot.
 
+This lab is good to pair with the [Rewards](2-3_Rewards.md) lab.
+
 ## 1. Setting up the Godot Project
 - Continue working with a previous project, or download the [Developer Default](./Developer_Default.zip) folder
 - If necessary, download the [Assets Folder](./Assets.zip) and get the *MetricsManager.gd*, *MetricCount.gd* and *MetricToggle.gd* scripts and add them to the `Scripts` folder
