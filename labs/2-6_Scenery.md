@@ -5,6 +5,8 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BaEwhW1uNT4?rel=0" frameborder="0" allowfullscreen></iframe>
+
 This lab covers creating scenery and adding it into a Godot scene.
 
 ## 1. Draw scenic elements
