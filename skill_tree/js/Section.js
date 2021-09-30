@@ -35,8 +35,8 @@ export default class Section {
 		this.skillTree = [];
 
 		for (const m in data.modules) {
-			if (data.modules[m].isAvailable !== undefined) {
-				if (!data.modules[m].isAvailable) return;
+			if (data.modules[m].available !== undefined) {
+				if (!data.modules[m].available) continue;
 			}
 			const mod = new Module(this.id, m, data.modules[m], markTreeCallback);
 			this.modules.appendChild(mod.container);
@@ -48,13 +48,15 @@ export default class Section {
 		return this.container;
 	}
 
-	open() {
-		if (this.modules.isOpen) {
-			this.modules.classList.remove('open');
-			this.modules.isOpen = false;
-		} else {
+	open(isOpen) {
+		if (isOpen || !this.modules.isOpen) {
 			this.modules.classList.add('open');
 			this.modules.isOpen = true;
+			localStorage.setItem(`section-${this.id}-open`, 'open');
+		} else {			
+			this.modules.classList.remove('open');
+			this.modules.isOpen = false;
+			localStorage.setItem(`section-${this.id}-open`, 'closed');
 		} 
 	}
 }

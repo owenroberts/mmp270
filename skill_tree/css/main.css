@@ -118,8 +118,7 @@ nav a.current {
   margin-right: 0.5em;
   min-width: 8em;
   display: grid;
-  grid-template-areas: "null available" "type title" "type video" "type resource" "type points" "type completed";
-  grid-gap: 0.25rem;
+  grid-template-areas: "null available" "null title" "type video" "type resource" "type points" "type bonus" "type collab" "type completed";
 }
 .section .module .link:hover + .dek {
   opacity: 1;
@@ -144,6 +143,8 @@ nav a.current {
 .section .module .title,
 .section .module .video,
 .section .module .dek-link,
+.section .module .bonus,
+.section .module .collab,
 .section .module .resource {
   text-align: right;
 }
@@ -164,6 +165,12 @@ nav a.current {
 }
 .section .module .video {
   grid-area: video;
+}
+.section .module .bonus {
+  grid-area: bonus;
+}
+.section .module .collab {
+  grid-area: collab;
 }
 .section .module .completed {
   grid-area: completed;
@@ -195,12 +202,22 @@ nav a.current {
 
 #admin #users,
 #admin #hello {
-  margin: 0 2rem;
+  margin: 0 1rem;
+}
+#admin p {
+  margin: 0;
 }
 #admin #users {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+}
+#admin .user {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+#admin .name {
+  color: blue;
 }
 
 /*# sourceMappingURL=main.css.map */

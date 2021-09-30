@@ -160,12 +160,14 @@ nav {
 		display: grid;
 		grid-template-areas:
 			'null available'
-			'type title'
+			'null title'
 			'type video'
 			'type resource'
 			'type points'
+			'type bonus'
+			'type collab'
 			'type completed';
-		grid-gap: 0.25rem;
+		// grid-gap: 0.25rem;
 
 		.link:hover + .dek {
 			opacity: 1;
@@ -193,6 +195,8 @@ nav {
 		.title,
 		.video,
 		.dek-link,
+		.bonus,
+		.collab,
 		.resource {
 			text-align: right;
 		}
@@ -216,6 +220,9 @@ nav {
 
 		.type { grid-area: type; }
 		.video { grid-area: video; }
+		.bonus { grid-area: bonus; }
+		.collab { grid-area: collab; }
+
 		.completed { 
 			grid-area: completed; 
 			margin-top: 1rem;
@@ -249,13 +256,24 @@ nav {
 #admin {
 	#users,
 	#hello {
-		margin: 0 2rem;
+		margin: 0 1rem;
 	}
+
+	p { margin: 0 }
 
 	#users {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1em;
+	}
+
+	.user {
+		border: 1px solid black;
+		padding: 0.5rem;
+	}
+
+	.name {
+		color: blue;
 	}
 }
 

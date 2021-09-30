@@ -24,6 +24,8 @@ export default class Module {
 		this.children = data.children;
 		this.isAvailable = parentId === 0 && data.id === 0 ? true : false;
 		this.isCompleted = false;
+		this.bonus = false;
+		this.collab = false;
 		
 		this.container = makeElement({
 			className: 'module',
@@ -96,6 +98,48 @@ export default class Module {
 		header.appendChild(link);
 		header.appendChild(dek);
 
+		if (data.bonus) {
+			const bonusTainer = makeElement({
+				className: 'bonus',
+			});
+
+			const bonus = makeElement({
+				tag: 'span',
+				text: "Bonus",
+			});
+
+			this.bonusCheck = makeElement({
+				tag: 'input',
+				type: 'checkbox',
+				title: title,
+			});
+
+			bonusTainer.appendChild(bonus);
+			bonusTainer.appendChild(this.bonusCheck);
+			this.container.appendChild(bonusTainer);
+		}
+
+		if (data.collab) {
+			const collabTainer = makeElement({
+				className: 'collab',
+			});
+
+			const collab = makeElement({
+				tag: 'span',
+				text: "Collaboration",
+			});
+
+			this.collabCheck = makeElement({
+				tag: 'input',
+				type: 'checkbox',
+				title: title,
+			});
+
+			collabTainer.appendChild(collab);
+			collabTainer.appendChild(this.collabCheck);
+			this.container.appendChild(collabTainer);
+		}
+
 		if (data.research) {
 			const researchLink = makeElement({
 				tag: 'a',
@@ -105,7 +149,6 @@ export default class Module {
 			});
 			this.container.appendChild(researchLink);
 		}
-
 
 		const completed = makeElement({
 			className: "completed",
@@ -149,5 +192,18 @@ export default class Module {
 	markCompleted(isComplete) {
 		this.isCompleted = isComplete;
 		this.completedCheck.checked = isComplete;
+	}
+
+	mark(param) {
+		this[`${param}Check`].checked = true;
+		this[param] = true;
+
+	}
+
+	getPoints() {
+		let points = this.points;
+		if (this.bonus) points += 1;
+		if (this.collab) points += 1;
+		return points;
 	}
 }

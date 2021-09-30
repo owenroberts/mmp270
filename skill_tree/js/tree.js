@@ -10,7 +10,11 @@ const data = SkillTreeDataProvider();
 const main = getElement('main');
 const pointsSpan = getElement('points-number');
 const skillTree = [];
-let completed = {};
+let labs = {
+	completed: {},
+	bonus: {},
+	collab: {},
+};
 let totalPoints = 0;
 pointsSpan.textContent = totalPoints;
 
@@ -20,7 +24,9 @@ for (const sectionTitle in data) {
 	let section = new Section(sectionTitle, data[sectionTitle], markTree);
 	skillTree[data[sectionTitle].id] = section;
 	main.appendChild(section.html);
-	if (sectionTitle === 'Apprentice') section.open();
+	const isOpen = localStorage.getItem(`section-${data[sectionTitle].id}-open`);
+	if (isOpen === 'open') section.open(true);
+	if (sectionTitle === 'Apprentice' && !isOpen) section.open(true);
 }
 
 function markTree() {
@@ -34,7 +40,7 @@ function markTree() {
 
 			// if (completed[id]) mod.markCompleted(true);
 			if (skillTree[section.id].skillTree[mod.id].isCompleted) {
-				totalPoints += mod.points;
+				totalPoints += mod.getPoints();
 				setCompleteStatus(id, true);
 			} else {
 				setCompleteStatus(id, false);
@@ -45,9 +51,7 @@ function markTree() {
 				const pid = parents[i];
 
 				if (pid.includes('@')) {
-					console.log(completed, mod);
-					const keys = Object.keys(completed).filter(k => +k.charAt(0) > 0 && completed[k]);
-					console.log(keys);
+					const keys = Object.keys(labs.completed).filter(k => +k.charAt(0) > 0 && labs.completed[k]);
 					if (keys.length > i) mod.markAvailable('@' + i, true);
 					continue;
 				}
@@ -58,6 +62,8 @@ function markTree() {
 				} else {
 					mod.markAvailable(pid, false);
 				}
+
+
 			}
 		});
 	});
@@ -71,23 +77,30 @@ firebase.auth().onAuthStateChanged(user => {
 		uid = user.uid;
 		userRef.once('value', snapshot => {
 			const userInfo = snapshot.val();
-			let copy = isPlan ? userInfo.plan : userInfo.completed;
-			for (const k in copy) {
-				completed[k] = copy[k];
-				if (copy[k]) {
+			const params = isPlan ? ['completed'] : ['completed', 'bonus', 'collab'];
+			params.forEach(param => {
+				let copy = userInfo[param];
+				for (const k in copy) {
+					labs[param][k] = copy[k];
 					let mod = getMod(k);
-					if (mod) mod.markCompleted(true);
+					if (['plan', 'completed'].includes(param) && copy[k]) {
+						if (mod) mod.markCompleted(true);
+					} else if (copy[k]) {
+						mod.mark(param)
+					}
 				}
-			}
+			})
+
+
 			markTree();
 		});	
 	}
 });
 
 function setCompleteStatus(id, isComplete) {
-	if (completed[id] === isComplete) return;
+	if (labs.completed[id] === isComplete) return;
 	
-	completed[id] = isComplete;
+	labs.completed[id] = isComplete;
 
 	if (isPlan && uid) {
 		let update = {};

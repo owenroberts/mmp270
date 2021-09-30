@@ -17,11 +17,11 @@ firebase.auth().onAuthStateChanged(user => {
 
 function getUsers() {
 	// order ?
-	const usersRef = firebase.database().ref('users');
+	const usersRef = firebase.database().ref('users').orderByChild('displayName');
 	usersRef.once('value', snapshot => {
-		for (const uid in snapshot.val()) {
-			displayUser(uid, snapshot.val()[uid])
-		}
+		snapshot.forEach(user => {
+			displayUser(user.key, user.val())
+		});
 	});
 }
 
@@ -29,38 +29,47 @@ function displayUser(uid, data) {
 	const user = makeElement({ className: 'user' });
 	const name = makeElement({
 		tag: 'p',
+		className: 'name',
 		text: data.displayName,
 	});
-
-	const completedLabs = Object.keys(data.completed)
-		.filter(index => data.completed[index])
-		.map(index => { return index.replace('-', '.') })
-		.join(', ');
-
-	const comp = makeElement({
-		tag: 'p',
-		text: 'Completed: ' + completedLabs
-	});
-
-	const addLabInput = makeElement({
-		tag: 'input',
-	});
-
-	const addLabButton = makeElement({
-		tag: 'button',
-		text: 'Add Lab',
-		onclick: function() {
-			const newLab = {};
-			newLab[addLabInput.value] = true;
-			firebase.database().ref('users').child(uid).child('completed').update(newLab);
-			comp.textContent += ', ' + addLabInput.value;
-		}
-	});
-
 	user.appendChild(name);
-	user.appendChild(comp); 
-	user.appendChild(addLabInput);
-	user.appendChild(addLabButton);
+	
+
+	['completed', 'bonus', 'collab'].forEach(param => {
+
+		const labs = data[param] ? 
+			Object.keys(data[param])
+				.filter(index => data[param][index])
+				.map(index => { return index.replace('-', '.') })
+				.join(', ') :
+			'';
+
+		const comp = makeElement({
+			tag: 'p',
+			text: `${param[0].toUpperCase()}${param.substr(1)}: ${labs}`
+		});
+
+		const addLabInput = makeElement({
+			tag: 'input',
+		});
+
+		const addLabButton = makeElement({
+			tag: 'button',
+			text: `Add ${param[0].toUpperCase()}${param.substr(1)}`,
+			onclick: function() {
+				const newLab = {};
+				newLab[addLabInput.value] = true;
+				firebase.database().ref('users').child(uid).child(param).update(newLab);
+				comp.textContent += ', ' + addLabInput.value;
+			}
+		});
+
+		user.appendChild(comp); 
+		user.appendChild(addLabInput);
+		user.appendChild(addLabButton);
+
+	});
+
 
 	usersDiv.appendChild(user);
 

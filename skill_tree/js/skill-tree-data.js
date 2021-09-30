@@ -47,7 +47,9 @@ export default function SkillTreeDataProvider() {
 					"parents": ['0-2'],
 					"children": ['1-1', '1-5'],
 					"type": "Godot",
-					"dek": "Covers basics of adding scripts to Godot.  This will add a global score variable and number of lives for the player."
+					"dek": "Covers basics of adding scripts to Godot.  This will add a global score variable and number of lives for the player.",
+					"bonus": true,
+					"collab": true,
 				},
 				"Scene Manager": {
 					"id": 1,
@@ -60,10 +62,13 @@ export default function SkillTreeDataProvider() {
 				},
 				"Collecting Items": {
 					"id": 2,
+					"link": "1-2_Collecting_Items",
 					"type": "Godot",
 					"points": 2,
 					"parents": ['1-1'],
-					"dek": "Covers writing a script to collect items."
+					"dek": "Covers writing a script to collect items.",
+					"bonus": true,
+					"collab": true,
 				},
 				"Player Physics": {
 					"id": 3,
@@ -72,7 +77,9 @@ export default function SkillTreeDataProvider() {
 					"parents": ['1-1'],
 					"children": ['1-4'],
 					"type": "Godot",
-					"dek": "Adding platformer physics to the PlayerController."
+					"dek": "Adding platformer physics to the PlayerController.",
+					"bonus": true,
+					"collab": true,
 				},
 				"Obstacles and Collisions": {
 					"id": 4,
@@ -80,14 +87,16 @@ export default function SkillTreeDataProvider() {
 					"points": 2,
 					"parents": ['1-3'],
 					"children": ['1-5'],
-					"dek": "Covers scripting for basic obstacles and collisions between the player and other components in the game."
+					"dek": "Covers scripting for basic obstacles and collisions between the player and other components in the game.",
+					"collab": true,	
 				},
 				"Projectile Physics": {
 					"id": 5,
 					"type": "Godot",
 					"points": 3,
 					"parents": ['1-4'],
-					"dek": "Overview of physics in scripts and adding projectiles."
+					"dek": "Overview of physics in scripts and adding projectiles.",
+					"collab": true,	
 				},
 
 				// switch these??
@@ -96,14 +105,16 @@ export default function SkillTreeDataProvider() {
 					"type": "Godot",
 					"points": 2,
 					"parents": ['1-0'],
-					"dek": "Using a Godot Plugin, this adds the ability to add dialog to NPCs."
+					"dek": "Using a Godot Plugin, this adds the ability to add dialog to NPCs.",
+					"collab": true,	
 				},
 				"NPCs": {
 					"id": 7,
 					"type": "Godot",
 					"points": 3,
 					"parents": ['1-6'],
-					"dek": "Adding NPCs (non-player-characters) to an RPG game."
+					"dek": "Adding NPCs (non-player-characters) to an RPG game.",
+					"collab": true,
 				}
 			}
 		},
@@ -159,6 +170,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Scenery": {
 					"id": 6,
+					"link": "2-6_Scenery",
 					"type": "Art",
 					"points": 3,
 					"parents": ['2-0'],
@@ -216,6 +228,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"User Interface Design": {
 					"id": 5,
+					"link": "3-5_User_Interface_Design",
 					"points": 2,
 					"type": "Art",
 					"parents": ['0-2'],
@@ -301,8 +314,8 @@ export default function SkillTreeDataProvider() {
 					"points": 1,
 					"parents": ['0-0'],
 					"research": "https://www.digitpress.com/library/books/book_art_of_computer_game_design.pdf",
-					"isAvailable": true,
-					"dek": "The Art of Computer Game Design by Chris Crawford, Chapter 1: What is a Game?"
+					"dek": "The Art of Computer Game Design by Chris Crawford, Chapter 1: What is a Game?",
+					"available": true,
 				},
 				"Understanding Comics Chapter 2": {
 					"id": 1,
@@ -311,8 +324,8 @@ export default function SkillTreeDataProvider() {
 					"points": 1,
 					"parents": ['0-0'],
 					"research": "http://270.owen.cool/notes/character/readings/mccloud.pdf",
-					"isAvailable": true,
-					"dek": "Understanding Comics by Scott McCloud, Chapter 2: The Vocabulary of Comics"
+					"dek": "Understanding Comics by Scott McCloud, Chapter 2: The Vocabulary of Comics",
+					"available": true,
 				},
 				"Video Game History Timeline": {
 					"id": 2,
@@ -321,8 +334,18 @@ export default function SkillTreeDataProvider() {
 					"points": 1,
 					"parents": ['0-0'],
 					"research": "https://www.museumofplay.org/about/icheg/video-game-history/timeline",
-					"isAvailable": true,
-					"dek": "Video Game History Timeline.  Consider how technological changes have effected the development of video games."
+					"dek": "Video Game History Timeline.  Consider how technological changes have effected the development of video games.",
+					"available": true,
+				},
+				"Sorting Out the Genre Muddle": {
+					"id": 3,
+					"type": "Reading",
+					"link": "6-0_Research",
+					"points": 1,
+					"parents": ['0-0'],
+					"research": "https://www.gamedeveloper.com/design/the-designer-s-notebook-sorting-out-the-genre-muddle",
+					"dek": "The Designer's Notebook: Sorting Out the Genre Muddle by Ernest Adams",
+					"ava": true,
 				}
 			}
 		}
