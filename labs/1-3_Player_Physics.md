@@ -5,7 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-This lab continues the PlayerController script started in the [Programming Intro](1-0_Programming_Intro), and adds platformer phyiscs.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VI1tkbbQt-E?rel=0" frameborder="0" allowfullscreen></iframe>
+
+This lab continues the PlayerController script started in the [Programming Intro](1-0_Programming_Intro), and adds platformer physics.
 
 ## 1. Setting up the Godot Project
 - Start with the project created in the previous lab, or Download the [Developer Default](./Developer_Default.zip) folder

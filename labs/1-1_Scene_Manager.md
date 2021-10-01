@@ -35,12 +35,8 @@ onready var game_over_ui = get_node(game_over_path)
 _ready():
 	game_over_ui.visible = false
 
-func game_over():
-	game_over_ui.visible = true
+func _on_player_hit():
+	game_over_ui.visible = false
 	player.dies()
-
-func _on_player_hit(is_alive):
-	if not is_alive:
-		game_over()
 
 ```
