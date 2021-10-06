@@ -17,6 +17,7 @@ title: Labs
 
 ## Designer
 - [Designing with TileMaps](3-0_Designing_with_TileMaps)
+- [Level Design](3-1_Level_Design)
 - [User Interface Design](3-5_User_Interface_Design)
 
 ## Developer

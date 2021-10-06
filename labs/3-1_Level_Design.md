@@ -1,0 +1,34 @@
+---
+layout: notes
+title: Level Design
+return: ./labs
+label: Labs
+---
+
+This lab covers creating a level in Godot using concepts from the [Level Design](../notes/level) lecture.
+
+## 1. Setup Godot project
+- Use an existing project or download the [Designer Default](./Designer_Default.zip)
+- Duplicate the `UIScene.tscn` and rename the copy `Level1.tscn`
+
+## 2. Designing the level
+- Create a level using some of the basic principles and techniques discussed in the level design lectures (you don't need to use all of them)
+- Use TileMaps for platforms, items and obstacles to build out the level
+- Principles
+	- Guidance
+	- Obstacles and rewards
+	- Perfect player principle
+	- Pacing
+- Techniques
+	- Signposting
+	- Foreshadowing
+	- Gating
+	- Risk vs reward
+	- Safe zone
+	- Branching
+	- Bottle necking
+	- Layering
+
+## 3. Documenation
+- Use screen shots or a video to document a playthrough of the level
+- Explain how you used the principles and techniques
