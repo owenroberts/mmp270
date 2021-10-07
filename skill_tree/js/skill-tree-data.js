@@ -200,6 +200,7 @@ export default function SkillTreeDataProvider() {
 				"Level Design": {
 					"id": 1,
 					"points": 2,
+					"link": "3-1_Level_Design",
 					"type": "Godot",
 					"parents": ['3-0'],
 					"children": ['3-2', '3-3', '3-4'],
