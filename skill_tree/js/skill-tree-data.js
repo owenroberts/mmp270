@@ -266,6 +266,7 @@ export default function SkillTreeDataProvider() {
 				"Interface Sounds": {
 					"id": 1,
 					"points": 2,
+					"link": "4-1_Interface_Sounds",
 					"type": "Audio",
 					"parents": ['0-2'],
 					"dek": "Sound effects for UI interacations."

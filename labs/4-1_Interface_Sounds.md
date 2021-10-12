@@ -5,6 +5,9 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lT2AxXgInos?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
 This lab covers adding sounds to user interface elements in a Godot scene.
 
 ## 1. Create sound effects
