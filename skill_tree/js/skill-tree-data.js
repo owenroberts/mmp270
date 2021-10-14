@@ -178,6 +178,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Backgrounds": {
 					"id": 7,
+					"link": "2-7_Backgrounds",
 					"type": "Art",
 					"points": 3,
 					"parents": ['2-0'],
