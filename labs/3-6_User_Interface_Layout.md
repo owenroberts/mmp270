@@ -8,7 +8,7 @@ label: Labs
 This lab covers designing the user interface using Godot UI layouts.  It uses the art created in the [User Interface Design](3-5_User_Interface_Design) lab.
 
 ## 1. Setup
-- Download the [Designer Default](./Designer_Default) or use your own project
+- Download the [Designer Default](./Designer_Default.zip) or use your own project
 - Import the sprite sheets created in User Interface Design lab
 - Delete the existing `StartMenu.tscn`, `Instructions.tscn`, `GameOver.tscn` and `YouWin.tscn` scene files, we'll build them from scratch
 

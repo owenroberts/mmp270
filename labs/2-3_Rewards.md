@@ -7,7 +7,7 @@ label: Labs
 
 This lab covers creating graphics for rewards in the game, like items to collect and a player life.
 
-This lab is good to pair with [Collecting_Items](1-2_Collecting_Items).
+This lab is good to pair with [Collecting Items](1-2_Collecting_Items).
 
 ## 1. Design rewards
 - Using Piskel or another art editor, design the rewards for your game
