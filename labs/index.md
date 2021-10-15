@@ -12,6 +12,8 @@ title: Labs
 - [Character Design](2-0_Character_Design)
 - [Character Animation](2-1_Character_Animation)
 - [Tilesets and Platforms](2-2_Tilesets_and_Platforms)
+- [Rewards](2-3_Rewards)
+- [Obstacles and Enemies](2-4_Obstacles_and_Enemies)
 - [Scenery](2-6_Scenery)
 - [Backgrounds](2-7_Backgrounds)
 
@@ -19,6 +21,8 @@ title: Labs
 - [Designing with TileMaps](3-0_Designing_with_TileMaps)
 - [Level Design](3-1_Level_Design)
 - [User Interface Design](3-5_User_Interface_Design)
+- [User Interface Layout](3-6_User_Interface_Layout)
+
 
 ## Developer
 - [Programming Intro](1-0_Programming_Intro)
