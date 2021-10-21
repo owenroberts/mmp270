@@ -148,6 +148,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Rewards": {
 					"id": 3,
+					"link": "2-3_Rewards",
 					"type": "Art",
 					"points": 3,
 					"parents": ['2-1'],
@@ -239,6 +240,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"User Interface Layout": {
 					"id": 6,
+					"link": "3-6_User_Interface_Layout",
 					"points": 3,
 					"type": "Godot",
 					"parents": ['3-5'],

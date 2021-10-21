@@ -5,7 +5,7 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PkfkmDc6AsY?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1RBe88SwfX4?rel=0" frameborder="0" allowfullscreen></iframe>
 
 This lab covers creating the art for User Interface Elements like titles and buttons using Piskel.
 
