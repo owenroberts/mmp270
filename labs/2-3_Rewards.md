@@ -5,6 +5,8 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JfzOMZT0seI?rel=0" frameborder="0" allowfullscreen></iframe>
+
 This lab covers creating graphics for rewards in the game, like items to collect and a player life.
 
 This lab is good to pair with [Collecting Items](1-2_Collecting_Items).
