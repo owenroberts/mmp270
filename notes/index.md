@@ -10,7 +10,7 @@ title: Lecture notes
 - [Level Design](level)
 - [Indie games](indie)
 - [Video Games & Art](art)
-- [Sound effects](sound)
+- [Sound Design](sound)
 - [Browser Games](browser)
 - [User Testing](testing)
 - [Emergence & Progression](emergence)

@@ -351,6 +351,16 @@ export default function SkillTreeDataProvider() {
 					"research": "https://www.gamedeveloper.com/design/the-designer-s-notebook-sorting-out-the-genre-muddle",
 					"dek": "The Designer's Notebook: Sorting Out the Genre Muddle by Ernest Adams",
 					"ava": true,
+				},
+				"Syoban Action": {
+					"id": 4,
+					"type": "Game",
+					"link": "6-0_Research",
+					"points": 1,
+					"parents": ['0-0'],
+					"research": "https://int3.github.io/open-syobon-action.js/",
+					"dek": "Syoban Action (Cat Mario) by Chiko.  An early indie game freeware game, play the game and record your playthrough or take screen shots and include commentary.",
+					"ava": true,
 				}
 			}
 		}
