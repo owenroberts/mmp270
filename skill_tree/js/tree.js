@@ -40,6 +40,7 @@ function markTree() {
 
 			// if (completed[id]) mod.markCompleted(true);
 			if (skillTree[section.id].skillTree[mod.id].isCompleted) {
+				// console.log(mod);
 				totalPoints += mod.getPoints();
 				setCompleteStatus(id, true);
 			} else {
@@ -77,19 +78,19 @@ firebase.auth().onAuthStateChanged(user => {
 		uid = user.uid;
 		userRef.once('value', snapshot => {
 			const userInfo = snapshot.val();
-			const params = isPlan ? ['completed'] : ['completed', 'bonus', 'collab'];
+			const params = isPlan ? ['plan'] : ['completed', 'bonus', 'collab'];
 			params.forEach(param => {
 				let copy = userInfo[param];
 				for (const k in copy) {
-					labs[param][k] = copy[k];
+					labs[isPlan ? 'completed' : param][k] = copy[k];
 					let mod = getMod(k);
 					if (['plan', 'completed'].includes(param) && copy[k]) {
 						if (mod) mod.markCompleted(true);
 					} else if (copy[k]) {
-						mod.mark(param)
+						if (mod) mod.mark(param)
 					}
 				}
-			})
+			});
 
 
 			markTree();
@@ -124,6 +125,8 @@ function setCompleteStatus(id, isComplete) {
 function getMod(id) {
 	let [s, m] = id.split('-');
 	if (isNaN(+s) || isNaN(+m)) return false;
+	if (!skillTree[s]) return false;
+	if (!skillTree[s].skillTree[m]) return false;
 	return skillTree[s].skillTree[m];
 }
 

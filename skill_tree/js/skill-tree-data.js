@@ -136,6 +136,7 @@ export default function SkillTreeDataProvider() {
 					"link": "2-1_Character_Animation",
 					"points": 3,
 					"parents": ['2-0'],
+					"collab": true,
 					"dek": "Overview of creating a Sprite animation.  Create character animations for idle, walk, and jump states.  Add animations into Godot using Animation editor."
 				},
 				"Tilesets and Platforms": {
@@ -144,6 +145,7 @@ export default function SkillTreeDataProvider() {
 					"link": "2-2_Tilesets_and_Platforms",
 					"points": 3,
 					"parents": ['2-0'],
+					"collab": true,
 					"dek": "Design platforms and add a Tilemap in Godot."
 				},
 				"Rewards": {
@@ -152,6 +154,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Art",
 					"points": 3,
 					"parents": ['2-1'],
+					"collab": true,
 					"dek": "Design three types of rewards.  Create one Sprite animation and add to Godot."
 				},
 				"Obstacles and Enemies": {
@@ -161,6 +164,7 @@ export default function SkillTreeDataProvider() {
 					"points": 3,
 					"parents": ['2-1'],
 					"children": ['2-4'],
+					"collab": true,
 					"dek": "Design three enemies and/or obstacles.  Create one Sprite animation and add to Godot."
 				},
 				"NPCs": {
@@ -168,6 +172,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Art",
 					"points": 4,
 					"parents": ['2-4'],
+					"collab": true,
 					"dek": "Design an NPC character.  Create an Idle sprite animation and add to Godot."
 				},
 				"Scenery": {
@@ -176,6 +181,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Art",
 					"points": 3,
 					"parents": ['2-0'],
+					"collab": true,
 					"dek": "Design three scenic elements and add to Godot using Godot Canvas layers."
 				},
 				"Backgrounds": {
@@ -184,6 +190,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Art",
 					"points": 3,
 					"parents": ['2-0'],
+					"collab": true,
 					"dek": "Add a background and setup paralax scrolling"
 				}
 			}
@@ -198,6 +205,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Godot",
 					"parents": ['0-2'],
 					"children": ['3-1'],
+					"collab": true,
 					"dek": "TileMaps are the basic level design starting point for Godot.  Overview of creating a TileMap and TileSets for Single and Auto Tiles."
 				},
 				"Level Design": {
@@ -207,6 +215,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Godot",
 					"parents": ['3-0'],
 					"children": ['3-2', '3-3', '3-4'],
+					"collab": true,
 					"dek": "Overview of Level Design and creating a level in Godot."
 				},
 				"Checkpoints": {
@@ -214,6 +223,7 @@ export default function SkillTreeDataProvider() {
 					"points": 3,
 					"type": "Godot",
 					"parents": ['3-1'],
+					"collab": true,
 					"dek": "Adding check points to save level progress in Godot."
 				},
 				"Portals": {
@@ -221,6 +231,7 @@ export default function SkillTreeDataProvider() {
 					"points": 3,
 					"type": "Godot",
 					"parents": ['3-1'],
+					"collab": true,
 					"dek": "Adding portals to go to new levels in Godot."
 				},
 				"Level Design 2": {
@@ -228,6 +239,7 @@ export default function SkillTreeDataProvider() {
 					"points": 3,
 					"type": "Godot",
 					"parents": ['3-1'],
+					"collab": true,
 					"dek": "Design a second level in Godot."
 				},
 				"User Interface Design": {
@@ -237,6 +249,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Art",
 					"parents": ['0-2'],
 					"children": ['3-5', '3-6'],
+					"collab": true,
 					"dek": "Create visual assets to use for interface like buttons and title screens."
 				},
 				"User Interface Layout": {
@@ -245,6 +258,7 @@ export default function SkillTreeDataProvider() {
 					"points": 3,
 					"type": "Godot",
 					"parents": ['3-5'],
+					"collab": true,
 					"dek": "Adding visual assets for UI into Godot and overview of Godot UI layout."
 				},
 				"Metrics": {
@@ -252,6 +266,7 @@ export default function SkillTreeDataProvider() {
 					"points": 3,
 					"type": "Godot",
 					"parents": ['3-5'],
+					"collab": true,
 					"dek": "Art for metrics like score and player lives and layout for Metrics in Godot."
 				}
 			}
@@ -265,6 +280,7 @@ export default function SkillTreeDataProvider() {
 					"link": "4-0_Gameplay_Sound_Effects",
 					"type": "Audio",
 					"parents": ['0-2'],
+					"collab": true,
 					"dek": "Creating sound effects and adding them into Godot scene."
 				},
 				"Interface Sounds": {
@@ -273,6 +289,7 @@ export default function SkillTreeDataProvider() {
 					"link": "4-1_Interface_Sounds",
 					"type": "Audio",
 					"parents": ['0-2'],
+					"collab": true,
 					"dek": "Sound effects for UI interacations."
 				},
 				"Background Music": {
@@ -280,6 +297,7 @@ export default function SkillTreeDataProvider() {
 					"points": 2,
 					"type": "Audio",
 					"parents": ['0-2'],
+					"collab": true,
 					"dek": "Adding background music in Godot."
 				},
 			}
@@ -287,11 +305,12 @@ export default function SkillTreeDataProvider() {
 		"Publishing": {
 			"id": 5,
 			"modules": {
-				"Exporing a Build": {
+				"Exporting a Build": {
 					"id": 0,
 					"type": "Godot",
 					"points": 5,
 					"parents": ['@0', '@1', '@2'],
+					"collab": true,
 					"dek": "Overview of creating builds for Mac, Windows and Web platforms from Godot."
 				},
 				"Publishing on Itch.io": {
@@ -299,6 +318,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Itch",
 					"points": 5,
 					"parents": ['5-0'],
+					"collab": true,
 					"dek": "Creating an Itch account to publish a Godot project."
 				},
 				"User Testing": {
@@ -306,6 +326,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Open Lab",
 					"points": 5,
 					"parents": ['5-1'],
+					"collab": true,
 					"dek": "Create a user testing survey and share with classmates.  Write an Open Lab post analyzing the survey results."
 				}
 			}

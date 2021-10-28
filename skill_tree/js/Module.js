@@ -19,6 +19,7 @@ export default class Module {
 	constructor(parentId, title, data, markTreeCallback) {
 
 		this.id = data.id;
+		this.idString = `${parentId}-${data.id}`;
 		this.points = data.points;
 		this.parents = data.parents;
 		this.children = data.children;
@@ -197,7 +198,6 @@ export default class Module {
 	mark(param) {
 		this[`${param}Check`].checked = true;
 		this[param] = true;
-
 	}
 
 	getPoints() {
