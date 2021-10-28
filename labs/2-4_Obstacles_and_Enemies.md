@@ -5,6 +5,9 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xsq2-3K6z3g?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
 This lab covers creating graphics and animations for obstacles and enemies.
 
 ## 1. Design an obstacle

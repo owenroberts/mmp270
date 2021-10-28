@@ -23,7 +23,6 @@ title: Labs
 - [User Interface Design](3-5_User_Interface_Design)
 - [User Interface Layout](3-6_User_Interface_Layout)
 
-
 ## Developer
 - [Programming Intro](1-0_Programming_Intro)
 - [Scene Manager](1-1_Scene_Manager)

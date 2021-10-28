@@ -156,6 +156,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Obstacles and Enemies": {
 					"id": 4,
+					"link": "2-3_Obstacles_and_Enemies",
 					"type": "Art",
 					"points": 3,
 					"parents": ['2-1'],
