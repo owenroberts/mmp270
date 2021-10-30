@@ -9,6 +9,7 @@ This lab covers adding obstacles and collions in Godot.  It uses graphics from t
 
 ## 1. Setting up the Godot project
 - Use a game that you're currently working on, or use a copy of the [Developer Default](./Developer_Default.zip) project
+- Download the [Assets](./Assets.zip) folder for any scenes or art you may need
 
 ## 2. Add collision layers and masks
 - Setup default collision layers in masks in `Project > Project Settings > Layer Names > 2d Physics`
