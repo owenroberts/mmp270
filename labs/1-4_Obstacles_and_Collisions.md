@@ -58,20 +58,30 @@ func _on_AnimatedSprite_animation_finished():
 		emit_signal("player_hit", is_alive) # don't know if player should die yet
 ```
 
+## Updates to SceneManager.gd script
+```
+func _on_player_hit(is_alive):
+	
+	if is_alive and Global.player_lives > 0:
+		Global.player_lives = Global.player_lives - 1
+		
+	if not is_alive or Global.player_lives <= 0:
+		player.dies()
+```
+
 ## Full ObstacleSimple.gd script
 ```
 extends Area2D
 
-export var frame_number = 0 # default frame, change frame in sprite
+# choose frame from sprite sheet
+export var frame_number = 0 
 
 func _ready():
 	$Sprite.frame = frame_number
 
 func _on_Obstacle_body_entered(body):
 	body.enemy_collision() # call enemy collision func in player
-	
-	# remove comment to play sfx
-	# $HitSound.play()
+	$HitSound.play()
 ```
 
 ## Full ObstactleMoving.gd script
@@ -81,88 +91,81 @@ extends KinematicBody2D
 # editor settings
 export var is_moving = true
 export var speed = 50
+export var direction = -1 # default -1 is left, 1 right
 export var stay_on_platform = true
-export var direction = -1 # 1 for right, -1 for left
-export var activate_on_player_detect = false # begins moving when player is within area
+export var detect_on_player = false
 
-# 'private' vars
+# internal variables
 var velocity = Vector2()
 var is_alive = true
-var horizontal_move = true
-var temp_speed = speed
-var gravity = 100 # export this?
+var gravity = 800
 
 func _ready():
-	$AnimatedSprite.flip_h = direction == 1 # match animation to direction
+	# set sprite direction
+	$AnimatedSprite.flip_h = direction == 1
 	
-	# move floor check in front of collider
+	# move our raycast in front of collider
 	$PlatformCheck.position.x = direction * $Collider.shape.get_radius()
 	
-	# stop movement if waiting for player detect
-	if activate_on_player_detect:
-		horizontal_move = false
+	# obstacles wait to move on player detection
+	if detect_on_player:
+		is_moving = false
 
 func _physics_process(delta):
-	if is_moving and is_alive:
+	if is_alive and is_moving:
 		movement_update(delta)
-
+		
 func movement_update(delta):
+	# check if snake is falling off platform
 	if stay_on_platform:
-		if is_on_wall() or not $PlatformCheck.is_colliding():
-			direction = direction * -1 # switch direction
-			$AnimatedSprite.flip_h = direction == 1 # match animation to direction
+		if not $PlatformCheck.is_colliding() or is_on_wall():
+			direction = direction * -1
+			$AnimatedSprite.flip_h = direction == 1
 			$PlatformCheck.position.x = direction * $Collider.shape.get_radius()
-			
-	velocity.y += gravity
 	
-	if is_on_floor() and horizontal_move:
+	# apply gravity
+	velocity.y += gravity * delta
+	
+	if is_on_floor():
 		velocity.x = speed * direction
 	
 	velocity = move_and_slide(velocity, Vector2.UP)
 	
-	if abs(velocity.x) > 0.1:
+	# update sprite
+	if abs(velocity.x) > 1:
 		$AnimatedSprite.play('Walk')
 	else:
 		$AnimatedSprite.play('Idle')
 
-# collisions -- assumes layer masks are set up
-
-# hit by player or projectile
-func hit():
-	is_alive = false
-	$AnimatedSprite.play('Dies')
-	
-	# remove comment to play sfx
-	$DiesSound.play()
-
-# if player jump on head or another part, hits with projectile
-func _on_Hit_body_entered(_body):
+# snake hit by player or projectile
+func _on_Hit_body_entered(body):
 	if is_alive:
 		hit()
 
-# area that harms/kills player
+func hit():
+	is_alive = false
+	$AnimatedSprite.play('Dies')
+	$DiesSound.play()
+
+# after hit or dies
+func _on_AnimatedSprite_animation_finished():
+	if not is_alive:
+		queue_free()
+	
+	if $AnimatedSprite.animation == 'Attack':
+		is_moving = true
+
+# when player enters attack aera
 func _on_Attack_body_entered(body):
 	if is_alive and body.is_alive:
 		$AnimatedSprite.play('Attack')
-		is_moving = false # stop moving to attack player
-		body.enemy_collision() # call enemy collision func in player
-		
-		# remove comment to play sfx
+		is_moving = false
+		body.obstacle_collision()
 		$HitSound.play()
 
-# area that detect player is nearby
+# when player enters detection area
 func _on_Detect_body_entered(body):
-	if is_alive:
-		if activate_on_player_detect:
-			horizontal_move = true
-
-func _on_AnimatedSprite_animation_finished():
-	
-	# if dead, remove object
-	if not is_alive:
-		queue_free()
-		
-	# resume moving after attack
-	if $AnimatedSprite.animation == 'Attack':
+	if is_alive and detect_on_player:
 		is_moving = true
+
 ```
