@@ -29,6 +29,7 @@ title: Labs
 - [Collecting Items](1-2_Collecting_Items)
 - [Player Physics](1-3_Player_Physics)
 - [Obstacles and Collisions](1-4_Obstacles_and_Collisions)
+- [Enemies](1-5_Enemies)
 
 
 ## Sound Design
