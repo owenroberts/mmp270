@@ -35,6 +35,9 @@ This lab covers adding moving enemies in Godot, continuing from the previous lab
 ## 4. Documentation
 - Post screen shots or video on Open Lab
 
+## Bonus
+- Make a variation of the enemy that moves vertially (up and down) instead of horizontally
+
 
 ## Full ObstactleMoving.gd script
 ```

@@ -88,6 +88,7 @@ export default function SkillTreeDataProvider() {
 					"parents": ['1-3'],
 					"children": ['1-5'],
 					"dek": "Covers scripting for basic obstacles and collisions between the player and other components in the game.",
+					"bonus": true,
 					"collab": true,	
 				},
 				"Enemies": {
@@ -97,6 +98,7 @@ export default function SkillTreeDataProvider() {
 					"parents": ['1-4'],
 					"children": ['1-6'],
 					"dek": "Continuing from obstacles and collisions, this lab covers creating moving enemies.",
+					"bonus": true,
 					"collab": true,	
 				},
 				"Projectile Physics": {

@@ -31,6 +31,9 @@ This lab covers adding obstacles and collions in Godot.  It uses graphics from t
 ## 4. Documentation
 - Post screen shots or video on Open Lab
 
+## Bonus
+- Create an obstacle with a StaticBody collider
+
 ## Updates to PlayerController.gd script
 ```
 func obstacle_collision():
