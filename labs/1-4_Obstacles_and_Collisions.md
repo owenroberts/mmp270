@@ -21,9 +21,6 @@ This lab covers adding obstacles and collions in Godot.  It uses graphics from t
 	- ObstacleHit
 	- ObstacleAttack
 	- ObstacleDetect
-	- Checkpoints
-	- Portals
-
 
 ## 3. Add a static obstacle
 - The first obstacle will not be moving
@@ -31,22 +28,12 @@ This lab covers adding obstacles and collions in Godot.  It uses graphics from t
 - Add `ObstacleSimple.gd` script
 - Modify `PlayerController.gd` for hitting obstacle
 
-## 4. Moving obstacle
-- The second obstacle, or enemy is moving
-- Add `ObstacleMoving.gd` script
-- Add four colliders
-	- Enemy body that interacts with platforms
-	- Hit area for player to kill enemy
-	- Attack area for enemy to attack player
-	- Detect area to activate enemy
-- Add raycaster for platform detection
-
-## 5. Documentation
+## 4. Documentation
 - Post screen shots or video on Open Lab
 
 ## Updates to PlayerController.gd script
 ```
-func enemy_collision():
+func obstacle_collision():
 	is_alive = false # player movement suspended before determining state
 	$AnimatedSprite.play('Hit')
 
@@ -84,88 +71,3 @@ func _on_Obstacle_body_entered(body):
 	$HitSound.play()
 ```
 
-## Full ObstactleMoving.gd script
-```
-extends KinematicBody2D
-
-# editor settings
-export var is_moving = true
-export var speed = 50
-export var direction = -1 # default -1 is left, 1 right
-export var stay_on_platform = true
-export var detect_on_player = false
-
-# internal variables
-var velocity = Vector2()
-var is_alive = true
-var gravity = 800
-
-func _ready():
-	# set sprite direction
-	$AnimatedSprite.flip_h = direction == 1
-	
-	# move our raycast in front of collider
-	$PlatformCheck.position.x = direction * $Collider.shape.get_radius()
-	
-	# obstacles wait to move on player detection
-	if detect_on_player:
-		is_moving = false
-
-func _physics_process(delta):
-	if is_alive and is_moving:
-		movement_update(delta)
-		
-func movement_update(delta):
-	# check if snake is falling off platform
-	if stay_on_platform:
-		if not $PlatformCheck.is_colliding() or is_on_wall():
-			direction = direction * -1
-			$AnimatedSprite.flip_h = direction == 1
-			$PlatformCheck.position.x = direction * $Collider.shape.get_radius()
-	
-	# apply gravity
-	velocity.y += gravity * delta
-	
-	if is_on_floor():
-		velocity.x = speed * direction
-	
-	velocity = move_and_slide(velocity, Vector2.UP)
-	
-	# update sprite
-	if abs(velocity.x) > 1:
-		$AnimatedSprite.play('Walk')
-	else:
-		$AnimatedSprite.play('Idle')
-
-# snake hit by player or projectile
-func _on_Hit_body_entered(body):
-	if is_alive:
-		hit()
-
-func hit():
-	is_alive = false
-	$AnimatedSprite.play('Dies')
-	$DiesSound.play()
-
-# after hit or dies
-func _on_AnimatedSprite_animation_finished():
-	if not is_alive:
-		queue_free()
-	
-	if $AnimatedSprite.animation == 'Attack':
-		is_moving = true
-
-# when player enters attack aera
-func _on_Attack_body_entered(body):
-	if is_alive and body.is_alive:
-		$AnimatedSprite.play('Attack')
-		is_moving = false
-		body.obstacle_collision()
-		$HitSound.play()
-
-# when player enters detection area
-func _on_Detect_body_entered(body):
-	if is_alive and detect_on_player:
-		is_moving = true
-
-```

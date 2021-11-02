@@ -83,15 +83,24 @@ export default function SkillTreeDataProvider() {
 				},
 				"Obstacles and Collisions": {
 					"id": 4,
-					"video": "link to video",
+					"link": "1-4_Obstacles_and_Collisions",
 					"points": 2,
 					"parents": ['1-3'],
 					"children": ['1-5'],
 					"dek": "Covers scripting for basic obstacles and collisions between the player and other components in the game.",
 					"collab": true,	
 				},
-				"Projectile Physics": {
+				"Enemies": {
 					"id": 5,
+					"points": 2,
+					"link": "1-5_Enemies",
+					"parents": ['1-4'],
+					"children": ['1-6'],
+					"dek": "Continuing from obstacles and collisions, this lab covers creating moving enemies.",
+					"collab": true,	
+				},
+				"Projectile Physics": {
+					"id": 6,
 					"type": "Godot",
 					"points": 3,
 					"parents": ['1-4'],
@@ -101,7 +110,7 @@ export default function SkillTreeDataProvider() {
 
 				// switch these??
 				"Dialog System and Plugins": {
-					"id": 6,
+					"id": 7,
 					"type": "Godot",
 					"points": 2,
 					"parents": ['1-0'],
@@ -109,7 +118,7 @@ export default function SkillTreeDataProvider() {
 					"collab": true,	
 				},
 				"NPCs": {
-					"id": 7,
+					"id": 8,
 					"type": "Godot",
 					"points": 3,
 					"parents": ['1-6'],
