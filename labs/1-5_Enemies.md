@@ -5,6 +5,9 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4qYDjJ-paE0?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
 This lab covers adding moving enemies in Godot, continuing from the previous lab [Obstacles and Collisions](1-4_Obstacles_and_Collisions).  It uses graphics from the [Obstacles and Enemies](2-4_Obstacles_and_Enemies) lab.
 
 ## 1. Setting up the Godot project

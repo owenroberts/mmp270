@@ -31,7 +31,6 @@ title: Labs
 - [Obstacles and Collisions](1-4_Obstacles_and_Collisions)
 - [Enemies](1-5_Enemies)
 
-
 ## Sound Design
 - [Gameplay Sound Effects](4-0_Gameplay_Sound_Effects)
 - [Interface Sounds](4-1_Interface_Sounds)

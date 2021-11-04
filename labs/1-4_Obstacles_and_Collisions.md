@@ -5,6 +5,9 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BWq6JFKtbUk?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
 This lab covers adding obstacles and collions in Godot.  It uses graphics from the [Obstacles and Enemies](2-4_Obstacles_and_Enemies) lab.
 
 ## 1. Setting up the Godot project

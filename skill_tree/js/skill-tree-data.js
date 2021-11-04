@@ -109,7 +109,6 @@ export default function SkillTreeDataProvider() {
 					"dek": "Overview of physics in scripts and adding projectiles.",
 					"collab": true,	
 				},
-
 				// switch these??
 				"Dialog System and Plugins": {
 					"id": 7,
