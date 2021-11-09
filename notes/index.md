@@ -12,7 +12,7 @@ title: Lecture notes
 - [Video Games & Art](art)
 - [Sound Design](sound)
 - [Browser Games](browser)
-- [User Testing](testing)
 - [Emergence & Progression](emergence)
+- [User Testing](testing)
 - [Violence in Video Games](violence)
 - [Representations of Race and Gender in Video Games](representation)
