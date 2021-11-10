@@ -28,6 +28,7 @@ This lab covers adding projectiles using a `PackedScene` with physics in Godot.
 - Add the `Projectile.gd` script
 
 ## 4. Modify PlayerController.gd
+- Add `"shoot"` to Input map in `Project Settings` and assign a key or mouse press
 - Add a `PackedScene` export variable and then choose the `Projectile` scene in the `Script Variables`
 - Update the `PlayerController.gd` script
 
