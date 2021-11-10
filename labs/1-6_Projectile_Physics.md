@@ -11,7 +11,11 @@ This lab covers adding projectiles using a `PackedScene` with physics in Godot.
 - Use a game that you're currently working on, or use a copy of the [Developer Default](./Developer_Default.zip) project
 - Download the [Assets](./Assets.zip) folder for any scenes or art you may need
 
-## 2. Create the Projectile scene
+## 2. Projectile art
+- Make projectile animations in Piskel or another software
+- Make an animation for the flying state `Fly` and hit state `Hit`
+
+## 3. Create the Projectile scene
 - Create a new scene called `Projectile.tscn`
 - The default Node2D is an `Area2D`
 - Name the node `Projectile`
@@ -23,11 +27,11 @@ This lab covers adding projectiles using a `PackedScene` with physics in Godot.
 - Add a `VisibilityNotifier2D`
 - Add the `Projectile.gd` script
 
-## 3. Modify PlayerController.gd
+## 4. Modify PlayerController.gd
 - Add a `PackedScene` export variable and then choose the `Projectile` scene in the `Script Variables`
 - Update the `PlayerController.gd` script
 
-## 4. Documentation
+## 5. Documentation
 - Post screen shots or video on Open Lab
 
 ## Bonus
