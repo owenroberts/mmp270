@@ -5,6 +5,8 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YfuncPB3mv0?rel=0" frameborder="0" allowfullscreen></iframe>
+
 This lab covers sourcing background music and adding it to a Godot scene.
 
 ## 1. Find (or create) background music 

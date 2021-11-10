@@ -305,6 +305,7 @@ export default function SkillTreeDataProvider() {
 				"Background Music": {
 					"id": 2,
 					"points": 2,
+					"link": "4-2_Background_Music",
 					"type": "Audio",
 					"parents": ['0-2'],
 					"collab": true,
