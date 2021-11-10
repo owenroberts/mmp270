@@ -59,39 +59,52 @@ func player_update(delta):
 		$AnimatedSprite.play("Walk")
 	elif is_moving:
 		$AnimatedSprite.play("Idle")
+
+func shoot():
+	var p = projectile.instance()
+	p.position = self.position
+#	p.velocity.x = p.speed * (-1 if $AnimatedSprite.flip_h else 1)
+#	p.rotation = p.velocity.angle()
+	owner.add_child(p)
+	
 ```
 
 ## Full Projectile.gd script
 ```
 extends Area2D
 
-var speed = 200
+var speed = 400
 var velocity = Vector2()
 var is_flying = true
 
 func _ready():
-	velocity = get_local_mouse_position().normalized() * speed
+	velocity = get_local_mouse_position().normalized()
 
 func _physics_process(delta):
 	if is_flying:
-		velocity.y += gravity * delta
-		position += velocity * delta
+		velocity.y += gravity * delta / speed
+		position += velocity * delta * speed
 		rotation = velocity.angle()
 		
 	if not $VisibilityNotifier2D.is_on_screen():
 		queue_free()
 
+
 func _on_Projectile_area_entered(area):
-	# assume body is moving obstacle
+	# this area will be obstacle hit area
 	area.get_parent().hit()
 	is_flying = false
 	$AnimatedSprite.play('Hit')
 
-func _on_Projectile_body_entered(body):
-	is_flying = false
-	$AnimatedSprite.play('Hit')
-	
+
 func _on_AnimatedSprite_animation_finished():
 	if not is_flying:
 		queue_free()
+
+
+func _on_Projectile_body_entered(body):
+	# this is masked for the tilemap
+	is_flying = false
+	$AnimatedSprite.play('Hit')
+	$SFX.play()
 ```
