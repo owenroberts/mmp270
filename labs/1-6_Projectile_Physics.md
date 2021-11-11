@@ -5,6 +5,9 @@ return: ./labs
 label: Labs
 ---
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lL3zTb9F6q0?rel=0" frameborder="0" allowfullscreen></iframe>
+
 This lab covers adding projectiles using a `PackedScene` with physics in Godot.
 
 ## 1. Setup
@@ -14,6 +17,7 @@ This lab covers adding projectiles using a `PackedScene` with physics in Godot.
 ## 2. Projectile art
 - Make projectile animations in Piskel or another software
 - Make an animation for the flying state `Fly` and hit state `Hit`
+- Or use sprites in the updated Assets or Developer Default folders
 
 ## 3. Create the Projectile scene
 - Create a new scene called `Projectile.tscn`
