@@ -103,6 +103,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Projectile Physics": {
 					"id": 6,
+					"link": "1-5_Projectile_Physics",
 					"type": "Godot",
 					"points": 3,
 					"parents": ['1-4'],
