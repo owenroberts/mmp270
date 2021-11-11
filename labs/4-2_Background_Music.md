@@ -13,7 +13,7 @@ This lab covers sourcing background music and adding it to a Godot scene.
 - Find music on the [Free Music Archive](https://freemusicarchive.org/search){:target="_blank"} or [Open Game Art](https://opengameart.org/art-search-advanced?keys=&field_art_type_tid%5B%5D=12&sort_by=count&sort_order=DESC){:target="_blank"} or another Creative Commons licensed source
 - You can also make your own music if you are familiar with music production
 - Edit with Audacity if necessary
-- Save files as `.ogg` or `.mpr3` format
+- Save files as `.ogg` or `.mp3` format
 
 ## 2. Add files to Godot
 - Use a previous project and add the assets or download the [Sound Default](./Sound_Default.zip) folder 

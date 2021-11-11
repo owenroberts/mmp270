@@ -84,7 +84,7 @@ export default function SkillTreeDataProvider() {
 				"Obstacles and Collisions": {
 					"id": 4,
 					"link": "1-4_Obstacles_and_Collisions",
-					"points": 2,
+					"points": 3,
 					"parents": ['1-3'],
 					"children": ['1-5'],
 					"dek": "Covers scripting for basic obstacles and collisions between the player and other components in the game.",
@@ -93,7 +93,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Enemies": {
 					"id": 5,
-					"points": 2,
+					"points": 3,
 					"link": "1-5_Enemies",
 					"parents": ['1-4'],
 					"children": ['1-6'],
@@ -103,7 +103,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Projectile Physics": {
 					"id": 6,
-					"link": "1-5_Projectile_Physics",
+					"link": "1-6_Projectile_Physics",
 					"type": "Godot",
 					"points": 3,
 					"parents": ['1-4'],
