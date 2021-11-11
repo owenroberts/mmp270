@@ -30,6 +30,7 @@ title: Labs
 - [Player Physics](1-3_Player_Physics)
 - [Obstacles and Collisions](1-4_Obstacles_and_Collisions)
 - [Enemies](1-5_Enemies)
+- [Projectile Physics](1-6_Projectile_Physics)
 
 ## Sound Design
 - [Gameplay Sound Effects](4-0_Gameplay_Sound_Effects)
