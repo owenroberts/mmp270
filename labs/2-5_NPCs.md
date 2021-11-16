@@ -7,7 +7,7 @@ label: Labs
 
 This lab demonstrates creating animations for an NPC and character faces for dialog scenes.
 
-This lab goes along with the [NPC](./1-7_Dialog_Systems_and_Add-Ons) art lab.
+This lab goes along with the [Dialog Systems and Add-Ons](./1-7_Dialog_Systems_and_Add-Ons) programming lab.
 
 ## 1. Setup
 - Create a folder for NPC art
