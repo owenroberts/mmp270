@@ -10,8 +10,8 @@ This lab demonstrates creating animations for an NPC and character faces for dia
 This lab goes along with the [NPC](./1-7_Dialog_Systems_and_Add-Ons) art lab.
 
 ## 1. Setup
-- Use a game that you're currently working on, or use a copy of the [Developer Default](./Developer_Default.zip) project
-- Download the [Assets](./Assets.zip) folder for any scenes or art you may need
+- Create a folder for NPC art
+- Open Piskel or another graphics application
 
 ## 2. NPC World Animations
 - Design and create a character for the NPC
