@@ -113,7 +113,7 @@ export default function SkillTreeDataProvider() {
 				// switch these??
 				"Dialog System and Plugins": {
 					"id": 7,
-					"link": "1-7_Dialog_Systems_and_Add-Ons"
+					"link": "1-7_Dialog_Systems_and_Add-Ons",
 					"type": "Godot",
 					"points": 3,
 					"parents": ['1-0'],
