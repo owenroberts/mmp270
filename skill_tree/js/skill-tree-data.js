@@ -113,19 +113,12 @@ export default function SkillTreeDataProvider() {
 				// switch these??
 				"Dialog System and Plugins": {
 					"id": 7,
+					"link": "1-7_Dialog_Systems_and_Add-Ons"
 					"type": "Godot",
-					"points": 2,
+					"points": 3,
 					"parents": ['1-0'],
 					"dek": "Using a Godot Plugin, this adds the ability to add dialog to NPCs.",
 					"collab": true,	
-				},
-				"NPCs": {
-					"id": 8,
-					"type": "Godot",
-					"points": 3,
-					"parents": ['1-6'],
-					"dek": "Adding NPCs (non-player-characters) to an RPG game.",
-					"collab": true,
 				}
 			}
 		},
@@ -180,8 +173,9 @@ export default function SkillTreeDataProvider() {
 				},
 				"NPCs": {
 					"id": 5,
+					"link": "2-5_NPCs",
 					"type": "Art",
-					"points": 4,
+					"points": 3,
 					"parents": ['2-4'],
 					"collab": true,
 					"dek": "Design an NPC character.  Create an Idle sprite animation and add to Godot."
