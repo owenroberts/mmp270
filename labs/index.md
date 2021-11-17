@@ -14,6 +14,7 @@ title: Labs
 - [Tilesets and Platforms](2-2_Tilesets_and_Platforms)
 - [Rewards](2-3_Rewards)
 - [Obstacles and Enemies](2-4_Obstacles_and_Enemies)
+- [NPCs](2-5_NPCs)
 - [Scenery](2-6_Scenery)
 - [Backgrounds](2-7_Backgrounds)
 
@@ -31,6 +32,7 @@ title: Labs
 - [Obstacles and Collisions](1-4_Obstacles_and_Collisions)
 - [Enemies](1-5_Enemies)
 - [Projectile Physics](1-6_Projectile_Physics)
+- [Dialog Systems and Add-Ons](1-7_Dialog_Systems_and_Add-Ons)
 
 ## Sound Design
 - [Gameplay Sound Effects](4-0_Gameplay_Sound_Effects)
