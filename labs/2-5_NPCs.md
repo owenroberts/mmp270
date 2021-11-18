@@ -5,6 +5,9 @@ return: ./labs
 label: Labs
 ---
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vyn8a48FL6M?rel=0" frameborder="0" allowfullscreen></iframe>
+
 This lab demonstrates creating animations for an NPC and character faces for dialog scenes.
 
 This lab goes along with the [Dialog Systems and Add-Ons](./1-7_Dialog_Systems_and_Add-Ons) programming lab.
