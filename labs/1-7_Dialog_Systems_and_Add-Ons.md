@@ -5,6 +5,8 @@ return: ./labs
 label: Labs
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9cv5McRohFU?rel=0" frameborder="0" allowfullscreen></iframe>
+
 This lab demonstrates creating a dialog system using the Godot Add-On Dialogic.
 
 This lab goes along with the [NPC](./2-5_NPCs) art lab.
