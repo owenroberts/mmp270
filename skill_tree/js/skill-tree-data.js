@@ -197,7 +197,7 @@ export default function SkillTreeDataProvider() {
 					"parents": ['2-0'],
 					"collab": true,
 					"dek": "Add a background and setup paralax scrolling"
-				}
+				},
 				"Checkpoints and Portals": {
 					"id": 8,
 					"link": "2-8_Checkpoints_and_Portals",
