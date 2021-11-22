@@ -206,7 +206,7 @@ export default function SkillTreeDataProvider() {
 					"parents": ['1-1'],
 					"collab": true,
 					"dek": "Design art for checkpoints and portals."
-				},
+				}
 			}
 		},
 		"Designer": {
