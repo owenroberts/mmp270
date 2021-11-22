@@ -198,6 +198,15 @@ export default function SkillTreeDataProvider() {
 					"collab": true,
 					"dek": "Add a background and setup paralax scrolling"
 				}
+				"Checkpoints and Portals": {
+					"id": 8,
+					"link": "2-8_Checkpoints_and_Portals",
+					"points": 3,
+					"type": "Godot",
+					"parents": ['1-1'],
+					"collab": true,
+					"dek": "Design art for checkpoints and portals."
+				},
 			}
 		},
 		"Designer": {
@@ -223,27 +232,20 @@ export default function SkillTreeDataProvider() {
 					"collab": true,
 					"dek": "Overview of Level Design and creating a level in Godot."
 				},
-				"Checkpoints": {
+				"Checkpoints and Portals": {
 					"id": 2,
+					"link": "3-2_Checkpoints_and_Portals",
 					"points": 3,
 					"type": "Godot",
 					"parents": ['3-1'],
 					"collab": true,
-					"dek": "Adding check points to save level progress in Godot."
-				},
-				"Portals": {
-					"id": 3,
-					"points": 3,
-					"type": "Godot",
-					"parents": ['3-1'],
-					"collab": true,
-					"dek": "Adding portals to go to new levels in Godot."
+					"dek": "Adding check points to save level progress and portals to go to new levels in Godot."
 				},
 				"Level Design 2": {
-					"id": 4,
-					"points": 3,
+					"id": 3,
+					"points": 4,
 					"type": "Godot",
-					"parents": ['3-1'],
+					"parents": ['3-2'],
 					"collab": true,
 					"dek": "Design a second level in Godot."
 				},

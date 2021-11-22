@@ -20,5 +20,4 @@ This lab can be paired with the [Checkpoints and Portals](./3-2_Checkpoints_and_
 - Export a sprite sheet to be used in Godot
 
 ## 3. Documentation
-- Take screenshots of a video of the background
-- Post on Open Lab
+- Post sprite sheets on Open Lab
