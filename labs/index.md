@@ -17,10 +17,12 @@ title: Labs
 - [NPCs](2-5_NPCs)
 - [Scenery](2-6_Scenery)
 - [Backgrounds](2-7_Backgrounds)
+- [Checkpoints and Portals](2-8_Checkpoints_and_Portals)
 
 ## Designer
 - [Designing with TileMaps](3-0_Designing_with_TileMaps)
 - [Level Design](3-1_Level_Design)
+- [Checkpoints and Portals](3-2_Checkpoints_and_Portals)
 - [User Interface Design](3-5_User_Interface_Design)
 - [User Interface Layout](3-6_User_Interface_Layout)
 
