@@ -7,7 +7,7 @@ label: Labs
 
 This lab covers adding checkpoints and portals into Godot.  Checkpoints save the progess of the player on a level.  Portals open a new scene or state in the game.
 
-This lab can be paired with the [Checkpoints and Portals](./2-8_Checkpoints_and_Portals) art lab.
+This lab can be paired with the [Checkpoints and Portals](./2-8_Checkpoints_and_Portals) artist lab.
 
 ## 1. Setup Godot project
 - Use an existing project or download the [Designer Default](./Designer_Default.zip)

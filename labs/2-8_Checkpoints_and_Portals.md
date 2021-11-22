@@ -7,7 +7,7 @@ label: Labs
 
 This lab covers creating art for checkpoints and portals using Piskel.
 
-This lab can be paired with the [Checkpoints and Portals](./3-2_Checkpoints_and_Portals) art lab.
+This lab can be paired with the [Checkpoints and Portals](./3-2_Checkpoints_and_Portals) desinger lab.
 
 ## 1. Design a checkpoint
 - The checkpoint design has two animations, one for idle, or unvisited, and one for active
