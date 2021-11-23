@@ -7,6 +7,8 @@ label: Labs
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
+This lab covers adding a second level to the Godot project.  This approach would also apply to any subsequent levels added.
+
 ## 1. Setup Godot project
 - Use an existing project or download the [Designer Default](./Designer_Default.zip)
 - Duplicate the `UIScene.tscn` or your `Level1.tscn` and rename the copy `Level2.tscn`
