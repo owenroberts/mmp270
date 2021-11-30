@@ -1,4 +1,14 @@
 import { getElement, makeElement } from './Cool.js';
+import SkillTreeDataProvider from './skill-tree-data.js';
+
+
+const tree = SkillTreeDataProvider();
+const pointsTree = Object.keys(tree).map(tier => {
+	const modules = tree[tier].modules;
+	return Object.keys(modules).map(mod => {
+		return tree[tier].modules[mod].points;
+	})
+});
 
 const usersDiv = getElement('users');
 
@@ -26,6 +36,9 @@ function getUsers() {
 }
 
 function displayUser(uid, data) {
+
+	let totalPoints = 0;
+
 	const user = makeElement({ className: 'user' });
 	const name = makeElement({
 		tag: 'p',
@@ -33,16 +46,33 @@ function displayUser(uid, data) {
 		text: data.displayName,
 	});
 	user.appendChild(name);
+
+	const points = makeElement({ className: 'points' });
+	user.appendChild(points);
 	
 
 	['completed', 'bonus', 'collab'].forEach(param => {
 
-		const labs = data[param] ? 
+		let labs = data[param] ? 
 			Object.keys(data[param])
 				.filter(index => data[param][index])
 				.map(index => { return index.replace('-', '.') })
-				.join(', ') :
+				// .join(', ') :
+				:
 			'';
+
+		if (labs) {
+			labs.forEach(lab => {
+				if (param === 'bonus' || param === 'collab') totalPoints += 1;
+				if (param === 'completed') {
+					const [i, j] = lab.split('.');
+					if (i && j) totalPoints += pointsTree[+i][+j];
+				}
+			})
+			labs = labs.join(', ');	
+		}
+
+
 
 		const comp = makeElement({
 			tag: 'p',
@@ -70,7 +100,6 @@ function displayUser(uid, data) {
 
 	});
 
-
+	points.textContent = `Total: ${totalPoints}`;
 	usersDiv.appendChild(user);
-
 }

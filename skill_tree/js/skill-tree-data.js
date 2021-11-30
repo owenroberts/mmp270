@@ -315,7 +315,7 @@ export default function SkillTreeDataProvider() {
 			"modules": {
 				"Exporting a Build": {
 					"id": 0,
-					"link": "5-0_Exporting_a-Build",
+					"link": "5-0_Exporting_a_Build",
 					"type": "Godot",
 					"points": 5,
 					"parents": ['@0', '@1', '@2'],

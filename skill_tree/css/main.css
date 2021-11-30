@@ -215,6 +215,7 @@ nav a.current {
 #admin .user {
   border: 1px solid black;
   padding: 0.5rem;
+  max-width: 264px;
 }
 #admin .name {
   color: blue;
