@@ -270,6 +270,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Metrics": {
 					"id": 7,
+					"link": "3-7_Metrics",
 					"points": 3,
 					"type": "Godot",
 					"parents": ['3-5'],
@@ -324,6 +325,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Publishing on Itch.io": {
 					"id": 1,
+					"link": "5-1_Publishing_on_Itch",
 					"type": "Itch",
 					"points": 5,
 					"parents": ['5-0'],

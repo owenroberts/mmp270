@@ -25,6 +25,7 @@ title: Labs
 - [Checkpoints and Portals](3-2_Checkpoints_and_Portals)
 - [User Interface Design](3-5_User_Interface_Design)
 - [User Interface Layout](3-6_User_Interface_Layout)
+- [User Interface Metrics](3-7_Metrics)
 
 ## Developer
 - [Programming Intro](1-0_Programming_Intro)
@@ -40,6 +41,11 @@ title: Labs
 - [Gameplay Sound Effects](4-0_Gameplay_Sound_Effects)
 - [Interface Sounds](4-1_Interface_Sounds)
 - [Background Music](4-2_Background_Music)
+
+## Publishing
+- [Exporting a Build](5-0_Exporting_a_Build)
+- [Publishing on Itch.io](5-1_Publishing_on_Itch)
+- [User Testing]
 
 ## Research
 - [Research](6-0_Research)

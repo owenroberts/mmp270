@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/?rel=0" frameborder="0" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RwEmR4IBjcs?rel=0" frameborder="0" allowfullscreen></iframe>
 
-This lab covers uploading a project to itch.io and updating the project page.
+This lab covers uploading a project to itch.io and updating the project page.  To export a build to use in this lab follow the steps in [Exporting a Build](5-0_Exporting_a_Build){:target="_blank"}
 
 ## 1. Setup
 - Prepare a web build and any other platform builds you want to use
