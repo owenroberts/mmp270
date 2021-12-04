@@ -23,6 +23,7 @@ title: Labs
 - [Designing with TileMaps](3-0_Designing_with_TileMaps)
 - [Level Design](3-1_Level_Design)
 - [Checkpoints and Portals](3-2_Checkpoints_and_Portals)
+- [Level Design 2](3-3_Level_Design_2)
 - [User Interface Design](3-5_User_Interface_Design)
 - [User Interface Layout](3-6_User_Interface_Layout)
 - [User Interface Metrics](3-7_Metrics)
