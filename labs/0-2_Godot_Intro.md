@@ -5,7 +5,7 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e40er_9_ozM?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y_dHEGCDyZ8?rel=0" frameborder="0" allowfullscreen></iframe>
 
 In this lab we will go over the basics of the Godot Game engine and add a simple character to a Godot scene.
 
@@ -68,6 +68,7 @@ In this lab we will go over the basics of the Godot Game engine and add a simple
 - Choose Camera2D
 - Add the `CameraController.gd` script
 - Adjust the properties in the `Script Variables`
+- Set `Current` to `On`
 - Add the `Player` scene instance to the `Player Path` variable
 
 ## 11. Preview the scene

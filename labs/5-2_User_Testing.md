@@ -5,7 +5,7 @@ return: ./labs
 label: Labs
 ---
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/?rel=0" frameborder="0" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XiAt_7pBu_g?rel=0" frameborder="0" allowfullscreen></iframe>
 
 This lab covers creating a user testing form and posting the results.
 

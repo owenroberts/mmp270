@@ -46,7 +46,7 @@ title: Labs
 ## Publishing
 - [Exporting a Build](5-0_Exporting_a_Build)
 - [Publishing on Itch.io](5-1_Publishing_on_Itch)
-- [User Testing]
+- [User Testing](5-2_User_Testing)
 
 ## Research
 - [Research](6-0_Research)

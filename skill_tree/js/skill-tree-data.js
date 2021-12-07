@@ -335,6 +335,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"User Testing": {
 					"id": 2,
+					"link": "5-2_User_Testing",
 					"type": "Open Lab",
 					"points": 5,
 					"parents": ['5-1'],
