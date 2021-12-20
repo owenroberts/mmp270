@@ -47,3 +47,4 @@ This lab covers exporting a Godot project
 
 ## 5. Post your project on Open Lab
 - You can wait until you finish the Itch.io lab or post your zip directly on the Open Lab
+- *Note*: Published games cannot include any art, design or sound assets from MMP 270 demo projects

@@ -27,3 +27,4 @@ This lab covers uploading a project to itch.io and updating the project page.  T
 ## 4. Open Lab post
 - Post your build on the Open Lab
 - Optional: Share it on Discord
+- *Note*: Published games cannot include any art, design or sound assets from MMP 270 demo projects
