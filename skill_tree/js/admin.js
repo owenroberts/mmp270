@@ -3,12 +3,20 @@ import SkillTreeDataProvider from './skill-tree-data.js';
 
 
 const tree = SkillTreeDataProvider();
-const pointsTree = Object.keys(tree).map(tier => {
-	const modules = tree[tier].modules;
-	return Object.keys(modules).map(mod => {
-		return tree[tier].modules[mod].points;
-	})
-});
+const pointsTree = [];
+const tiers = Object.keys(tree);
+for (let i = 0; i < tiers.length; i++) {
+	const tier = tiers[i];
+	const modules = Object.keys(tree[tier].modules);
+	for (let j = 0; j < modules.length; j++) {
+		const mod = modules[j];
+		if (!pointsTree[i]) pointsTree[i] = [];
+		let designerOffset = 0;
+		if (i === 3 && j > 3) designerOffset = 1;		
+		pointsTree[i][j + designerOffset] = tree[tier].modules[mod].points;
+	}
+}
+
 
 const usersDiv = getElement('users');
 
@@ -36,6 +44,10 @@ function getUsers() {
 }
 
 function displayUser(uid, data) {
+
+	// if (data.displayName !== "James Rodriguez") return;
+	// if (data.displayName !== "BenRosenblum") return;
+
 
 	let totalPoints = 0;
 
@@ -66,6 +78,7 @@ function displayUser(uid, data) {
 				if (param === 'bonus' || param === 'collab') totalPoints += 1;
 				if (param === 'completed') {
 					const [i, j] = lab.split('.');
+					// console.log(i,j,pointsTree[+i][+j])
 					if (i && j) totalPoints += pointsTree[+i][+j];
 				}
 			})
