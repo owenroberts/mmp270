@@ -203,7 +203,7 @@ export default function SkillTreeDataProvider() {
 					"link": "2-8_Checkpoints_and_Portals",
 					"points": 3,
 					"type": "Godot",
-					"parents": ['1-1'],
+					"parents": ['2-0'],
 					"collab": true,
 					"dek": "Design art for checkpoints and portals."
 				}

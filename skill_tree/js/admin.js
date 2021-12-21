@@ -78,7 +78,6 @@ function displayUser(uid, data) {
 				if (param === 'bonus' || param === 'collab') totalPoints += 1;
 				if (param === 'completed') {
 					const [i, j] = lab.split('.');
-					// console.log(i,j,pointsTree[+i][+j])
 					if (i && j) totalPoints += pointsTree[+i][+j];
 				}
 			})
