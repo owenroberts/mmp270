@@ -25,7 +25,7 @@ This lab covers creating a seamless background in Piskel and implementing it in 
 - In the *ParallaxLayer* node set the motion and mirroring settings
 
 ## 3. Documentation
-- Take screenshots of a video of the background
+- Take screenshots or record a video of the background
 - Post on Open Lab
 
 ## Resources

@@ -256,7 +256,7 @@ export default function SkillTreeDataProvider() {
 					"points": 2,
 					"type": "Art",
 					"parents": ['0-2'],
-					"children": ['3-5', '3-6'],
+					"children": ['3-6'],
 					"collab": true,
 					"dek": "Create visual assets to use for interface like buttons and title screens."
 				},
