@@ -64,7 +64,7 @@ extends KinematicBody2D
 # physics settings 
 export var speed = 100
 
-# "private" vars
+# member vars
 var is_alive = true
 var velocity = Vector2()
 
@@ -94,10 +94,10 @@ func player_update(delta):
 	else:
 		$AnimatedSprite.play("Idle")
 
-	if velocity.x > 0.1:
+	if velocity.x > 1:
 		$AnimatedSprite.flip_h = false
 	
-	if velocity.x < -0.1:
+	if velocity.x < -1:
 		$AnimatedSprite.flip_h = true
 
 ```
