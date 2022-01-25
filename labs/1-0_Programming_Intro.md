@@ -7,11 +7,11 @@ label: Labs
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/go0W1zRwJlw?rel=0" frameborder="0" allowfullscreen></iframe>
 
-This lab covers making Global and PlayerContoller scripts, while covering programming basics.
+This lab covers making Global and PlayerContollerSimple scripts, while covering programming basics.
 
 ## 1. Adding scripts to Godot
-- Download the [Assets](./Assets.zip) folder
-- Create a new Godot Project or use an existing one
+- Download the [Assets](./270_Assets.zip) folder
+- Create a new Godot Project or use the [Blank Project Template](./Blank_Template.zip)
 - Add folders for Scripts, Scenes, Sprites and TileSets
 - For this lab we need the character animation sprites, the tree for scenery, the Player scene and 1-0_Programming_Intro scenes
 
@@ -55,7 +55,7 @@ var item_count = 0 # count generic items, can add more, use specific names like 
 
 ```
 
-## Full PlayerController.gd script
+## Full PlayerControllerSimple.gd script
 ```
 extends KinematicBody2D
 

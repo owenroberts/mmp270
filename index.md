@@ -4,7 +4,6 @@ title: Introduction to Video Game Design
 schedule: false
 ---
 
-
 ## Class links
 - [Skill Tree](skill_tree){:target="blank"}
 - [Labs](labs)

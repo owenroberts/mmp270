@@ -52,12 +52,8 @@ title: Labs
 - [Research](6-0_Research)
 
 ## Assets
-- [Assets Folder](./Assets.zip)
+- [Assets Folder](./270_Assets.zip)
 - [Blank Template](./Blank_Template.zip)
-- [Artist Default Project](./Artist_Default.zip)
-- [Designer Default Project](./Designer_Default.zip)
-- [Developer Default Project](./Developer_Default.zip)
-- [Sound Design Default Project](./Sound_Default.zip)
 
 
 <!--
