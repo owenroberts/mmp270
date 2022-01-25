@@ -20,7 +20,7 @@ This lab covers making Global and PlayerContollerSimple scripts, while covering 
 - Create a new Script called Global.gd
 - Add Global.gd to Project Settings > AutoLoad
 
-## 3. Open 1-0_Programming_Intro
+## 3. Open DefaultSimple
 - This default scene has a player and some scenery
 - Remove the PlayerController script from the Player, we're going to write this from scratch
 
