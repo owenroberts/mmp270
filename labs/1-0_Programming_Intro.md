@@ -13,7 +13,7 @@ This lab covers making Global and PlayerContollerSimple scripts, while covering 
 - Download the [Assets](./270_Assets.zip) folder
 - Create a new Godot Project or use the [Blank Project Template](./Blank_Template.zip)
 - Add folders for Scripts, Scenes, Sprites and TileSets
-- For this lab we need the character animation sprites, the tree for scenery, the Player scene and 1-0_Programming_Intro scenes
+- For this lab we need the character animation sprites, the tree for scenery, the Player scene and DefaultSimple scenes
 
 ## 2. Create the Global.gd script
 - Go to the Script view
