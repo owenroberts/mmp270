@@ -23,19 +23,25 @@ This lab covers adding a simple SceneManager script to a Godot scene and the Nod
 
 ## Full SceneManager.gd script
 ```
-extends Node
+extends Node2D
+
+# communicate between scene components
 
 export (NodePath) var player_path
 onready var player = get_node(player_path)
 
-export (NodePath) var game_over_path
-onready var game_over_ui = get_node(game_over_path)
-
-_ready():
-	game_over_ui.visible = false
-
 func _on_player_hit():
-	game_over_ui.visible = false
-	player.dies()
+	print('player hit!', Global.player_lives)
+	if Global.player_lives > 1:
+		Global.player_lives -= 1
+	else:
+		print('game over!')
+		player.dies()
+
+
+func _on_Item_body_entered(body):
+	Global.item_count += 1
+	print("you have " + String(Global.item_count) + " items")
+
 
 ```
