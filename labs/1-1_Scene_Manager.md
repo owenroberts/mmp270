@@ -39,9 +39,33 @@ func _on_player_hit():
 		player.dies()
 
 
-func _on_Item_body_entered(body):
+func _on_item_collected():
 	Global.item_count += 1
-	print("you have " + String(Global.item_count) + " items")
+	print("you have ", Global.item_count, " items")
 
+```
+
+## Added to PlayerController
+```
+# member variables
+signal player_hit
+
+func _on_Enemy_body_entered(body):
+	emit_signal("player_hit")
+
+func dies():
+	is_alive = false
+	$AnimatedSprite.play('Dies')
+```
+
+## ItemManager.gd
+```
+extends Area2D
+
+signal item_collected
+
+
+func _on_Item_body_entered(body):
+	emit_signal("item_collected")
 
 ```
