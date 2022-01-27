@@ -10,7 +10,7 @@ label: Labs
 This lab covers adding a simple SceneManager script to a Godot scene and the NodePath and Signal concepts in Godot.
 
 ## 1. Setting up the Godot Project
-- Start with the project created in the previous lab, or Download the [Blank Project Template](./Blank_Template.zip) folder
+- Start with the project created in the previous lab, or Download the [Blank Project Template](./270_Template.zip) folder
 - Continue working with your PlayerController script from The Programming Intro lab or add the `PlayerSimple.gd` from [Assets](./270_Assets.zip) if needed
 - Use the DefaultSimple scene or a new scene and add a SceneManager node as the first node in the scene hierarchy
 
