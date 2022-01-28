@@ -251,7 +251,7 @@ export default function SkillTreeDataProvider() {
 					"dek": "Design a second level in Godot."
 				},
 				"User Interface Design": {
-					"id": 5,
+					"id": 4,
 					"link": "3-5_User_Interface_Design",
 					"points": 2,
 					"type": "Art",
@@ -261,7 +261,7 @@ export default function SkillTreeDataProvider() {
 					"dek": "Create visual assets to use for interface like buttons and title screens."
 				},
 				"User Interface Layout": {
-					"id": 6,
+					"id": 5,
 					"link": "3-6_User_Interface_Layout",
 					"points": 3,
 					"type": "Godot",
@@ -270,7 +270,7 @@ export default function SkillTreeDataProvider() {
 					"dek": "Adding visual assets for UI into Godot and overview of Godot UI layout."
 				},
 				"Metrics": {
-					"id": 7,
+					"id": 6,
 					"link": "3-7_Metrics",
 					"points": 3,
 					"type": "Godot",

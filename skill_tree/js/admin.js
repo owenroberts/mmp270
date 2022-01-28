@@ -1,6 +1,8 @@
 import { getElement, makeElement } from './Cool.js';
 import SkillTreeDataProvider from './skill-tree-data.js';
 
+const semester = location.search.split('=')[1] || 'Spring22';
+console.log(semester);
 
 const tree = SkillTreeDataProvider();
 const pointsTree = [];
@@ -17,9 +19,7 @@ for (let i = 0; i < tiers.length; i++) {
 	}
 }
 
-
 const usersDiv = getElement('users');
-
 
 firebase.auth().onAuthStateChanged(user => {
 	if (user) {
@@ -35,7 +35,7 @@ firebase.auth().onAuthStateChanged(user => {
 
 function getUsers() {
 	// order ?
-	const usersRef = firebase.database().ref('users').orderByChild('displayName');
+	const usersRef = firebase.database().ref('users').orderByChild('semester').equalTo(semester);
 	usersRef.once('value', snapshot => {
 		snapshot.forEach(user => {
 			displayUser(user.key, user.val())
@@ -84,34 +84,60 @@ function displayUser(uid, data) {
 			labs = labs.join(', ');	
 		}
 
-
-
 		const comp = makeElement({
 			tag: 'p',
-			text: `${param[0].toUpperCase()}${param.substr(1)}: ${labs}`
+			text: `${param[0].toUpperCase()}${param.substr(1)}: ${labs}`,
+			id: `${param}-list`
 		});
+		user.appendChild(comp); 
 
-		const addLabInput = makeElement({
-			tag: 'input',
-		});
+	});
 
+	console.log(tree)
+
+	const tierSelector = makeElement({ tag: 'select'});
+	user.appendChild(tierSelector);
+	user.appendChild(makeElement({tag: 'br'}));
+
+	tierSelector.onchange = function() {
+		Array.from(document.getElementsByClassName('labs'))
+			.forEach(e => { e.style.display = 'none' });
+		document.getElementById(`${tierSelector.value}-labs`).style.display = 'inline-block';
+	};
+
+	for (const t in tree) {
+		const option = makeElement({ tag: 'option', text: `${tree[t].id} ${t}` });
+		option.value = tree[t].id;
+		tierSelector.appendChild(option);
+
+		const labSelector = makeElement({ tag: 'select', id: `${tree[t].id}-labs`, className: 'labs'});
+		
+		user.appendChild(labSelector);
+		if (tree[t].id !== 0) labSelector.style.display = 'none';
+		for (const l in tree[t].modules) {
+			const option = makeElement({ tag: 'option', text: `${tree[t].modules[l].id} ${l}` });
+			option.value = `${tree[t].id}-${tree[t].modules[l].id}`;
+			labSelector.appendChild(option);
+		}
+	}
+
+	user.appendChild(makeElement({tag: 'br'}));
+	['completed', 'bonus', 'collab'].forEach(param => {
 		const addLabButton = makeElement({
 			tag: 'button',
 			text: `Add ${param[0].toUpperCase()}${param.substr(1)}`,
 			onclick: function() {
 				const newLab = {};
-				newLab[addLabInput.value] = true;
+				const selection = document.getElementById(`${tierSelector.value}-labs`).value;
+				newLab[selection] = true;
 				firebase.database().ref('users').child(uid).child(param).update(newLab);
-				comp.textContent += ', ' + addLabInput.value;
+				document.getElementById(`${param}-list`).textContent += ', ' + selection;
 			}
 		});
-
-		user.appendChild(comp); 
-		user.appendChild(addLabInput);
 		user.appendChild(addLabButton);
 
 	});
 
-	points.textContent = `Total: ${totalPoints}`;
+	points.textContent = `Total points: ${totalPoints}`;
 	usersDiv.appendChild(user);
 }

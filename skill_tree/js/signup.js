@@ -26,6 +26,7 @@ signupOpenButton.onclick = function() {
 			.then(credential => {
 				const ref = firebase.database().ref('users').child(credential.user.uid);
 				ref.update({ displayName: signupUsername.value });
+				ref.update({ semester: 'Spring 2022' });
 				ref.child('completed').update({ '0-0': false });
 				ref.child('collabs').update({ '0-0': false });
 				ref.child('plan').update({ '0-0': false });
