@@ -12,9 +12,14 @@ This lab covers collecting items in Godot.
 This lab is good to pair with the [Rewards](2-3_Rewards.md) lab.
 
 ## 1. Setting up the Godot Project
-- Continue working with a previous project, or download the [Developer Default](./Developer_Default.zip) folder
-- If necessary, download the [Assets Folder](./Assets.zip) and get the *MetricsManager.gd*, *MetricCount.gd* and *MetricToggle.gd* scripts and add them to the `Scripts` folder
-- Add in a `CanvasLayer` called *UI* with the `GameOver` and `Metrics` scenes 
+- Continue working with your game project, or download the [Default Project Template](./270_Template.zip)
+- This lab requires the Metrics to be set up in the scene, so grab the following things from [Assets](./270_Assets.zip)
+	- Scenes: Metrics, GameOver, YouWin
+	- Sprites: All of the ui_buttons folders and ui_titles folder
+	- Scripts: MetricsManager, MetricCount, MetricToggle
+- We also need some sprites for the reward items, which require the following assets
+	- Scenes: Item
+	- Sprites: reward_apple, reward_apple_collected, reward_life, reward_life_collected
 
 ## 2. Add Items
 - Add a Node2D to the scene hierarchy and name it `Items`
