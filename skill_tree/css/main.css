@@ -119,6 +119,7 @@ nav a.current {
   min-width: 8em;
   display: grid;
   grid-template-areas: "null available" "null title" "type video" "type resource" "type points" "type bonus" "type collab" "type completed";
+  display: none;
 }
 .section .module .link:hover + .dek {
   opacity: 1;

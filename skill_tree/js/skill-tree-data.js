@@ -176,7 +176,7 @@ export default function SkillTreeDataProvider() {
 					"link": "2-5_NPCs",
 					"type": "Art",
 					"points": 3,
-					"parents": ['2-4'],
+					"parents": ['2-1'],
 					"collab": true,
 					"dek": "Design an NPC character.  Create an Idle sprite animation and add to Godot."
 				},
@@ -256,7 +256,7 @@ export default function SkillTreeDataProvider() {
 					"points": 2,
 					"type": "Art",
 					"parents": ['0-2'],
-					"children": ['3-6'],
+					"children": ['3-5'],
 					"collab": true,
 					"dek": "Create visual assets to use for interface like buttons and title screens."
 				},
@@ -265,7 +265,7 @@ export default function SkillTreeDataProvider() {
 					"link": "3-6_User_Interface_Layout",
 					"points": 3,
 					"type": "Godot",
-					"parents": ['3-5'],
+					"parents": ['3-4'],
 					"collab": true,
 					"dek": "Adding visual assets for UI into Godot and overview of Godot UI layout."
 				},
@@ -274,7 +274,7 @@ export default function SkillTreeDataProvider() {
 					"link": "3-7_Metrics",
 					"points": 3,
 					"type": "Godot",
-					"parents": ['3-5'],
+					"parents": ['3-4'],
 					"collab": true,
 					"dek": "Art for metrics like score and player lives and layout for Metrics in Godot."
 				}

@@ -18,9 +18,13 @@ This lab is an overview of using Open Lab class site, the MMP 270 Skill Tree and
 
 ## 2. Open the Skill Tree
 - Click on the Skill Tree link and create an account
+- Use an email that you can access in case we need to reset your password
+- Choose a username that is recognizable or send a message with your username
 
 ## 3. Explore the Skill Tree
-- You can click on the `Completed` checks to see how it effects the Skill Tree (it will not be saved in the backend)
+- You can click on the `Completed` checks to see how the Skill Tree progresses
+- The `Progress` page shows your progress in the class, it will reset when you refresh the page
+- The `Plan` page will save your changes so you can compare your progress to your plan
 - Choose a series of labs that adds up to at least 35 total points
 
 ## 4. Document your Path

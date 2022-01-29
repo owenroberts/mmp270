@@ -96,7 +96,6 @@ nav {
 	height: auto !important;
 }
 
-
 #main {
 
 	#Apprentice-container {
@@ -168,6 +167,8 @@ nav {
 			'type collab'
 			'type completed';
 		// grid-gap: 0.25rem;
+
+		display: none; // before loading
 
 		.link:hover + .dek {
 			opacity: 1;

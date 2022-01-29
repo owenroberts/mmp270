@@ -3,22 +3,12 @@
 */
 
 import { makeElement } from './Cool.js';
-import SkillTreeDataProvider from './skill-tree-data.js';
-
-const skillTreeData = SkillTreeDataProvider();
-const skillTree = {};
-for (const sectionTitle in skillTreeData) {
-	const section = skillTreeData[sectionTitle];
-	for (const modTitle in section.modules) {
-		const mod = section.modules[modTitle];
-		skillTree[section.id + '-' + mod.id] = `${sectionTitle} ~ ${modTitle}`;
-	}
-}
 
 export default class Module {
-	constructor(parentId, title, data, markTreeCallback) {
+	constructor(parentId, title, data, tree) {
 
 		this.id = data.id;
+		this.parentId = parentId;
 		this.idString = `${parentId}-${data.id}`;
 		this.points = data.points;
 		this.parents = data.parents;
@@ -38,7 +28,7 @@ export default class Module {
 				"0.0 Start Here ☟" :
 				`${parentId}.${this.id} Available`,
 		});
-		this.container.appendChild(available);
+		// this.container.appendChild(available);
 		this.availableChecks = {};
 
 		this.parents.forEach(id => {
@@ -47,13 +37,13 @@ export default class Module {
 				type: 'checkbox',
 				title: id.includes('@') ?
 					'One from Art, Dev, Design or Sound' :
-					'Requires ' + skillTree[id],
+					'Requires ' + tree[id],
 				onclick: ev => {
 					ev.preventDefault();
 				}
 			});
 			this.availableChecks[id] = check;
-			available.appendChild(check);
+			// available.appendChild(check);
 		});
 
 		const header = makeElement({
@@ -161,13 +151,12 @@ export default class Module {
 			tag: 'input',
 			type: 'checkbox',
 			title:  this.children ? 
-				'Unlocks ' + this.children.map(id => { return `${skillTree[id]}`; }).join(', ') :
+				'Unlocks ' + this.children.map(id => { return `${tree[id]}`; }).join(', ') :
 				'',
 			onclick: ev => {
-				// ev.preventDefault();
 				if (this.isCompleted) this.markCompleted(false); // checked off
 				else if (this.isAvailable) this.markCompleted(true);
-				markTreeCallback();
+				tree.update(this.idString, this.isCompleted);
 
 				if (!this.isAvailable) {
 					this.completedCheck.checked = false;
@@ -186,7 +175,8 @@ export default class Module {
 	}
 
 	markAvailable(id, isAvailable) {
-		this.availableChecks[id].checked = isAvailable;
+		// this.availableChecks[id].checked = isAvailable;
+		this.container.style.display = isAvailable ? 'grid' : 'none';
 		this.isAvailable = isAvailable;
 	}
 
@@ -201,6 +191,7 @@ export default class Module {
 	}
 
 	getPoints() {
+		if (!this.isCompleted) return 0;
 		let points = this.points;
 		if (this.bonus) points += 1;
 		if (this.collab) points += 1;
