@@ -15,35 +15,10 @@ export default class Module {
 		this.children = data.children;
 		this.isAvailable = parentId === 0 && data.id === 0 ? true : false;
 		this.isCompleted = false;
-		this.bonus = false;
 		this.collab = false;
 		
 		this.container = makeElement({
 			className: 'module',
-		});
-
-		const available = makeElement({
-			className: "available",
-			text: this.parents.length === 0 ? 
-				"0.0 Start Here ☟" :
-				`${parentId}.${this.id} Available`,
-		});
-		// this.container.appendChild(available);
-		this.availableChecks = {};
-
-		this.parents.forEach(id => {
-			const check = makeElement({
-				tag: 'input',
-				type: 'checkbox',
-				title: id.includes('@') ?
-					'One from Art, Dev, Design or Sound' :
-					'Requires ' + tree[id],
-				onclick: ev => {
-					ev.preventDefault();
-				}
-			});
-			this.availableChecks[id] = check;
-			// available.appendChild(check);
 		});
 
 		const header = makeElement({
@@ -51,12 +26,27 @@ export default class Module {
 			className: 'title',
 		});
 
+		const labContainer = document.getElementById('lab-container');
+		const labFrame = document.getElementById('lab-frame');
+		let labIsOpen = false;
 		const link = makeElement({
 			tag: 'a',
 			className: 'link',
 			text: title,
-			href: data.link
-		})
+			// href: data.link,
+			onclick: function() {
+				if (labIsOpen) {
+					labContainer.classList.remove('open');
+					header.classList.remove('open');
+				} else {
+					labFrame.src = `../labs/${data.link}.html`;
+					labContainer.classList.add('open');
+					header.classList.add('open');
+				}
+				labIsOpen = !labIsOpen;
+			}
+
+		});
 
 		const points = makeElement({
 			tag: 'p',
@@ -87,28 +77,7 @@ export default class Module {
 		this.container.appendChild(typeContainer);
 		this.container.appendChild(points);
 		header.appendChild(link);
-		header.appendChild(dek);
-
-		if (data.bonus) {
-			const bonusTainer = makeElement({
-				className: 'bonus',
-			});
-
-			const bonus = makeElement({
-				tag: 'span',
-				text: "Bonus",
-			});
-
-			this.bonusCheck = makeElement({
-				tag: 'input',
-				type: 'checkbox',
-				title: title,
-			});
-
-			bonusTainer.appendChild(bonus);
-			bonusTainer.appendChild(this.bonusCheck);
-			this.container.appendChild(bonusTainer);
-		}
+		// header.appendChild(dek);
 
 		if (data.collab) {
 			const collabTainer = makeElement({
@@ -156,7 +125,7 @@ export default class Module {
 			onclick: ev => {
 				if (this.isCompleted) this.markCompleted(false); // checked off
 				else if (this.isAvailable) this.markCompleted(true);
-				tree.update(this.idString, this.isCompleted);
+				tree.update(this.idString, this.isCompleted, true);
 
 				if (!this.isAvailable) {
 					this.completedCheck.checked = false;

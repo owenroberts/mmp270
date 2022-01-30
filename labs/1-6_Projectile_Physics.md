@@ -6,9 +6,9 @@ label: Labs
 ---
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lL3zTb9F6q0?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/lL3zTb9F6q0?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers adding projectiles using a `PackedScene` with physics in Godot.
+Add projectiles using a `PackedScene` with physics in Godot.
 
 ## 1. Setup
 - Use a game that you're currently working on, or use a copy of the [Developer Default](./Developer_Default.zip) project
@@ -36,12 +36,12 @@ This lab covers adding projectiles using a `PackedScene` with physics in Godot.
 - Add a `PackedScene` export variable and then choose the `Projectile` scene in the `Script Variables`
 - Update the `PlayerController.gd` script
 
-## 5. Documentation
-- Post screen shots or video on Open Lab
+## 5. Add one of the following
+- Add an item that the player has to collect to enable the projectile
+- Add projectile to an Enemy
 
-## Bonus
-- #1 - Add an item that the player has to collect to enable the projectile
-- #2 - Add projectile to an Enemy
+## 6. Documentation
+- Post screen shots or video on Open Lab
 
 ## Update to PlayerController.gd
 ```

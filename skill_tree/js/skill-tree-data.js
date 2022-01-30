@@ -32,7 +32,7 @@ export default function SkillTreeDataProvider() {
 					"type": "Godot",
 					"points": 1,
 					"parents": ['0-1'],
-					"children": ['1-0', '2-0', '3-0', '4-0', '4-1', '4-2'],
+					"children": ['1-0', '2-0', '3-0', '4-0', '4-1', '4-2', '5-0'],
 					"dek": "Overview of Godot game engine editor and interface.  Add your avatar into a simple Godot game."
 				}
 			}
@@ -320,7 +320,7 @@ export default function SkillTreeDataProvider() {
 					"link": "5-0_Exporting_a_Build",
 					"type": "Godot",
 					"points": 5,
-					"parents": ['@0', '@1', '@2'],
+					"parents": ['0-2'],
 					"collab": true,
 					"dek": "Overview of creating builds for Mac, Windows and Web platforms from Godot."
 				},

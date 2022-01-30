@@ -5,21 +5,14 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CLiS-J8SAM8?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/CLiS-J8SAM8?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers collecting items in Godot.
-
-This lab is good to pair with the [Rewards](2-3_Rewards.md) lab.
+Add items and to be collected in Godot. This lab is good to pair with the [Rewards](2-3_Rewards.md) lab.
 
 ## 1. Setting up the Godot Project
 - Continue working with your game project, or download the [Default Project Template](./270_Template.zip)
 - This lab requires the Metrics to be set up in the scene, so grab the following things from [Assets](./270_Assets.zip)
-	- Scenes: Metrics, GameOver, YouWin
-	- Sprites: All of the ui_buttons folders and ui_titles folder
-	- Scripts: MetricsManager, MetricCount, MetricToggle
-- We also need some sprites for the reward items, which require the following assets
-	- Scenes: Item
-	- Sprites: reward_apple, reward_apple_collected, reward_life, reward_life_collected
+- This lab requires animated sprites for a collectible item such as a coin, or life
 
 ## 2. Add Items
 - Add a Node2D to the scene hierarchy and name it `Items`
@@ -29,11 +22,13 @@ This lab is good to pair with the [Rewards](2-3_Rewards.md) lab.
 ## 3. Update the Scene Manager
 - Update the scene manager to update Global values and metrics with items
 
-## 4. Documentation
+## 4. Add a third item
+- What other types of items might be useful in your game? Add an extra item and explain what it would be used for in the documentation
+- Example could be a specific key, powerup, story items, inventory items or anything else you can collect in a game
+
+## 5. Documentation
 - Document with a screen shot or video and post on Open Lab
 
-## Bonus
-- What other types of items might be useful in your game? Add an extra item and explain what it would be used for in the documentation.
 
 ## Full ItemManager.gd script
 ```

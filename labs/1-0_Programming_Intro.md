@@ -5,7 +5,7 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/go0W1zRwJlw?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/go0W1zRwJlw?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
 This lab covers making Global and PlayerContollerSimple scripts, while covering programming basics.
 
@@ -13,16 +13,16 @@ This lab covers making Global and PlayerContollerSimple scripts, while covering 
 - Download the [Assets](./270_Assets.zip) folder
 - Create a new Godot Project or use the [Default Project Template](./270_Template.zip)
 - Add folders for Scripts, Scenes, Sprites and TileSets
-- For this lab we need the character animation sprites, the tree for scenery, the Player scene and DefaultSimple scenes
 
 ## 2. Create the Global.gd script
 - Go to the Script view
 - Create a new Script called Global.gd
 - Add Global.gd to Project Settings > AutoLoad
 
-## 3. Open DefaultSimple
-- This default scene has a player and some scenery
-- Remove the PlayerController script from the Player, we're going to write this from scratch
+## 3. Add player and scenery to the default scene
+- Use the Scene from the [Godot Intro](./0-2_Godot_Intro) or create a new one
+- Open `DefaultScene` and add the Player and Camera
+- Add some scenery for the player to walk around in
 
 ## 4. Add movement to Player
 - Create a new script called PlayerController.gd
@@ -30,11 +30,12 @@ This lab covers making Global and PlayerContollerSimple scripts, while covering 
 - Update movement
 - Update animations to follow movement
 
-## 5. Documentation
-- Add screen shots or video on Open Lab
+## 5. Add one of the following to the script
+- Add new animations for up and down movement
+- Extra challenge: Add two players with different controls for local two player setup
 
-## Bonus
-- Add new animations for walking up and down
+## 6. Documentation
+- Add screen shots or video on Open Lab
 
 ## Resources
 - [Godot API](https://docs.godotengine.org/en/stable/classes/index.html){:target="_blank"}
@@ -78,11 +79,15 @@ func player_update(delta):
 	velocity.y = 0
 	
 	if Input.is_action_pressed("move_right"):
-		velocity.x += speed # += is x = x + speed
+		# += is short hand for  x = x + speed
+		velocity.x += speed 
+
 	if Input.is_action_pressed("move_left"):
 		velocity.x -= speed
+
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= speed
+
 	if Input.is_action_pressed("move_down"):
 		velocity.y += speed
 	

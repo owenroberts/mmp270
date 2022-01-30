@@ -19,7 +19,7 @@ body {
 	background-color: hsl($main-hue, $main-sat, $main-lit);
 }
 
-nav {
+#header-nav {
 	// background-color: hsl($main-hue, $main-sat, $main-lit);
 	padding: 0 1rem;
 	// display: flex;
@@ -131,6 +131,43 @@ nav {
 	}
 }
 
+#main {
+	display: flex;
+}
+
+#lab-container {
+
+	float: right;
+	width: 640px;
+	flex: 0 0 640px;
+
+	display: none;
+
+	&.open {
+		display: block;
+	}
+
+	#lab-nav {
+		background-color: hsl($second-hue, $main-sat, $main-lit);
+		display: flex;
+		justify-content: flex-end;
+		a {
+		    color: blue;
+    		text-decoration: underline;
+    		cursor: pointer;
+    		margin-left: 1em;
+    		font-size: 1.25em;
+    	}
+	}
+
+	#lab-frame {
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden;	
+	}
+
+}
+
 .section {
 
 	padding: 0.5rem;
@@ -210,7 +247,10 @@ nav {
 		.title {
 			display: inline-block;
 			grid-area: title;
-			cursor: s-resize;
+			color: blue;
+			text-decoration: underline;
+			cursor: e-resize;
+			&.open { cursor: w-resize; }
 		}
 
 		.title,

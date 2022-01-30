@@ -9,39 +9,39 @@ body {
   background-color: #ffc7e3;
 }
 
-nav {
+#header-nav {
   padding: 0 1rem;
   display: grid;
   grid-template-areas: "header login" "points login";
 }
-nav header {
+#header-nav header {
   font-size: 24px;
   line-height: 2;
   grid-area: header;
 }
-nav #points {
+#header-nav #points {
   font-size: 1.5rem;
   flex-basis: 100%;
   grid-area: points;
 }
-nav #user-nav {
+#header-nav #user-nav {
   display: none;
   text-align: right;
 }
-nav #auth-button,
-nav #user-nav {
+#header-nav #auth-button,
+#header-nav #user-nav {
   margin-left: auto;
   font-size: 1.5rem;
   grid-area: login;
   align-self: center;
 }
-nav #auth-button {
+#header-nav #auth-button {
   cursor: pointer;
 }
-nav a {
+#header-nav a {
   color: blue;
 }
-nav a.current {
+#header-nav a.current {
   color: black;
 }
 
@@ -94,6 +94,37 @@ nav a.current {
 }
 #main #Research-container {
   background-color: #e3ffc7;
+}
+
+#main {
+  display: flex;
+}
+
+#lab-container {
+  float: right;
+  width: 640px;
+  flex: 0 0 640px;
+  display: none;
+}
+#lab-container.open {
+  display: block;
+}
+#lab-container #lab-nav {
+  background-color: #e3c7ff;
+  display: flex;
+  justify-content: flex-end;
+}
+#lab-container #lab-nav a {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 1em;
+  font-size: 1.25em;
+}
+#lab-container #lab-frame {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .section {
@@ -155,7 +186,12 @@ nav a.current {
 .section .module .title {
   display: inline-block;
   grid-area: title;
-  cursor: s-resize;
+  color: blue;
+  text-decoration: underline;
+  cursor: e-resize;
+}
+.section .module .title.open {
+  cursor: w-resize;
 }
 .section .module .title,
 .section .module .points {

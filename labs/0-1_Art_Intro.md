@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sLFiYtlCRGs?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/sLFiYtlCRGs?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-In this lab we will cover using the Piskel pixel art editor and create an icon for your Open Lab profile.
+Use the Piskel pixel art editor and create an icon for your Open Lab profile.
 
 ## 1. Download Piskel
 - [Download](https://www.piskelapp.com/){:target="_blank"}
@@ -16,12 +16,12 @@ In this lab we will cover using the Piskel pixel art editor and create an icon f
 - Use something unique to you to make it easy to identify you
 
 ## 3. Login to the Open Lab and upload your icon
-- Go to your [profile page](https://openlab.bmcc.cuny.edu/members/owenroberts/){:target="_blank"}
+- Go to your Open Lab Profile page from the Open Lab toolbar menu
 - Click "Change Avatar"
 - Choose a File and Upload Image
 - Crop Image
 
-## 4. Document
+## 4. Documentation
 - Create an Open Lab post with the category "Art Intro"
 - Add your avatar image
 - Write a sentence or two explaining why it is unique to you

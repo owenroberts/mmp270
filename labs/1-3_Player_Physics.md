@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VI1tkbbQt-E?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/VI1tkbbQt-E?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab continues the PlayerController script started in the [Programming Intro](1-0_Programming_Intro), and adds platformer physics.
+Add platformer physics to the PlayerController script started in the [Programming Intro](1-0_Programming_Intro).
 
 ## 1. Setting up the Godot Project
 - Start with the project created in the previous lab, or Download the [Developer Default](./Developer_Default.zip) folder
@@ -24,11 +24,13 @@ This lab continues the PlayerController script started in the [Programming Intro
 ## 3. Connect to the SceneManager
 - Add a signal to connect the scene manager when the Player falls below the game window
 
-## 4. Documentation
+## 4. Add one of the following
+- A double jump
+- A "run" mode that makes the character move faster
+
+## 5. Documentation
 - Add screen shots or video on Open Lab
 
-## Bonus
-- Add a double jump
 
 ## Full PlayerController.gd script
 ```

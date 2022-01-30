@@ -37,9 +37,8 @@
 </head>
 <body>
 	<div id="container">
-		<nav>
+		<nav id="header-nav">
 			<header>MMP 270 Syllabus / Skill Tree</header>
-
 			<div id='user-nav'>
 				<div id="user-name"></div>
 				<div id="links">
@@ -60,7 +59,16 @@
 			</div>
 		</div>
 
-		<main id="main"></main>
+		<main id="main">
+			<div id="tier-container"></div>
+			<div id="lab-container">
+				<nav id="lab-nav">
+					<a id="open-tab">Open in new tab</a>
+					<a id="close-lab-frame">Close</a>
+				</nav>
+				<iframe id="lab-frame" frameborder="0"></iframe>
+			</div>
+		</main>
 		
 		<div id="grade-scale" class="section">
 			<h1 class="title">Grading Scale</h1>

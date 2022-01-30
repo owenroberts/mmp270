@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y_dHEGCDyZ8?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/y_dHEGCDyZ8?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-In this lab we will go over the basics of the Godot Game engine and add a simple character to a Godot scene.
+Get the Godot Engine set up on your computer and create a basic scene.
 
 ## 1. Download Godot
 - [Download](https://godotengine.org/download/){:target="_blank"}
@@ -45,8 +45,8 @@ In this lab we will go over the basics of the Godot Game engine and add a simple
 - Add your avatar image to the sprite texture
 
 ## 7. Add the Player Script to the Player
-- [Download the lab zip file](0-2_Godot_Intro.zip)
-- Extract the `PlayerController.gd` file and drag into the Scripts folder
+- [Download the MMP 270 Assets folder](./270_Assets.zip)
+- Extract the `PlayerControllerSimple.gd` file and drag into the Scripts folder
 - In the Player scene `Inspector` click the `[empty]` next to `Script` and then choose the player script
 - Adjust the properties in the `Script Variables`
 
@@ -75,8 +75,11 @@ In this lab we will go over the basics of the Godot Game engine and add a simple
 - Click the Play button or Play Scene button
 - Screen shot the window for documentation
 
-## 12. Bonus: Add some scenery
+## 12. Add some scenery
 - To make your scene a little more interesting, draw some sprites for scenery and add them into the scene
+
+## 13. Documentation
+- Take a screen shot or video of your scene and post it on the Open Lab
 
 ## Resources
 - [The Godot Game Engine Explained in 5 Minutes](https://www.youtube.com/watch?v=KjX5llYZ5eQ){:target="_blank"}

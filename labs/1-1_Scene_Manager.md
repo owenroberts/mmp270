@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/30I1BoK4UJ8?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/30I1BoK4UJ8?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers adding a simple SceneManager script to a Godot scene and the NodePath and Signal concepts in Godot.
+Add a SceneManager script to a Godot that communicates between the components of a scene.
 
 ## 1. Setting up the Godot Project
 - Start with the project created in the previous lab, or Download the [Default Project Template](./270_Template.zip) folder
@@ -16,9 +16,23 @@ This lab covers adding a simple SceneManager script to a Godot scene and the Nod
 
 ## 2. Create SceneManager.gd script
 - This script is used to communicate between objects and events in the scene
-- Add a signal to the player to trigger game over
+- Get a reference to the player
 
-## 3. Documentation
+## 4. Update the PlayerController
+- Add an "Enemy" Area2D to interact with the player
+- Add a signal to the PlayerController to communicate with the SceneManager
+
+## 5. Log the player signal
+- Use the Godot Debug Logger to print statements on signal events
+
+## 6. Add an Item
+- Add an "Item" Area2D to update the Global item_count value
+
+## 7. Add another example Area
+- Make another area for the player to interact with, it could be a key, a door, an NPC character or something else that would occur in a game
+- Change the debug print statement to show the player is interacting with something new
+
+## 8. Documentation
 - Add screen shots or video on Open Lab
 
 ## Full SceneManager.gd script

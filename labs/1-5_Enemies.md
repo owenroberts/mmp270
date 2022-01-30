@@ -5,10 +5,10 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4qYDjJ-paE0?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4qYDjJ-paE0?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
 
-This lab covers adding moving enemies in Godot, continuing from the previous lab [Obstacles and Collisions](1-4_Obstacles_and_Collisions).  It uses graphics from the [Obstacles and Enemies](2-4_Obstacles_and_Enemies) lab.
+Add moving enemies in Godot, continuing from the previous lab [Obstacles and Collisions](1-4_Obstacles_and_Collisions).  It uses graphics from the [Obstacles and Enemies](2-4_Obstacles_and_Enemies) lab.
 
 ## 1. Setting up the Godot project
 - Use a game that you're currently working on, or use a copy of the [Developer Default](./Developer_Default.zip) project
@@ -35,12 +35,11 @@ This lab covers adding moving enemies in Godot, continuing from the previous lab
 	- Detect area to activate enemy
 - Add raycaster for platform detection
 
-## 4. Documentation
+## 4. Add an enemy with a new behavior
+- Add an enemy that does something different, like move up and down, fall out of the sky, has different hit and attack areas
+
+## 5. Documentation
 - Post screen shots or video on Open Lab
-
-## Bonus
-- Make a variation of the enemy that moves vertially (up and down) instead of horizontally
-
 
 ## Full ObstactleMoving.gd script
 ```

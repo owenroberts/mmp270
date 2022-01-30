@@ -9,7 +9,7 @@ export default class SkillTree {
 		this.points = 0;
 		this.pointsSpan = getElement('points-number');
 
-		const main = getElement('main');
+		const main = getElement('tier-container');
 
 		// set up skill tree tiers and labs
 		const data = SkillTreeDataProvider();
@@ -29,7 +29,6 @@ export default class SkillTree {
 	}
 
 	addUserData(userData, uid) {
-		console.log(userData);
 		this.uid = uid;
 		const params = this.isPlan ? ['plan'] : ['completed', 'bonus', 'collab'];
 
@@ -53,9 +52,6 @@ export default class SkillTree {
 		const points = this.tiers.flatMap(tier => {
 			return tier.labs.map(lab => lab.getPoints())
 		}).reduce((a, b) => a + b);
-
-		console.log(points);
-	
 		this.pointsSpan.textContent = points;
 	}
 
@@ -67,7 +63,7 @@ export default class SkillTree {
 		return this.tiers[tierId].labs[labId];
 	}
 
-	showChildLabs(id, isCompleted) {
+	showChildLabs(id, isCompleted, wasClicked) {
 		let childLabs = this.tiers.flatMap(tier => {
 			return tier.labs.filter(lab => {
 				return lab.parents.includes(id);
@@ -76,16 +72,15 @@ export default class SkillTree {
 
 		childLabs.forEach(lab => {
 			lab.markAvailable(null, isCompleted);
-			if (isCompleted) this.tiers[lab.parentId].open(true);
+			if (isCompleted && wasClicked) this.tiers[lab.parentId].open(true);
 		});
 
 		return childLabs;
 	}
 
-	update(id, isCompleted) {
-		// console.log(id, isCompleted);;
+	update(id, isCompleted, wasClicked) {
 		// get labs that have id as parent
-		const childLabs = this.showChildLabs(id, isCompleted);
+		const childLabs = this.showChildLabs(id, isCompleted, wasClicked);
 		if (this.isPlan && this.uid) {
 			const update = {};
 			update[id] = isCompleted;
@@ -94,7 +89,7 @@ export default class SkillTree {
 			if (!isCompleted) {
 				childLabs.forEach(lab => {
 					lab.markCompleted(false);
-					this.update(lab.idString, false);
+					this.update(lab.idString, false, false);
 				});
 			}
 		}

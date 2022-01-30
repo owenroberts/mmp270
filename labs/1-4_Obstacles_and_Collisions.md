@@ -5,10 +5,10 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BWq6JFKtbUk?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/BWq6JFKtbUk?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
 
-This lab covers adding obstacles and collions in Godot.  It uses graphics from the [Obstacles and Enemies](2-4_Obstacles_and_Enemies) lab.
+Add obstacles and collions in Godot using graphics from the [Obstacles and Enemies](2-4_Obstacles_and_Enemies) lab.
 
 ## 1. Setting up the Godot project
 - Use a game that you're currently working on, or use a copy of the [Developer Default](./Developer_Default.zip) project
@@ -31,11 +31,13 @@ This lab covers adding obstacles and collions in Godot.  It uses graphics from t
 - Add `ObstacleSimple.gd` script
 - Modify `PlayerController.gd` for hitting obstacle
 
-## 4. Documentation
+
+## 4. Add a second obstacle scene
+- Make something unique about this obstacle, for example it could deal more damage to the player, or disappear if the player runs into it
+
+## 5. Documentation
 - Post screen shots or video on Open Lab
 
-## Bonus
-- Create an obstacle with a StaticBody collider
 
 ## Updates to PlayerController.gd script
 ```

@@ -18,6 +18,20 @@ firebase.auth().onAuthStateChanged(user => {
 	}
 });
 
+// lab frame nav
+const labContainer = document.getElementById('lab-container');
+const labFrame = getElement('lab-frame');
+const openTab = getElement('open-tab');
+const closeLabFrame = getElement('close-lab-frame');
+
+openTab.onclick = function() {
+	window.open(labFrame.src, "_blank");
+};
+
+closeLabFrame.onclick = function() {
+	labContainer.classList.remove('open');
+};
+
 /* grade scale */
 const gradeScale = getElement('grade-scale');
 const gradeScaleMod = getElement('grade-scale-mod');
