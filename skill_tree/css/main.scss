@@ -163,7 +163,8 @@ body {
 	#lab-frame {
 		width: 100%;
 		height: 100%;
-		overflow-x: hidden;	
+		overflow-x: hidden;
+		max-height: calc(100vh - 100px);
 	}
 
 }
