@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XiAt_7pBu_g?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/XiAt_7pBu_g?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers creating a user testing form and posting the results.
+Create a user testing form and posting the results.
 
 ## 1. Setup
 - Creating a user testing form requires a Google account

@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4XsTHY5w08g?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4XsTHY5w08g?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers exporting a Godot project
+Export a playable build of a Godot project.
 
 ## 1. Setup
 - Create a folder for `Builds`

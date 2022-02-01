@@ -209,7 +209,7 @@ export default function SkillTreeDataProvider() {
 				}
 			}
 		},
-		"Designer": {
+		"Level Design": {
 			"id": 3,
 			"modules": {
 				"Designing with TileMaps": {
@@ -250,34 +250,7 @@ export default function SkillTreeDataProvider() {
 					"collab": true,
 					"dek": "Design a second level in Godot."
 				},
-				"User Interface Design": {
-					"id": 4,
-					"link": "3-5_User_Interface_Design",
-					"points": 2,
-					"type": "Art",
-					"parents": ['0-2'],
-					"children": ['3-5'],
-					"collab": true,
-					"dek": "Create visual assets to use for interface like buttons and title screens."
-				},
-				"User Interface Layout": {
-					"id": 5,
-					"link": "3-6_User_Interface_Layout",
-					"points": 3,
-					"type": "Godot",
-					"parents": ['3-4'],
-					"collab": true,
-					"dek": "Adding visual assets for UI into Godot and overview of Godot UI layout."
-				},
-				"Metrics": {
-					"id": 6,
-					"link": "3-7_Metrics",
-					"points": 3,
-					"type": "Godot",
-					"parents": ['3-4'],
-					"collab": true,
-					"dek": "Art for metrics like score and player lives and layout for Metrics in Godot."
-				}
+				
 			}
 		},
 		"Sound Design": {
@@ -312,12 +285,46 @@ export default function SkillTreeDataProvider() {
 				},
 			}
 		},
-		"Publishing": {
+		"User Interface Design": {
 			"id": 5,
+			"modules": {
+				"User Interface Design": {
+					"id": 0,
+					"link": "5-0_User_Interface_Design",
+					"points": 2,
+					"type": "Art",
+					"parents": ['0-2'],
+					"children": ['5-1'],
+					"collab": true,
+					"dek": "Create visual assets to use for interface like buttons and title screens."
+				},
+				"User Interface Layout": {
+					"id": 1,
+					"link": "5-1_User_Interface_Layout",
+					"points": 3,
+					"type": "Godot",
+					"parents": ['5-0'],
+					"children": ['5-1'],
+					"collab": true,
+					"dek": "Adding visual assets for UI into Godot and overview of Godot UI layout."
+				},
+				"Metrics": {
+					"id": 2,
+					"link": "5-2_Metrics",
+					"points": 3,
+					"type": "Godot",
+					"parents": ['5-1'],
+					"collab": true,
+					"dek": "Art for metrics like score and player lives and layout for Metrics in Godot."
+				}
+			}
+		},
+		"Publishing": {
+			"id": 6,
 			"modules": {
 				"Exporting a Build": {
 					"id": 0,
-					"link": "5-0_Exporting_a_Build",
+					"link": "6-0_Exporting_a_Build",
 					"type": "Godot",
 					"points": 5,
 					"parents": ['0-2'],
@@ -326,31 +333,32 @@ export default function SkillTreeDataProvider() {
 				},
 				"Publishing on Itch.io": {
 					"id": 1,
-					"link": "5-1_Publishing_on_Itch",
+					"link": "6-1_Publishing_on_Itch",
 					"type": "Itch",
 					"points": 5,
-					"parents": ['5-0'],
+					"parents": ['6-0'],
+					"children": ['6-2'],
 					"collab": true,
 					"dek": "Creating an Itch account to publish a Godot project."
 				},
 				"User Testing": {
 					"id": 2,
-					"link": "5-2_User_Testing",
+					"link": "6-2_User_Testing",
 					"type": "Open Lab",
 					"points": 5,
-					"parents": ['5-1'],
+					"parents": ['6-1'],
 					"collab": true,
 					"dek": "Create a user testing survey and share with classmates.  Write an Open Lab post analyzing the survey results."
 				}
 			}
 		},
 		"Research": {
-			"id": 6,
+			"id": 7,
 			"modules": {
 				"Crawford Chapter 1": {
 					"id": 0,
 					"type": "Reading",
-					"link": '6-0_Research',
+					"link": '7-0_Research',
 					"points": 1,
 					"parents": ['0-0'],
 					"research": "https://www.digitpress.com/library/books/book_art_of_computer_game_design.pdf",

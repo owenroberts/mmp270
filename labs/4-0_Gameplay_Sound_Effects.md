@@ -5,10 +5,10 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/624ug8rWzWw?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/624ug8rWzWw?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
 
-This lab covers creating sound effects using JFXR and adding them to a Godot scene.
+Create sound effects using JFXR and add them to a Godot scene.
 
 ## 1. Create sound effects
 - Using [JFXR](https://jfxr.frozenfractal.com/){:target="_blank"}, [FreeSound](https://freesound.org/){:target="_blank"} or another sound design program, create SFX for the player movement sounds, obstacle sounds and other sound effects for collisions or state changes in the game.

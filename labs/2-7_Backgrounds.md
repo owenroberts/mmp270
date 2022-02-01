@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E39rVWlHlkA?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/E39rVWlHlkA?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers creating a seamless background in Piskel and implementing it in Godot.
+Create a seamless background in Piskel and add it in Godot.
 
 ## 1. Create the background
 - Using Piskel or another editor create a seamless background

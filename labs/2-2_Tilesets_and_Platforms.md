@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mN5kJ_UoJpY?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/mN5kJ_UoJpY?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers designing platforms to be used in a platformer style game.  The same process can be used for obstacles/walls in a RPG style game.  We'll create the platforms in Piskel which can be implemented with a TileMap in Godot to make collisions with the player and other moving objects.
+Design platforms to be used in a platformer style game.  The same process can be used for obstacles/walls in a RPG style game.  We'll create the platforms in Piskel which can be implemented with a TileMap in Godot to make collisions with the player and other moving objects.
 
 This lab is good to pair the the [Designing with TileMaps](3-0_Designing_with_TileMaps) lab.
 

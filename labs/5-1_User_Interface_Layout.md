@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n2HdxTPCYIA?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/n2HdxTPCYIA?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers designing the user interface using Godot UI layouts.  It uses the art created in the [User Interface Design](3-5_User_Interface_Design) lab.
+Design the user interface using Godot UI layouts.  It uses the art created in the [User Interface Design](3-5_User_Interface_Design) lab.
 
 The lab [Interface Sounds](4-1_Interface_Sounds) goes over adding sounds to the interface.
 

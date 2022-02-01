@@ -6,9 +6,9 @@ label: Labs
 ---
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5xbeB4as8Lg?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/5xbeB4as8Lg?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers adding visible metrics to a game scene to show the score, number of items or lives.  It uses art created in the [Rewards](2-3_Rewards) art lab 
+Add visible metrics to a game scene to show the score, number of items or lives.  It uses art created in the [Rewards](2-3_Rewards) art lab 
 
 ## 1. Setup
 - Download the [Designer Default](./Designer_Default.zip) or use your own project

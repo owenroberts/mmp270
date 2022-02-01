@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jyrkFqSJRyc?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/jyrkFqSJRyc?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers doing and posting research.  The same steps apply to any reading, game or viewing.
+Post research on any reading, game or viewing.
 
 ## 1. Read, play or view the linked resource
 - Seriously, read the whole thing, from the beginning to the end, it's probably not that long

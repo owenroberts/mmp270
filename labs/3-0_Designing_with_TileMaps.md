@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LYZQlZ4qoqM?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/LYZQlZ4qoqM?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers taking a TileSet from the Tilesets and Platforms lab and implementing them with a TileMap in Godot.
+Create a TileMap in Godot.
 
 This lab is good to pair with the [Tilesets and Platforms](2-2_Tilesets_and_Platforms) lab.
 

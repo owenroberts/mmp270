@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YfuncPB3mv0?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/YfuncPB3mv0?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers sourcing background music and adding it to a Godot scene.
+Source background music and add it to a Godot scene.
 
 ## 1. Find (or create) background music 
 - Find music on the [Free Music Archive](https://freemusicarchive.org/search){:target="_blank"} or [Open Game Art](https://opengameart.org/art-search-advanced?keys=&field_art_type_tid%5B%5D=12&sort_by=count&sort_order=DESC){:target="_blank"} or another Creative Commons licensed source

@@ -5,10 +5,10 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lT2AxXgInos?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/lT2AxXgInos?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
 
-This lab covers adding sounds to user interface elements in a Godot scene.
+Add sounds to user interface elements in a Godot scene.
 
 ## 1. Create sound effects
 - Using [JFXR](https://jfxr.frozenfractal.com/){:target="_blank"}, [FreeSound](https://freesound.org/){:target="_blank"} or another sound design program, create SFX for the player movement sounds, obstacle sounds and other sound effects for collisions or state changes in the game.

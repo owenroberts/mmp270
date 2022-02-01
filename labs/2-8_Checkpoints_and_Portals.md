@@ -5,10 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ByzvzZ_bS4U?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ByzvzZ_bS4U?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-
-This lab covers creating art for checkpoints and portals using Piskel.
+Create art for checkpoints and portals using Piskel.
 
 This lab can be paired with the [Checkpoints and Portals](./3-2_Checkpoints_and_Portals) desinger lab.
 

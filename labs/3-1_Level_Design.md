@@ -5,9 +5,9 @@ return: ./labs
 label: Labs
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hWFJgCm2wFg?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/hWFJgCm2wFg?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-This lab covers creating a level in Godot using concepts from the [Level Design](../notes/level) lecture.
+Create a level in Godot using concepts from the [Level Design](../notes/level) lecture.
 
 ## 1. Setup Godot project
 - Use an existing project or download the [Designer Default](./Designer_Default.zip)
