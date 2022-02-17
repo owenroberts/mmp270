@@ -2,7 +2,6 @@ import { getElement, makeElement } from './Cool.js';
 import SkillTreeDataProvider from './skill-tree-data.js';
 
 const semester = location.search.split('=')[1] || 'Spring22';
-console.log(semester);
 
 const tree = SkillTreeDataProvider();
 const pointsTree = [];
@@ -61,6 +60,8 @@ function displayUser(uid, data) {
 
 	const points = makeElement({ className: 'points' });
 	user.appendChild(points);
+
+	const lists = {};
 	
 
 	['completed', 'bonus', 'collab'].forEach(param => {
@@ -87,15 +88,17 @@ function displayUser(uid, data) {
 		const comp = makeElement({
 			tag: 'p',
 			text: `${param[0].toUpperCase()}${param.substr(1)}: ${labs}`,
-			id: `${param}-list`
+			className: `${param}-list`
 		});
 		user.appendChild(comp); 
+		lists[param] = comp;
 
 	});
 
-	console.log(tree)
+	// console.log(tree)
 
 	const tierSelector = makeElement({ tag: 'select'});
+	const labSelectors = {};
 	user.appendChild(tierSelector);
 	user.appendChild(makeElement({tag: 'br'}));
 
@@ -111,8 +114,8 @@ function displayUser(uid, data) {
 		tierSelector.appendChild(option);
 
 		const labSelector = makeElement({ tag: 'select', id: `${tree[t].id}-labs`, className: 'labs'});
-		
 		user.appendChild(labSelector);
+		labSelectors[tree[t].id] = labSelector;
 		if (tree[t].id !== 0) labSelector.style.display = 'none';
 		for (const l in tree[t].modules) {
 			const option = makeElement({ tag: 'option', text: `${tree[t].modules[l].id} ${l}` });
@@ -128,10 +131,15 @@ function displayUser(uid, data) {
 			text: `Add ${param[0].toUpperCase()}${param.substr(1)}`,
 			onclick: function() {
 				const newLab = {};
-				const selection = document.getElementById(`${tierSelector.value}-labs`).value;
+				const selection = labSelectors[tierSelector.value].value;
 				newLab[selection] = true;
 				firebase.database().ref('users').child(uid).child(param).update(newLab);
-				document.getElementById(`${param}-list`).textContent += ', ' + selection;
+				lists[param].textContent += ', ' + selection.replace('-', '.');
+				const [i, j] = selection.split('-');
+				if (i && j) {
+					totalPoints += pointsTree[+i][+j];
+					points.textContent = `Total points: ${totalPoints}`;
+				}
 			}
 		});
 		user.appendChild(addLabButton);
