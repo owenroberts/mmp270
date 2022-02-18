@@ -103,9 +103,11 @@ function displayUser(uid, data) {
 	user.appendChild(makeElement({tag: 'br'}));
 
 	tierSelector.onchange = function() {
-		Array.from(document.getElementsByClassName('labs'))
-			.forEach(e => { e.style.display = 'none' });
-		document.getElementById(`${tierSelector.value}-labs`).style.display = 'inline-block';
+
+		for (let k in labSelectors) {
+			labSelectors[k].style.display = 'none';
+		}
+		labSelectors[tierSelector.value].style.display = 'inline-block';
 	};
 
 	for (const t in tree) {
