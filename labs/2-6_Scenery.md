@@ -16,18 +16,24 @@ Create scenery and add it into a Godot scene.
 - Try variations and choose the best ones
 
 ## 2. Setup Godot project
-- Use a previous project and add the assets or download the [Artist Default](./Artist_Default.zip) folder
-- Download [Assets Folder](./Assets.zip) if needed
-- Add a Node2D for *Scenery*
+- Use your game project or download the [Blank Template](./270_Template.zip) folder
+- Download [Assets Folder](./270_Assets.zip) if needed
 - Add sprites and duplicate them to arrange scenery
 
-## 3. Setup a Parallax Background
+## 3. (Optional) Use YSort in Godot
+- In Godot, `YSort` is a 2D Node that will sort your scenery and sprites according to their vertical (Y) position in the scene
+- Change the `DefaultScene` node type to `YSort`
+- Add a child `YSort` node and name it *Scenery*
+- Add your scenery Sprites into the *Scenery* Node and offset the bottom
+- Edit your *Player* scene so the *AnimatedSprite* and *CollisionShape2D* are sitting with the bottom at the origin
+
+<!-- ## 3. Setup a Parallax Background
 - In the *DefaultScene*, add a new *ParallaxBackground* node
 - Then add a *ParallaxLayer*
 - Add some elements to the layer
 - Add your background image as the texture 
 - In the *ParallaxLayer* node set the motion and mirroring settings
-- Repeat with multiple layers for different elements
+- Repeat with multiple layers for different elements -->
 
 ## 4. Documentation
 - Take screenshots of a video of the background
