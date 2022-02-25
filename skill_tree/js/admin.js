@@ -79,7 +79,13 @@ function displayUser(uid, data) {
 				if (param === 'bonus' || param === 'collab') totalPoints += 1;
 				if (param === 'completed') {
 					const [i, j] = lab.split('.');
-					if (i && j) totalPoints += pointsTree[+i][+j];
+					if (i && j) {
+						if (!pointsTree[+i][+j]) {
+							console.log(uid, data.displayName, i, j, totalPoints, pointsTree[+i][+j])
+						} else {
+							totalPoints += pointsTree[+i][+j];
+						}
+					}
 				}
 			})
 			labs = labs.join(', ');	
@@ -150,4 +156,25 @@ function displayUser(uid, data) {
 
 	points.textContent = `Total points: ${totalPoints}`;
 	usersDiv.appendChild(user);
+}
+
+const updateDatabaseButton = makeElement({ tag: 'button', text: 'Update Database' });
+document.body.appendChild(updateDatabaseButton);
+updateDatabaseButton.addEventListener('click', updateDatabase);
+
+let labId = ['3-7', '5-2'];
+let type = 'completed';
+
+function updateDatabase() {
+
+	const uRef = firebase.database().ref('users');
+
+	uRef.orderByChild(`${type}/${labId[0]}`).equalTo(true).once('value', snap => { const users = snap.val();
+		for (const uid in users) {
+			console.log(uid, users[uid])
+			let update = {};
+			update[labId[1]] = true;
+			uRef.child(uid).child(type).update(update);
+		}
+	});
 }
