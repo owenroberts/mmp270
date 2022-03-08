@@ -24,8 +24,8 @@ Create sprite animations in Piskel and adding them into a Godot Animated Sprite.
 - Import to Godot
 
 ## 3. Adding new Animations
-- Use a previous project and add the assets or download the [Blank Project Template](./Blank_Template.zip) folder
-- Download [Assets Folder](./270_Assets.zip) if needed
+- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Download the [Assets](./270_Assets.zip) folder if you need any assets
 	- From Scenes you will need the DefaultScene and Player
 	- From Scripts you will need the PlayerController
 - Add your character animation sprites to the `Sprites` folder

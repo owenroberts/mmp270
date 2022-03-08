@@ -17,8 +17,8 @@ This lab is good to pair with [Collecting Items](1-2_Collecting_Items).
 - Export sprite sheets to use in Godot
 
 ## 2. Add art to Godot
-- Using the [Artist Default](./Artist_Default.zip) or your own game, add your animations into the pre-built `Item.tscn` and/or `Life.tscn` scene
-- Download the [Assets](./Assets.zip) folder if you need to add the Item/Life scene to your project
+- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Download the [Assets](./270_Assets.zip) folder if you need to add the Item/Life scene to your project
 - For extra Items, duplicate the Item scene
 
 ## 3. Documentation

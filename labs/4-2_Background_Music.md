@@ -16,7 +16,8 @@ Source background music and add it to a Godot scene.
 - Save files as `.ogg` or `.mp3` format
 
 ## 2. Add files to Godot
-- Use a previous project and add the assets or download the [Sound Default](./Sound_Default.zip) folder 
+- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Download the [Assets](./270_Assets.zip) folder if needed
 - Add music to the `Audio` folder or create one
 - Make sure the Import settings are set to `Loop`
 - For each background sound, find or create an `AudioStreamPlayer` and add the track

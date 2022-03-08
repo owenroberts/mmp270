@@ -11,8 +11,8 @@ label: Labs
 Add moving enemies in Godot, continuing from the previous lab [Obstacles and Collisions](1-4_Obstacles_and_Collisions).  It uses graphics from the [Obstacles and Enemies](2-4_Obstacles_and_Enemies) lab.
 
 ## 1. Setting up the Godot project
-- Use a game that you're currently working on, or use a copy of the [Developer Default](./Developer_Default.zip) project
-- Download the [Assets](./Assets.zip) folder for any scenes or art you may need
+- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Download the [Assets](./270_Assets.zip) folder if you need any assets
 
 ## 2. Add collision layers and masks
 - Setup default collision layers in masks in `Project > Project Settings > Layer Names > 2d Physics`

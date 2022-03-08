@@ -12,7 +12,8 @@ Create a TileMap in Godot.
 This lab is good to pair with the [Tilesets and Platforms](2-2_Tilesets_and_Platforms) lab.
 
 ## 1. Get Tilesets
-- Use an existing project or download the [Designer Default](./Designer_Default.zip)
+- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Download the [Assets](./270_Assets.zip) folder if needed
 - Use the platforms sprite sheets in the default, or design your own, or collaborate with another student
 
 ## 2. Create TileMaps in Godot

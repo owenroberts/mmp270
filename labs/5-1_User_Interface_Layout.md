@@ -12,7 +12,8 @@ Design the user interface using Godot UI layouts.  It uses the art created in th
 The lab [Interface Sounds](4-1_Interface_Sounds) goes over adding sounds to the interface.
 
 ## 1. Setup
-- Download the [Designer Default](./Designer_Default.zip) or use your own project
+- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Download the [Assets](./270_Assets.zip) folder if needed
 - Import the sprite sheets created in User Interface Design lab
 - Delete the existing `StartMenu.tscn`, `Instructions.tscn`, `GameOver.tscn` and `YouWin.tscn` scene files, we'll build them from scratch
 

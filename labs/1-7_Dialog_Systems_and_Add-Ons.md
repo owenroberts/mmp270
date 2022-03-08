@@ -10,8 +10,8 @@ label: Labs
 Create a dialog system using the Godot Add-On Dialogic. This lab goes along with the [NPC](./2-5_NPCs) art lab.
 
 ## 1. Setup
-- Use a game that you're currently working on, or use a copy of the [Developer Default](./Developer_Default.zip) project
-- Download the [Assets](./Assets.zip) folder for any scenes or art you may need
+- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Download the [Assets](./270_Assets.zip) folder if you need any assets
 - Get a font from [BitFontMaker2](http://www.pentacom.jp/pentacom/bitfontmaker2/gallery/){:target="_blank"} or make one
 - Download [Dialogic](https://github.com/coppolaemilio/dialogic){:target="_blank"} in Godot's Asset Library
 - Duplicate the `DefaultScene` and add in a `SceneManager` and `UI` node

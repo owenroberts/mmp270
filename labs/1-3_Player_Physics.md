@@ -10,8 +10,8 @@ label: Labs
 Add platformer physics to the PlayerController script started in the [Programming Intro](1-0_Programming_Intro).
 
 ## 1. Setting up the Godot Project
-- Start with the project created in the previous lab, or Download the [Developer Default](./Developer_Default.zip) folder
-- Download the [Assets](./Assets.zip) folder if necessary
+- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Download the [Assets](./270_Assets.zip) folder if you need any assets
 - Save the previous `PlayerController.gd` script as `PlayerSimple.gd`
 - Continue editing `PlayerController.gd`
 

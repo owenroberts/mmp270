@@ -11,8 +11,8 @@ label: Labs
 Add projectiles using a `PackedScene` with physics in Godot.
 
 ## 1. Setup
-- Use a game that you're currently working on, or use a copy of the [Developer Default](./Developer_Default.zip) project
-- Download the [Assets](./Assets.zip) folder for any scenes or art you may need
+- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Download the [Assets](./270_Assets.zip) folder if you need any assets
 
 ## 2. Projectile art
 - Make projectile animations in Piskel or another software

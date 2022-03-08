@@ -21,8 +21,8 @@ Create graphics and animations for obstacles and enemies.
 - Save sprite sheets to use in Godot
 
 ## 3. Add art to Godot
-- Using the [Artist Default](./Artist_Default.zip) or your own game, add your animations into the pre-built `ObstacleSimple.tscn` and/or `ObstacleMoving.tscn` scene
-- Download the [Assets](./Assets.zip) folder if you need to add the ObstacleSimple/ObstacleMoving scene to your project
+- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Download the [Assets](./270_Assets.zip) folder if you need to add the ObstacleSimple/ObstacleMoving scene to your project
 - For extra Obstacles, duplicate either scene depending on the obstacle behavior
 
 ## 4. Documentation 
