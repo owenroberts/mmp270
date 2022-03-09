@@ -10,6 +10,7 @@ export default function SkillTreeDataProvider() {
 			"modules": {
 				"Open Lab Intro": {
 					"id": 0,
+					"video": 'https://www.youtube.com/watch?v=AFWP4vFI8sM&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=2',
 					"link": "0-0_Open_Lab_Intro",
 					"type": "Open Lab",
 					"points": 1,
@@ -19,6 +20,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Art Intro": {
 					"id": 1,
+					"video": 'https://www.youtube.com/watch?v=HK_e2QnF-TA&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=3',
 					"link": "0-1_Art_Intro",
 					"type": "Art",
 					"points": 1,
@@ -28,6 +30,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Godot Intro": {
 					"id": 2,
+					"video": "https://www.youtube.com/watch?v=0-rs77ttuLE&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=4&t=4s",
 					"link": "0-2_Godot_Intro",
 					"type": "Godot",
 					"points": 1,
@@ -42,6 +45,7 @@ export default function SkillTreeDataProvider() {
 			"modules": {
 				"Programming Intro": {
 					"id": 0,
+					"video": "https://www.youtube.com/watch?v=fVj_LgCJiRc&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=13",
 					"link": "1-0_Programming_Intro",
 					"points": 2,
 					"parents": ['0-2'],
@@ -127,6 +131,7 @@ export default function SkillTreeDataProvider() {
 			"modules": {
 				"Character Design": {
 					"id": 0,
+					"video": "https://www.youtube.com/watch?v=qlGDx9cXQaE&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=6",
 					"type": "Art",
 					"link": "2-0_Character_Design",
 					"points": 2,
@@ -136,6 +141,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Character Animation": {
 					"id": 1,
+					"video": "https://www.youtube.com/watch?v=3Javdc97UbE&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=8",
 					"type": "Art",
 					"link": "2-1_Character_Animation",
 					"points": 3,
@@ -145,6 +151,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Tilesets and Platforms": {
 					"id": 2,
+					"video": "https://www.youtube.com/watch?v=GqKkeKmL1VM&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=12",
 					"type": "Art",
 					"link": "2-2_Tilesets_and_Platforms",
 					"points": 3,
@@ -154,6 +161,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Rewards": {
 					"id": 3,
+					"video": "https://www.youtube.com/watch?v=zy-5MNfZPIg&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=17",
 					"link": "2-3_Rewards",
 					"type": "Art",
 					"points": 3,
@@ -182,6 +190,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Scenery": {
 					"id": 6,
+					"video": "https://www.youtube.com/watch?v=lxx3q-0uuj8&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=10",
 					"link": "2-6_Scenery",
 					"type": "Art",
 					"points": 3,
@@ -214,6 +223,7 @@ export default function SkillTreeDataProvider() {
 			"modules": {
 				"Designing with TileMaps": {
 					"id": 0,
+					"video": "https://www.youtube.com/watch?v=qNzSLkQKcWs&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=15",
 					"points": 2,
 					"link": "3-0_Designing_with_TileMaps",
 					"type": "Godot",
@@ -357,6 +367,7 @@ export default function SkillTreeDataProvider() {
 			"modules": {
 				"Crawford Chapter 1": {
 					"id": 0,
+					"video": "https://www.youtube.com/watch?v=XlweYmqvsv8&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=7",
 					"type": "Reading",
 					"link": '7-0_Research',
 					"points": 1,
@@ -367,6 +378,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Understanding Comics Chapter 2": {
 					"id": 1,
+					"video": "https://www.youtube.com/watch?v=XlweYmqvsv8&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=7",
 					"type": "Reading",
 					"link": '6-0_Research',
 					"points": 1,
@@ -377,6 +389,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Video Game History Timeline": {
 					"id": 2,
+					"video": "https://www.youtube.com/watch?v=XlweYmqvsv8&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=7",
 					"type": "Reading",
 					"link": '6-0_Research',
 					"points": 1,
@@ -387,6 +400,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Sorting Out the Genre Muddle": {
 					"id": 3,
+					"video": "https://www.youtube.com/watch?v=XlweYmqvsv8&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=7",
 					"type": "Reading",
 					"link": "6-0_Research",
 					"points": 1,
@@ -397,6 +411,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Syoban Action": {
 					"id": 4,
+					"video": "https://www.youtube.com/watch?v=XlweYmqvsv8&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=7",
 					"type": "Game",
 					"link": "6-0_Research",
 					"points": 1,

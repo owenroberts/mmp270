@@ -48,6 +48,16 @@ export default class Module {
 
 		});
 
+		if (data.video) {
+			const videoLink = makeElement({ 
+				tag : 'a', 
+				className: 'video', 
+				text: 'YouTube Video',
+				external: data.video,
+			});
+			this.container.appendChild(videoLink);
+		}
+
 		const points = makeElement({
 			tag: 'p',
 			className: 'points',
