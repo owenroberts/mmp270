@@ -57,6 +57,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Scene Manager": {
 					"id": 1,
+					"video": "https://www.youtube.com/watch?v=gE1pRrSoLog",
 					"link": "1-1_Scene_Manager",
 					"points": 2,
 					"parents": ['1-0'],
@@ -66,6 +67,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Collecting Items": {
 					"id": 2,
+					"video": "https://www.youtube.com/watch?v=gE1pRrSoLog",
 					"link": "1-2_Collecting_Items",
 					"type": "Godot",
 					"points": 2,
