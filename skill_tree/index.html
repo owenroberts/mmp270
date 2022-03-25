@@ -39,14 +39,17 @@
 	<div id="container">
 		<nav id="header-nav">
 			<header><a href="../">MMP 270</a> Syllabus / Skill Tree</header>
+			<div id="settings">
+					High Contrast <input type="checkbox" id="high-contrast">
+				</div>
 			<div id='user-nav'>
 				<div id="user-name"></div>
 				<div id="links">
 					<a href="index.html" class="current">Progress</a>
 					<a href="plan.html">Plan</a>
-				</div>				
+				</div>
 			</div>
-			<div id='auth-button'>Login</div>
+			<div id="auth-button-div"><button id='auth-button'>Login</button></div>
 			<div id="points">Total Points: <span id="points-number"></span></div>
 		</nav>
 
@@ -97,6 +100,7 @@
 	<script type="module" src="js/tree.js"></script>
 	<script type="module" src="js/auth.js"></script>
 	<script type="module" src="js/signup.js"></script>
+	<script type="module" src="js/settings.js"></script>
 </body>
 </html>
 

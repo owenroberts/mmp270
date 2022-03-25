@@ -24,12 +24,19 @@ export default class Section {
 			}
 		});
 
+		const openButton = makeElement({
+			tag: 'button',
+			className: 'open-button',
+			text: 'V'
+		})
+
 		this.modules = makeElement({
 			className: 'modules hidden',
 		});
 		this.modules.isOpen = false;
 
 		this.container.appendChild(heading);
+		heading.appendChild(openButton);
 		this.container.appendChild(this.modules);
 
 		this.labs = [];

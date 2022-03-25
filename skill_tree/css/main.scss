@@ -1,5 +1,4 @@
-	@use 'fonts';
-
+@use 'fonts';
 $main-font: '04b03';
 
 $color-one: #ffc9ec;
@@ -12,6 +11,18 @@ $third-hue: $second-hue - 60;
 $fourth-hue: $third-hue - 60;
 $fifth-hue: $fourth-hue - 60;
 
+@mixin double-size-check {
+	/* Double-sized Checkboxes */
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+	transform: scale(2);
+	padding: 0.5em;
+	margin: 0.5em;
+	cursor: pointer;
+}
+
 body {
 	margin: 0;
 	font-family: $main-font;
@@ -19,15 +30,16 @@ body {
 	background-color: hsl($main-hue, $main-sat, $main-lit);
 }
 
-#header-nav {
-	// background-color: hsl($main-hue, $main-sat, $main-lit);
-	padding: 0 1rem;
-	// display: flex;
-	// align-items: center;
-	// flex-wrap: wrap;
+#high-contrast {
+	@include double-size-check;
+	margin: 0.25em;
+}
 
+#header-nav {
+	padding: 0 1rem;
 	display: grid;
-	grid-template-areas: 
+	grid-template-areas:
+		"header settings"
 		"header login"
 		"points login";
 
@@ -49,7 +61,7 @@ body {
 		text-align: right;
 	}
 
-	#auth-button,
+	#auth-button-div,
 	#user-nav {
 		margin-left: auto;
 		font-size: 1.5rem;
@@ -58,7 +70,12 @@ body {
 	}
 
 	#auth-button {
-		cursor: pointer;
+		font-size: 1.125em		
+	}
+
+	#settings {
+		margin-left: auto;
+		margin-top: 0.5em;
 	}
 
 	a {
@@ -90,10 +107,12 @@ body {
 .hidden {
 	height: 0;
 	overflow: hidden;
+	visibility: hidden;
 }
 
 .open {
 	height: auto !important;
+	visibility: visible;
 }
 
 #main {
@@ -185,6 +204,11 @@ body {
 		cursor: pointer;
 	}
 
+	.open-button {
+		margin-left: 1em;
+		vertical-align: text-top;
+	}
+
 	.modules {
 		display: flex;
 		flex-wrap: wrap;
@@ -199,16 +223,16 @@ body {
 		min-width: 8em;
 
 		display: grid;
+		grid-gap: 0 0.25em;
 		grid-template-areas:
-			'null available'
-			'null title'
-			'type video'
-			'type resource'
-			'type points'
-			'type bonus'
-			'type collab'
-			'type completed';
-		// grid-gap: 0.25rem;
+			'available null'
+			'title null'
+			'video type'
+			'resource type'
+			'points type'
+			'bonus type'
+			'collab type'
+			'completed type';
 
 		display: none; // before loading
 
@@ -233,21 +257,9 @@ body {
 			margin: 0;
 		}
 
-		.completed,
-		.available,
-		.title,
-		.video,
-		.dek-link,
-		.bonus,
-		.collab,
-		.resource {
-			text-align: right;
-		}
-
 		.resource {
 			grid-area: resource;
 		}
-
 
 		.title {
 			display: inline-block;
@@ -260,7 +272,6 @@ body {
 
 		.title,
 		.points {
-			// margin-top: 0;
 			margin: 0;
 		}
 
@@ -281,19 +292,11 @@ body {
 
 		.points {
 			grid-area: points;
-			text-align: right;
+			// text-align: right;
 		}
 
 		.completed input[type=checkbox] {
-			/* Double-sized Checkboxes */
-			-ms-transform: scale(2); /* IE */
-			-moz-transform: scale(2); /* FF */
-			-webkit-transform: scale(2); /* Safari and Chrome */
-			-o-transform: scale(2); /* Opera */
-			transform: scale(2);
-			padding: 0.5em;
-			margin: 0.5em;
-			cursor: pointer;
+			@include double-size-check;
 		}
 
 	}
@@ -324,3 +327,16 @@ body {
 	}
 }
 
+body.high-contrast {
+	font-family: Verdana, Tahoma, sans-serif;
+
+	#header-nav, .section {
+		background-color: white !important;
+		border-bottom: 2px solid black;
+	}
+
+	.module {
+		border: 2px solid
+	}
+
+}

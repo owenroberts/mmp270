@@ -25,7 +25,6 @@ export default class SkillTree {
 			// if nothing is stored in localStorage, open apprentice section
 			if (sectionTitle === 'Apprentice' && !isOpen) this.tiers[id].open(true);
 		}
-
 	}
 
 	addUserData(userData, uid) {
