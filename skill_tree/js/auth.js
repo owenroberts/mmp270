@@ -30,6 +30,7 @@ function updateUserDisplay(name) {
 	userName.textContent = 'Hi, ' + name;
 	userNav.style.display = 'block';
 	authButton.style.display = 'none';
+	authDiv.classList.remove('open');
 }
 
 

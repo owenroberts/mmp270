@@ -23,7 +23,7 @@ body {
   padding: 0.5em;
   margin: 0.5em;
   cursor: pointer;
-  margin: 0.25em;
+  margin: 0.125em;
 }
 
 #header-nav {
@@ -70,6 +70,9 @@ body {
   padding: 0 1rem;
   background-color: #e3ffc7;
   text-align: right;
+}
+#auth * {
+  font-size: 1.125em;
 }
 #auth #login {
   margin: 1rem 0;
@@ -282,7 +285,7 @@ body {
 body.high-contrast {
   font-family: Verdana, Tahoma, sans-serif;
 }
-body.high-contrast #header-nav, body.high-contrast .section {
+body.high-contrast #header-nav, body.high-contrast .section, body.high-contrast #auth {
   background-color: white !important;
   border-bottom: 2px solid black;
 }

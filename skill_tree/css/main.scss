@@ -32,7 +32,7 @@ body {
 
 #high-contrast {
 	@include double-size-check;
-	margin: 0.25em;
+	margin: 0.125em;
 }
 
 #header-nav {
@@ -88,6 +88,9 @@ body {
 	padding: 0 1rem;
 	background-color: hsl($fifth-hue, $main-sat, $main-lit);
 	text-align: right;
+	* {
+		font-size: 1.125em;
+	}
 
 	#login {
 		margin: 1rem 0;
@@ -189,7 +192,6 @@ body {
 		overflow-x: hidden;
 		max-height: calc(100vh - 100px);
 	}
-
 }
 
 .section {
@@ -330,7 +332,7 @@ body {
 body.high-contrast {
 	font-family: Verdana, Tahoma, sans-serif;
 
-	#header-nav, .section {
+	#header-nav, .section, #auth {
 		background-color: white !important;
 		border-bottom: 2px solid black;
 	}
@@ -338,5 +340,4 @@ body.high-contrast {
 	.module {
 		border: 2px solid
 	}
-
 }

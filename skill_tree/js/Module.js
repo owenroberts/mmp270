@@ -133,20 +133,29 @@ export default class Module {
 				'Unlocks ' + this.children.map(id => { return `${tree[id]}`; }).join(', ') :
 				'',
 			onclick: ev => {
-				if (this.isCompleted) this.markCompleted(false); // checked off
-				else if (this.isAvailable) this.markCompleted(true);
-				tree.update(this.idString, this.isCompleted, true);
-
-				if (!this.isAvailable) {
-					this.completedCheck.checked = false;
-					clickCount++;
-				}
-
-				if (clickCount >= 3) {
-					alert(title + " is not available.  Complete " + this.parents.map(id => skillTree[id]).join(', ') + ' first.');
-					clickCount = 0;
-				}
+				updateComplete();
 			}
+		});
+
+		let self = this; // not sure why this doesn' twork
+		function updateComplete() {
+			if (self.isCompleted) self.markCompleted(false); // checked off
+			else if (self.isAvailable) self.markCompleted(true);
+			tree.update(self.idString, self.isCompleted, true);
+
+			if (!self.isAvailable) {
+				self.completedCheck.checked = false;
+				clickCount++;
+			}
+
+			if (clickCount >= 3) {
+				alert(title + " is not available.  Complete " + self.parents.map(id => skillTree[id]).join(', ') + ' first.');
+				clickCount = 0;
+			}
+		}
+
+		this.completedCheck.addEventListener('keydown', ev => {
+			if (ev.which === 13) updateComplete();
 		});
 
 		completed.appendChild(this.completedCheck);
