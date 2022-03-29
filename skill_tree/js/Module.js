@@ -33,8 +33,8 @@ export default class Module {
 			tag: 'a',
 			className: 'link',
 			text: title,
-			// href: data.link,
-			onclick: function() {
+			onclick: function(ev) {
+				ev.preventDefault();
 				if (labIsOpen) {
 					labContainer.classList.remove('open');
 					header.classList.remove('open');
@@ -45,18 +45,8 @@ export default class Module {
 				}
 				labIsOpen = !labIsOpen;
 			}
-
 		});
-
-		if (data.video) {
-			const videoLink = makeElement({ 
-				tag : 'a', 
-				className: 'video', 
-				text: 'YouTube Video',
-				external: data.video,
-			});
-			this.container.appendChild(videoLink);
-		}
+		link.href = 'javascript;'; // accessibility hack for now
 
 		const points = makeElement({
 			tag: 'p',
@@ -84,10 +74,20 @@ export default class Module {
 		});
 
 		this.container.appendChild(header);
+
+		if (data.video) {
+			const videoLink = makeElement({ 
+				tag : 'a', 
+				className: 'video', 
+				text: 'YouTube Video',
+				external: data.video,
+			});
+			this.container.appendChild(videoLink);
+		}
+
 		this.container.appendChild(typeContainer);
 		this.container.appendChild(points);
 		header.appendChild(link);
-		// header.appendChild(dek);
 
 		if (data.collab) {
 			const collabTainer = makeElement({
@@ -133,20 +133,29 @@ export default class Module {
 				'Unlocks ' + this.children.map(id => { return `${tree[id]}`; }).join(', ') :
 				'',
 			onclick: ev => {
-				if (this.isCompleted) this.markCompleted(false); // checked off
-				else if (this.isAvailable) this.markCompleted(true);
-				tree.update(this.idString, this.isCompleted, true);
-
-				if (!this.isAvailable) {
-					this.completedCheck.checked = false;
-					clickCount++;
-				}
-
-				if (clickCount >= 3) {
-					alert(title + " is not available.  Complete " + this.parents.map(id => skillTree[id]).join(', ') + ' first.');
-					clickCount = 0;
-				}
+				updateComplete();
 			}
+		});
+
+		let self = this; // not sure why this doesn' twork
+		function updateComplete() {
+			if (self.isCompleted) self.markCompleted(false); // checked off
+			else if (self.isAvailable) self.markCompleted(true);
+			tree.update(self.idString, self.isCompleted, true);
+
+			if (!self.isAvailable) {
+				self.completedCheck.checked = false;
+				clickCount++;
+			}
+
+			if (clickCount >= 3) {
+				alert(title + " is not available.  Complete " + self.parents.map(id => skillTree[id]).join(', ') + ' first.');
+				clickCount = 0;
+			}
+		}
+
+		this.completedCheck.addEventListener('keydown', ev => {
+			if (ev.which === 13) updateComplete();
 		});
 
 		completed.appendChild(this.completedCheck);

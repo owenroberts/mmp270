@@ -9,10 +9,27 @@ body {
   background-color: #ffc7e3;
 }
 
+#high-contrast {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2);
+  /* IE */
+  -moz-transform: scale(2);
+  /* FF */
+  -webkit-transform: scale(2);
+  /* Safari and Chrome */
+  -o-transform: scale(2);
+  /* Opera */
+  transform: scale(2);
+  padding: 0.5em;
+  margin: 0.5em;
+  cursor: pointer;
+  margin: 0.125em;
+}
+
 #header-nav {
   padding: 0 1rem;
   display: grid;
-  grid-template-areas: "header login" "points login";
+  grid-template-areas: "header settings" "header login" "points login";
 }
 #header-nav header {
   font-size: 24px;
@@ -28,7 +45,7 @@ body {
   display: none;
   text-align: right;
 }
-#header-nav #auth-button,
+#header-nav #auth-button-div,
 #header-nav #user-nav {
   margin-left: auto;
   font-size: 1.5rem;
@@ -36,7 +53,11 @@ body {
   align-self: center;
 }
 #header-nav #auth-button {
-  cursor: pointer;
+  font-size: 1.125em;
+}
+#header-nav #settings {
+  margin-left: auto;
+  margin-top: 0.5em;
 }
 #header-nav a {
   color: blue;
@@ -49,6 +70,9 @@ body {
   padding: 0 1rem;
   background-color: #e3ffc7;
   text-align: right;
+}
+#auth * {
+  font-size: 1.125em;
 }
 #auth #login {
   margin: 1rem 0;
@@ -65,10 +89,12 @@ body {
 .hidden {
   height: 0;
   overflow: hidden;
+  visibility: hidden;
 }
 
 .open {
   height: auto !important;
+  visibility: visible;
 }
 
 #main #Apprentice-container {
@@ -141,6 +167,10 @@ body {
   padding: 0 0.5rem;
   cursor: pointer;
 }
+.section .open-button {
+  margin-left: 1em;
+  vertical-align: text-top;
+}
 .section .modules {
   display: flex;
   flex-wrap: wrap;
@@ -153,7 +183,8 @@ body {
   margin-right: 0.5em;
   min-width: 8em;
   display: grid;
-  grid-template-areas: "null available" "null title" "type video" "type resource" "type points" "type bonus" "type collab" "type completed";
+  grid-gap: 0 0.25em;
+  grid-template-areas: "available null" "title null" "video type" "resource type" "points type" "bonus type" "collab type" "completed type";
   display: none;
 }
 .section .module .link:hover + .dek {
@@ -173,16 +204,6 @@ body {
   overflow: hidden;
   text-align: left;
   margin: 0;
-}
-.section .module .completed,
-.section .module .available,
-.section .module .title,
-.section .module .video,
-.section .module .dek-link,
-.section .module .bonus,
-.section .module .collab,
-.section .module .resource {
-  text-align: right;
 }
 .section .module .resource {
   grid-area: resource;
@@ -223,7 +244,6 @@ body {
 }
 .section .module .points {
   grid-area: points;
-  text-align: right;
 }
 .section .module .completed input[type=checkbox] {
   /* Double-sized Checkboxes */
@@ -260,6 +280,17 @@ body {
 }
 #admin .name {
   color: blue;
+}
+
+body.high-contrast {
+  font-family: Verdana, Tahoma, sans-serif;
+}
+body.high-contrast #header-nav, body.high-contrast .section, body.high-contrast #auth {
+  background-color: white !important;
+  border-bottom: 2px solid black;
+}
+body.high-contrast .module {
+  border: 2px solid;
 }
 
 /*# sourceMappingURL=main.css.map */
