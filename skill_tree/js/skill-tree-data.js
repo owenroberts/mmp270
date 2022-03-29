@@ -119,6 +119,7 @@ export default function SkillTreeDataProvider() {
 				// switch these??
 				"Dialog System and Plugins": {
 					"id": 7,
+					"video": "https://www.youtube.com/watch?v=hLuyeVXQ1_c&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=24",
 					"link": "1-7_Dialog_Systems_and_Add-Ons",
 					"type": "Godot",
 					"points": 3,
@@ -173,6 +174,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Obstacles and Enemies": {
 					"id": 4,
+					"video": "",
 					"link": "2-4_Obstacles_and_Enemies",
 					"type": "Art",
 					"points": 3,
@@ -183,6 +185,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"NPCs": {
 					"id": 5,
+					"video": "https://www.youtube.com/watch?v=armTjmJ7cXk&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=22",
 					"link": "2-5_NPCs",
 					"type": "Art",
 					"points": 3,
@@ -302,6 +305,7 @@ export default function SkillTreeDataProvider() {
 			"modules": {
 				"User Interface Design": {
 					"id": 0,
+					"video": "https://www.youtube.com/watch?v=EImHEb0KZXE&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=19",
 					"link": "5-0_User_Interface_Design",
 					"points": 2,
 					"type": "Art",
@@ -312,6 +316,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"User Interface Layout": {
 					"id": 1,
+					"video": "https://www.youtube.com/watch?v=nTx6YMZhnb4&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=21",
 					"link": "5-1_User_Interface_Layout",
 					"points": 3,
 					"type": "Godot",
