@@ -78,6 +78,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Player Physics": {
 					"id": 3,
+					"video": "https://www.youtube.com/watch?v=i1dUOVQc6hA&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=27",
 					"link": "1-3_Player_Physics",
 					"points": 2,
 					"parents": ['1-1'],
@@ -89,6 +90,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Obstacles and Collisions": {
 					"id": 4,
+					"video": "https://www.youtube.com/watch?v=SFZur_7HNfQ&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=29",
 					"link": "1-4_Obstacles_and_Collisions",
 					"points": 3,
 					"parents": ['1-3'],
@@ -174,7 +176,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Obstacles and Enemies": {
 					"id": 4,
-					"video": "",
+					"video": "https://www.youtube.com/watch?v=4FfVHjFAifw&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=25",
 					"link": "2-4_Obstacles_and_Enemies",
 					"type": "Art",
 					"points": 3,
