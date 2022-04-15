@@ -101,6 +101,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Enemies": {
 					"id": 5,
+					"video": "https://www.youtube.com/watch?v=Ku25456Te4U&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=30",
 					"points": 3,
 					"link": "1-5_Enemies",
 					"parents": ['1-4'],
@@ -241,6 +242,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Level Design": {
 					"id": 1,
+					"video": "https://www.youtube.com/watch?v=n7YA1jRjfq4&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=31",
 					"points": 2,
 					"link": "3-1_Level_Design",
 					"type": "Godot",
@@ -275,6 +277,7 @@ export default function SkillTreeDataProvider() {
 			"modules": {
 				"Gameplay Sound Effects": {
 					"id": 0,
+					"video": "https://www.youtube.com/watch?v=qedr1J72L0s&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=33",
 					"points": 2,
 					"link": "4-0_Gameplay_Sound_Effects",
 					"type": "Audio",
@@ -284,6 +287,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Interface Sounds": {
 					"id": 1,
+					"video": "https://www.youtube.com/watch?v=qedr1J72L0s&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=33",
 					"points": 2,
 					"link": "4-1_Interface_Sounds",
 					"type": "Audio",
@@ -293,6 +297,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Background Music": {
 					"id": 2,
+					"video": "https://www.youtube.com/watch?v=bIvjTxfWHAk&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=34",
 					"points": 2,
 					"link": "4-2_Background_Music",
 					"type": "Audio",
@@ -389,7 +394,7 @@ export default function SkillTreeDataProvider() {
 					"id": 1,
 					"video": "https://www.youtube.com/watch?v=XlweYmqvsv8&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=7",
 					"type": "Reading",
-					"link": '6-0_Research',
+					"link": '7-0_Research',
 					"points": 1,
 					"parents": ['0-0'],
 					"research": "http://270.owen.cool/notes/character/readings/mccloud.pdf",
@@ -400,7 +405,7 @@ export default function SkillTreeDataProvider() {
 					"id": 2,
 					"video": "https://www.youtube.com/watch?v=XlweYmqvsv8&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=7",
 					"type": "Reading",
-					"link": '6-0_Research',
+					"link": '7-0_Research',
 					"points": 1,
 					"parents": ['0-0'],
 					"research": "https://www.museumofplay.org/about/icheg/video-game-history/timeline",
@@ -411,7 +416,7 @@ export default function SkillTreeDataProvider() {
 					"id": 3,
 					"video": "https://www.youtube.com/watch?v=XlweYmqvsv8&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=7",
 					"type": "Reading",
-					"link": "6-0_Research",
+					"link": "7-0_Research",
 					"points": 1,
 					"parents": ['0-0'],
 					"research": "https://www.gamedeveloper.com/design/the-designer-s-notebook-sorting-out-the-genre-muddle",
@@ -422,7 +427,7 @@ export default function SkillTreeDataProvider() {
 					"id": 4,
 					"video": "https://www.youtube.com/watch?v=XlweYmqvsv8&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=7",
 					"type": "Game",
-					"link": "6-0_Research",
+					"link": "7 d-0_Research",
 					"points": 1,
 					"parents": ['0-0'],
 					"research": "https://int3.github.io/open-syobon-action.js/",
