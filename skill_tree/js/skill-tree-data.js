@@ -112,6 +112,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Projectile Physics": {
 					"id": 6,
+					"video": "https://www.youtube.com/watch?v=7So3eZlfLUo&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=37",
 					"link": "1-6_Projectile_Physics",
 					"type": "Godot",
 					"points": 3,
@@ -208,6 +209,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Backgrounds": {
 					"id": 7,
+					"video": "https://www.youtube.com/watch?v=E39rVWlHlkA&list=PLSqAxglrKGAxAuQNZ4YRQViMI5wuwSIEo&index=19",
 					"link": "2-7_Backgrounds",
 					"type": "Art",
 					"points": 3,
@@ -217,6 +219,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Checkpoints and Portals": {
 					"id": 8,
+					"video": "https://www.youtube.com/watch?v=LwN65Uc6dIg&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=39",
 					"link": "2-8_Checkpoints_and_Portals",
 					"points": 3,
 					"type": "Godot",
@@ -253,6 +256,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Checkpoints and Portals": {
 					"id": 2,
+					"video": "https://www.youtube.com/watch?v=6Tb3Dkozl6I&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=40",
 					"link": "3-2_Checkpoints_and_Portals",
 					"points": 3,
 					"type": "Godot",
@@ -262,6 +266,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Level Design 2": {
 					"id": 3,
+					"video": "https://www.youtube.com/watch?v=6Tb3Dkozl6I&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=40",
 					"link": "3-3_Level_Design_2",
 					"points": 4,
 					"type": "Godot",
@@ -334,6 +339,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Metrics": {
 					"id": 2,
+					"video": "https://www.youtube.com/watch?v=KEfovNboeGY&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=44",
 					"link": "5-2_Metrics",
 					"points": 3,
 					"type": "Godot",
@@ -348,6 +354,7 @@ export default function SkillTreeDataProvider() {
 			"modules": {
 				"Exporting a Build": {
 					"id": 0,
+					"video": "https://www.youtube.com/watch?v=N6rnoLKQQaU&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=41",
 					"link": "6-0_Exporting_a_Build",
 					"type": "Godot",
 					"points": 5,
@@ -357,6 +364,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"Publishing on Itch.io": {
 					"id": 1,
+					"video": "https://www.youtube.com/watch?v=LAYDZCvo_Ek&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=42", 
 					"link": "6-1_Publishing_on_Itch",
 					"type": "Itch",
 					"points": 5,
@@ -367,6 +375,7 @@ export default function SkillTreeDataProvider() {
 				},
 				"User Testing": {
 					"id": 2,
+					"video": "https://www.youtube.com/watch?v=kgEQB3LOugU&list=PLSqAxglrKGAyc_-fTzVPtGC_x4WVlfr_v&index=43",
 					"link": "6-2_User_Testing",
 					"type": "Open Lab",
 					"points": 5,
