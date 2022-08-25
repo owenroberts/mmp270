@@ -8,30 +8,18 @@ title: Schedule
 ## Week 1 **Introduction**
 - [Introduction to Game Design](notes/intro)
 - **Reading**:	<a href="readings/crawford.pdf" target="blank">Crawford - Chapter 1</a>
-
-<!-- 
-- [Publishing on Medium](notes/medium)
-- **Lab**: Set up development environment
-	- Using Brackets <a href="http://brackets.io/" target="blank">Download</a>
-	- Basic HTML/CSS page
-	- [Download p5.js](https://github.com/processing/p5.js/releases/download/0.5.14/p5.min.js)
-	- [Download p5.play](https://github.com/molleindustria/p5.play/archive/master.zip)
-	- [Lab](labs/{{site.semester}}/week1/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week1/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week1/lab.html)
-- **Assignment 1: Blog Response**
-	- Write a post on the class blog
-	- Choose a game that you are currently playing or played recently
-	- Identify the Goals, Obstacles and Rewards of the game
-	- Write about one example of each
-	- Use screen shots to show how they are represented visually
-	- Write short descriptions of each and how they work in the game
--->
+- **Lab**: [Open Lab Intro](0-0_Open_Lab_Intro)
+- **Lab**: [Art Intro](0-1_Art_Intro)
+- **Lab**: [Godot Intro](0-2_Godot_Intro)
+- **Assignment: First Open Lab Post**
+	- Create an avatar in Piskel to use for the Open Lab Avatar
+	- Take a screen shot of your Avatar inside the intro Godot scene
+	- Post on Open Lab
 
 ## Week 2 **Character**
 - [Character Design](notes/character)
 - [Piskel App](https://www.piskelapp.com/){:target="blank"}
-
+- **Lab**: [Character Design](2-0_Character_Design)
 
 <!-- - [Adobe Animate CC Guide](https://www.youtube.com/watch?v=3iXSQ8VcPcU){:target="blank"}
 - **Reading**: [McCloud - Chapter 2](readings/mccloud.pdf)

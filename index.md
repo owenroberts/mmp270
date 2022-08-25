@@ -5,7 +5,8 @@ schedule: false
 ---
 
 ## Class links
-- [Skill Tree](skill_tree){:target="blank"}
+<!-- - [Skill Tree](skill_tree){:target="blank"} -->
+- [Schedule](schedule)
 - [Labs](labs)
 - [Lecture notes](notes)
 - [Open Lab](https://openlab.bmcc.cuny.edu/mmp-270-fall-2021/){:target="blank"}

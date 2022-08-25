@@ -7,33 +7,18 @@ label: Labs
 <!-- 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tLUm5UnBU94?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
-Create an Open Lab account, a Skill Tree account, and post your Skill Tree Plan on the Open Lab.
+Create an Open Lab Account.  
 
 ## 1. Login to Open Lab.
 - Go to [Open Lab](https://openlab.bmcc.cuny.edu/){:target="blank"} and click Login or Sign Up
 - Sign Up if you don't have an account
 - Use BMCC email and password
-- Go to the [MMP 270 course](https://openlab.bmcc.cuny.edu/groups/mmp-270-spring-2022/){:target="blank"} and click `Join` button
-- Click visit site to go to the [class site](https://openlab.bmcc.cuny.edu/mmp-270-spring-2022/){:target="blank"}
+- Go to the [MMP 270 course](https://openlab.bmcc.cuny.edu/groups/mmp-270-fall-2022/){:target="blank"} and click `Join` button
+- Click visit site to go to the [class site](https://openlab.bmcc.cuny.edu/mmp-270-fall-2022/){:target="blank"}
 
-## 2. Open the Skill Tree
-- Click on the [Skill Tree](../skill_tree){:target="blank"} link and create an account
-- Use an email that you can access in case we need to reset your password
-- Choose a username that is recognizable or send a message with your username
-
-## 3. Explore the Skill Tree
-- You can click on the `Completed` checks to see how the Skill Tree progresses
-- The `Progress` page shows your progress in the class, it will reset when you refresh the page
-- The `Plan` page will save your changes so you can compare your progress to your plan
-- Choose a series of labs that adds up to *at least 35 total points*
-
-## 4. Document your Path
-- Take screen shots of the sections you want to complete
-- Make a new post on the Open Lab and add your screen shots
-- Write 2-3 sentences on why you chose the labs you chose
-
-## 5. Publish your first post on Open Lab
-- Add the "Open Lab Intro" for the Open Lab post and click Publish
+## 2. Publish your first post on Open Lab
+- Add a screen shot from your Godot Intro lab and post it to the Open Lab
+- Write a sentence about the Avatar you created and how it relates to you
 
 ## Resources
 - [Signing up on the BMCC Open Lab](https://openlab.bmcc.cuny.edu/blog/help/how-to-sign-up-and-log-in-to-bmcc-openlab-students-staff-faculty/){:target="blank"}
