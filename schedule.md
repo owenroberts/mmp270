@@ -8,9 +8,9 @@ title: Schedule
 ## Week 1 **Introduction**
 - [Introduction to Game Design](notes/intro)
 - **Reading**:	<a href="readings/crawford.pdf" target="blank">Crawford - Chapter 1</a>
-- **Lab**: [Open Lab Intro](0-0_Open_Lab_Intro)
-- **Lab**: [Art Intro](0-1_Art_Intro)
-- **Lab**: [Godot Intro](0-2_Godot_Intro)
+- **Lab**: [Open Lab Intro](labs/0-0_Open_Lab_Intro)
+- **Lab**: [Art Intro](labs/0-1_Art_Intro)
+- **Lab**: [Godot Intro](labs/0-2_Godot_Intro)
 - **Assignment: First Open Lab Post**
 	- Create an avatar in Piskel to use for the Open Lab Avatar
 	- Take a screen shot of your Avatar inside the intro Godot scene
