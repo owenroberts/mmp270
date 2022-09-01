@@ -5,8 +5,6 @@ return: ./labs
 label: Labs
 ---
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/y_dHEGCDyZ8?rel=0" frameborder="0" allowfullscreen></iframe> -->
-
 Get the Godot Engine set up on your computer and create a basic scene.
 
 ## 1. Download Godot
@@ -46,7 +44,7 @@ Get the Godot Engine set up on your computer and create a basic scene.
 
 ## 7. Add the Player Script to the Player
 - [Download the MMP 270 Assets folder](./270_Assets.zip)
-- Extract the `PlayerControllerSimple.gd` file and drag into the Scripts folder
+- Extract the `PlayerController.gd` file and drag into the Scripts folder
 - In the Player scene `Inspector` click the `[empty]` next to `Script` and then choose the player script
 - Adjust the properties in the `Script Variables`
 
