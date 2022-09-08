@@ -53,7 +53,7 @@ title: Labs
 
 ## Assets
 - [Assets Folder](./270_Assets.zip)
-- [Blank Template](./270_Template.zip)
+- [Blank Template](./270_BlankTemplate.zip)
 
 
 <!--

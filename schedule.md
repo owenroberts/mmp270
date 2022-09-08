@@ -3,8 +3,6 @@ layout: main
 title: Schedule
 ---
 
-
-
 ## Week 1 **Introduction**
 - [Introduction to Game Design](notes/intro)
 - **Reading**:	<a href="readings/crawford.pdf" target="blank">Crawford - Chapter 1</a>
@@ -19,24 +17,14 @@ title: Schedule
 ## Week 2 **Character**
 - [Character Design](notes/character)
 - [Piskel App](https://www.piskelapp.com/){:target="blank"}
-- **Lab**: [Character Design](2-0_Character_Design)
-
-<!-- - [Adobe Animate CC Guide](https://www.youtube.com/watch?v=3iXSQ8VcPcU){:target="blank"}
-- **Reading**: [McCloud - Chapter 2](readings/mccloud.pdf)
-- **Lab**: Add character to game
-	- Sprites, image and animation
-	- Events and input
-	- Booleans
-	- [Lab](labs/{{site.semester}}/week2/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week2/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week2/lab.html)
-- **Assignment 2: Character Design**
-	- Concept design for main character in video game
-	- At least 5 sketches
-	- Digital version of favorite sketch
-	- Design main character for endless runner game
-	- Create sprites for idle, running, jumping states
-	- Post screen shots / photos of everything on the blog -->
+- **Lab**: [Character Design](labs/2-0_Character_Design)
+- **Lab**: [Character Animation](labs/2-1_Character_Animation)
+- **Assignment: Character Design and Animation**
+	- Create three variations of a design for your player character
+	- Post the sketches on Open Lab
+	- Choose one design to make an animation
+	- Make animations for Idle, Walk, Jump and Hit states
+	- Post animation sprite sheets on the Open Lab
 
 ## Week 3 **Setting**
 - [Game Setting](notes/setting)
