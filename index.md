@@ -9,7 +9,7 @@ schedule: false
 - [Schedule](schedule)
 - [Labs](labs)
 - [Lecture notes](notes)
-- [Open Lab](https://openlab.bmcc.cuny.edu/mmp-270-fall-2021/){:target="blank"}
+- [Open Lab](https://openlab.bmcc.cuny.edu/mmp-270-fall-2022/){:target="blank"}
 - [Discord](https://discord.com/invite/GaHnPfZUs6){:target="blank"}
 - [itch.io](https://itch.io/){:target="blank"}
 
