@@ -9,7 +9,7 @@ title: Schedule
 - **Lab**: [Open Lab Intro](labs/0-0_Open_Lab_Intro)
 - **Lab**: [Art Intro](labs/0-1_Art_Intro)
 - **Lab**: [Godot Intro](labs/0-2_Godot_Intro)
-- **Assignment: First Open Lab Post**
+- **Assignment**: First Open Lab Post
 	- Create an avatar in Piskel to use for the Open Lab Avatar
 	- Take a screen shot of your Avatar inside the intro Godot scene
 	- Post on Open Lab
@@ -19,7 +19,7 @@ title: Schedule
 - [Piskel App](https://www.piskelapp.com/){:target="blank"}
 - **Lab**: [Character Design](labs/2-0_Character_Design)
 - **Lab**: [Character Animation](labs/2-1_Character_Animation)
-- **Assignment: Character Design and Animation**
+- **Assignment**: Character Design and Animation
 	- Create three variations of a design for your player character
 	- Post the sketches on Open Lab
 	- Choose one design to make an animation
@@ -28,26 +28,21 @@ title: Schedule
 
 ## Week 3 **Setting**
 - [Game Setting](notes/setting)
+- **Lab**: [Scenery](labs/2-6_Scenery)
+- **Lab**: [Backgrounds](labs/2-7_Backgrounds)
 - **Reading**: [The Designer's Notebook: Sorting Out the Genre Muddle](https://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php)
-
-
-<!-- - **Lab: Scenic Assets**
-	- Platform, foreground and background elements
-	- Random, more booleans, basic physics
-	- [Lab](labs/{{site.semester}}/week3/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week3/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week3/lab.html)
-- **Assignment 3: Scenic Assets**
-	- Design scenic assets for your game
-	- Create at least 1 background element (non interactive)
-	- Create at least 1 foreground element (non interactive)
-	- Create at least 1 platforms that the player can stand on
-	- Create at least 2 more scenic elements (interactive or not)
-	- Post screen shots / photos of everything on the blog -->
+- **Assignment**: Scenery and Backgrounds
+	- Create 3 sprites that represent scenic elements of the game world
+	- At least 1 sprite should be animated
+	- Create a background image for the gameworld using a Parallax Layer
+	- Document the scenic elements with a screen shot from the game scene
+	- Post the screen shot and sprites on the Open Lab
 
 ## Week 4 **Genre**
 - [Game Genre](notes/genre)
 - **Reading**: Watch [Early Video Game History](https://www.youtube.com/watch?v=uuxoThzFPPw) and [A Brief History of Video Games](https://www.youtube.com/watch?v=GoyGlyrYb9c) and look at [Video Game History Timeline](http://www.museumofplay.org/about/icheg/video-game-history/timeline)
+
+<!-- need to do platforms/tilesets here -->
 
 <!-- - **Lab: Obstacles**
 	- Groups, loops
