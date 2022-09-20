@@ -33,12 +33,11 @@ title: Schedule
 - **Lab**: [Tilesets and Platforms](labs/2-2_Tilesets_and_Platforms)
 - **Lab**: [Designing with Tilemaps](labs/3-0_Designing_with_TileMaps)
 - **Reading**: [The Designer's Notebook: Sorting Out the Genre Muddle](https://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php)
-- **Assignment**: Scenery and Backgrounds
-	- Create 3 sprites that represent scenic elements of the game world
-	- At least 1 sprite should be animated
-	- Create a background image for the gameworld using a Parallax Layer
+- **Assignment**: Scenery 
+	- Create the setting of a scene using a combination of scenery sprites, backgrounds and TileMaps
+	- Scenery should have a cohesive theme that creates an identifiable world
 	- Document the scenic elements with a screen shot from the game scene
-	- Post the screen shot and sprites on the Open Lab
+	- Post a screen shot of the scenery and sprites on the Open Lab
 
 ## Week 4 **Genre**
 - [Game Genre](notes/genre)
