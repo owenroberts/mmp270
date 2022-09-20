@@ -30,6 +30,8 @@ title: Schedule
 - [Game Setting](notes/setting)
 - **Lab**: [Scenery](labs/2-6_Scenery)
 - **Lab**: [Backgrounds](labs/2-7_Backgrounds)
+- **Lab**: [Tilesets and Platforms](labs/2-2_Tilesets_and_Platforms)
+- **Lab**: [Designing with Tilemaps](labs/3-0_Designing_with_TileMaps)
 - **Reading**: [The Designer's Notebook: Sorting Out the Genre Muddle](https://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php)
 - **Assignment**: Scenery and Backgrounds
 	- Create 3 sprites that represent scenic elements of the game world

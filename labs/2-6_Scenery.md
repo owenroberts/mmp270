@@ -16,7 +16,7 @@ Create scenery and add it into a Godot scene.
 - Try variations and choose the best ones
 
 ## 2. Setup Godot project
-- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Use your game project or download the [Default Project Template](./270_BlankTemplate.zip)
 - Download the [Assets](./270_Assets.zip) folder if needed
 - Add sprites and duplicate them to arrange scenery
 

@@ -17,7 +17,7 @@ Create a seamless background in Piskel and add it in Godot.
 - Export at a size that will be the same size or larger than the game window
 
 ## 2. Setup Godot project
-- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Use your game project or download the [Default Project Template](./270_BlankTemplate.zip)
 - Download the [Assets](./270_Assets.zip) folder if needed
 - In the *DefaultScene*, add a new *ParallaxBackground* node
 - Then add a *ParallaxLayer* node with a *Sprite* node child
