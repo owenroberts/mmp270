@@ -4,6 +4,7 @@ semester: 21s
 layouts_dir: slides/_jeks/layouts
 includes_dir: slides/_jeks/includes
 background: true
+schedule: true
 # http://downtothewire.io/2015/08/15/configuring-jekyll-for-user-and-project-github-pages/
 # baseurl: /
 # Exclude these files from your production _site
