@@ -53,7 +53,7 @@ title: Labs
 
 ## Assets
 - [Assets Folder](./270_Assets.zip)
-- [TileSets](./270_Assets.zip)
+- [TileSets](./270_TileSets.zip)
     - Contains Tilesets for Auto 3x3 Minamalist setup, RGP has collisions with Off (water) areas, Platforms has collisions with On (grass) areas
     - TileMap art must be located in `Sprites` and named `scenery_autotile_3x3.png` to work
 - [Blank Template](./270_BlankTemplate.zip)
