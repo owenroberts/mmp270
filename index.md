@@ -5,17 +5,17 @@ schedule: false
 ---
 
 ## Class links
-<!-- - [Skill Tree](skill_tree){:target="blank"} -->
 - [Schedule](schedule)
+- [Class videos](https://www.youtube.com/playlist?list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh){:target="_blank"}
 - [Labs](labs)
 - [Lecture notes](notes)
-- [Open Lab](https://openlab.bmcc.cuny.edu/mmp-270-fall-2022/){:target="blank"}
-- [Discord](https://discord.com/invite/GaHnPfZUs6){:target="blank"}
-- [itch.io](https://itch.io/){:target="blank"}
+- [Open Lab](https://openlab.bmcc.cuny.edu/mmp-270-fall-2022/){:target="_blank"}
+- [Discord](https://discord.com/invite/GaHnPfZUs6){:target="_blank"}
+- [itch.io](https://itch.io/){:target="_blank"}
 
 ## Software
-- [Godot Engine](https://godotengine.org/){:target="blank"}
-- [Audacity](https://www.audacityteam.org/){:target="blank"}
-- [Piskel](https://www.piskelapp.com/){:target="blank"}
-- [jfxr](https://jfxr.frozenfractal.com/){:target="blank"}
-- [Audio Tool](https://www.audiotool.com/app){:target="blank"} 
+- [Godot Engine](https://godotengine.org/){:target="_blank"}
+- [Audacity](https://www.audacityteam.org/){:target="_blank"}
+- [Piskel](https://www.piskelapp.com/){:target="_blank"}
+- [jfxr](https://jfxr.frozenfractal.com/){:target="_blank"}
+- [Audio Tool](https://www.audiotool.com/app){:target="b_lank"} 
