@@ -42,21 +42,18 @@ title: Schedule
 ## Week 4 **Genre**
 - [Game Genre](notes/genre)
 - **Reading**: Watch [Early Video Game History](https://www.youtube.com/watch?v=uuxoThzFPPw) and [A Brief History of Video Games](https://www.youtube.com/watch?v=GoyGlyrYb9c) and look at [Video Game History Timeline](http://www.museumofplay.org/about/icheg/video-game-history/timeline)
-
-<!-- need to do platforms/tilesets here -->
-
-<!-- - **Lab: Obstacles**
-	- Groups, loops
-	- Collisions, death
-	- "wrapping" sprites
-	- [Lab](labs/{{site.semester}}/week4/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week4/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week4/lab.html)
-- **Assignment 4: Obstacles**
-	- Design 5 potential *obstacles* for your game
-	- Sketches/pixel art/Illustrator art all okay
-	- Explain how the obstacles interact with character
-	- Post images and explanations on blog -->
+- **Lab**: [Rewards](labs/2-3_Rewards)
+- **Lab**: [Collecting Items](labs/1-2_Collecting_Items)
+- **Lab**: [Obstacles and Collisions](labs/1-4_Obstacles_and_Collisions)
+- **Assignment**: Rewards and Obstacles
+	- Create art for a reward for the player to collect
+		- Include an idle state animation and collected animation
+	- Create art for a stationary obstacle for the player to avoid
+		- Include an idle state animation and collected animation
+	- Add rewards and obstacles into a scene
+	- Create a Global script to track the number of items collected
+	- The script can also track the player health or number of lives
+	- Post screens shots of the items in the game along with the spritesheets on the Open Lab
 
 ## Week 5 **Indie games**
 - [Indie games](notes/indie)
