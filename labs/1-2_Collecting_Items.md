@@ -10,7 +10,7 @@ label: Labs
 Add items and to be collected in Godot. This lab is good to pair with the [Rewards](2-3_Rewards.md) lab.
 
 ## 1. Setting up the Godot Project
-- Continue working with your game project, or download the [Default Project Template](./270_Template.zip)
+- Continue working with your game project, or download the [Default Project Template](./270_BlankTemplate.zip)
 - This lab requires the Metrics to be set up in the scene, so grab the following things from [Assets](./270_Assets.zip)
 - This lab requires animated sprites for a collectible item such as a coin, or life
 

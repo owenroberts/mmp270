@@ -10,7 +10,7 @@ label: Labs
 Create a level in Godot using concepts from the [Level Design](../notes/level) lecture.
 
 ## 1. Setup Godot project
-- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Use your game project or download the [Default Project Template](./270_BlankTemplate.zip)
 - Download the [Assets](./270_Assets.zip) folder if needed
 - Duplicate the `UIScene.tscn` and rename the copy `Level1.tscn`
 

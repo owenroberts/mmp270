@@ -5,21 +5,30 @@ title: Schedule
 
 ## Week 1 **Introduction**
 - [Introduction to Game Design](notes/intro)
-- **Reading**:	<a href="readings/crawford.pdf" target="blank">Crawford - Chapter 1</a>
+- **Reading**:	<a href="readings/crawford.pdf" target="_blank">Crawford - Chapter 1</a>
 - **Lab**: [Open Lab Intro](labs/0-0_Open_Lab_Intro)
 - **Lab**: [Art Intro](labs/0-1_Art_Intro)
 - **Lab**: [Godot Intro](labs/0-2_Godot_Intro)
-- **Assignment**: First Open Lab Post
+- **Class recordings**: 
+	- [Introduction to Game Design](https://www.youtube.com/watch?v=ahR_PPvvUs8&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=1){:target="_blank"}
+	- [Art Intro](https://www.youtube.com/watch?v=YCvLlOpeupE&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=2){:target="_blank"}
+	- [Godot Intro Part 1](https://www.youtube.com/watch?v=mlIQzG99oyo&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=4&t=2s){:target="_blank"}
+	- [Godot Intro Part 2](https://www.youtube.com/watch?v=1Ov8EQR7B5g&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=5){:target="_blank"}
+	- [Godot Intro Part 3](https://www.youtube.com/watch?v=-gKaEL4Ob14&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=6&t=1091s){:target="_blank"}
+- **Assignment 1**: First Open Lab Post
 	- Create an avatar in Piskel to use for the Open Lab Avatar
 	- Take a screen shot of your Avatar inside the intro Godot scene
 	- Post on Open Lab
 
 ## Week 2 **Character**
 - [Character Design](notes/character)
-- [Piskel App](https://www.piskelapp.com/){:target="blank"}
+- [Piskel App](https://www.piskelapp.com/){:target="_blank"}
 - **Lab**: [Character Design](labs/2-0_Character_Design)
 - **Lab**: [Character Animation](labs/2-1_Character_Animation)
-- **Assignment**: Character Design and Animation
+- **Class recordings**:
+	- [Character Design Lecture](https://www.youtube.com/watch?v=rIPYJMlaVBQ&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=7){:target="_blank"}
+	- [Character Design Lab](https://www.youtube.com/watch?v=Gr_lUymk9s4&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=8){:target="_blank"}
+- **Assignment 2**: Character Design and Animation
 	- Create three variations of a design for your player character
 	- Post the sketches on Open Lab
 	- Choose one design to make an animation
@@ -32,8 +41,14 @@ title: Schedule
 - **Lab**: [Backgrounds](labs/2-7_Backgrounds)
 - **Lab**: [Tilesets and Platforms](labs/2-2_Tilesets_and_Platforms)
 - **Lab**: [Designing with Tilemaps](labs/3-0_Designing_with_TileMaps)
+- **Class recordings**:
+	- [Setting Lecture](https://www.youtube.com/watch?v=wO7NsZplyOY&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=10){:target="_blank"}
+	- [Scenery Sprites](https://www.youtube.com/watch?v=0iqQk5iuPmo&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=11){:target="_blank"}
+	- [Simple TileMap](https://www.youtube.com/watch?v=gdZq-LSojcQ&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=12){:target="_blank"}
+	- [AutoTiles](https://www.youtube.com/watch?v=G6JB2aipt_8&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=13){:target="_blank"}
+	- [Background](https://www.youtube.com/watch?v=OT4CfdDbxbQ&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=14){:target="_blank"}
 - **Reading**: [The Designer's Notebook: Sorting Out the Genre Muddle](https://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php)
-- **Assignment**: Scenery 
+- **Assignment 3**: Scenery 
 	- Create the setting of a scene using a combination of scenery sprites, backgrounds and TileMaps
 	- Scenery should have a cohesive theme that creates an identifiable world
 	- Document the scenic elements with a screen shot from the game scene
@@ -45,7 +60,11 @@ title: Schedule
 - **Lab**: [Rewards](labs/2-3_Rewards)
 - **Lab**: [Collecting Items](labs/1-2_Collecting_Items)
 - **Lab**: [Obstacles and Collisions](labs/1-4_Obstacles_and_Collisions)
-- **Assignment**: Rewards and Obstacles
+- **Class recordings**:
+	- [Genre Lecture](https://www.youtube.com/watch?v=4YpWbgZnnBQ&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=15){:target="_blank"}
+	- [Collecting Items](){:target="_blank"}
+	- [Obstacles](){:target="_blank"}
+- **Assignment 4**: Rewards and Obstacles
 	- Create art for a reward for the player to collect
 		- Include an idle state animation and collected animation
 	- Create art for a stationary obstacle for the player to avoid
@@ -58,183 +77,71 @@ title: Schedule
 ## Week 5 **Indie games**
 - [Indie games](notes/indie)
 - **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
+- **Lab**: Enemies (Moving Obstacles)
+- **Assignment 5**:
+	- Create art for a moving enemy
+	- Include idle, walking, attack and death animations
+	- Add a moving enemy into a Godot scene
+	- Post sprite sheet and documentation on Open Lab
 
-<!-- - **Blog**: How does Syoban Action play with video game expectations?
- -->
-<!-- - **Lab**
-	- Distributing platforms
-	- Camera position
-	- [Lab](labs/{{site.semester}}/week5/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week5/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week5/lab.html)
-- **Assignment 5: Rewards**
-	- Design 5 potential *rewards* for your game
-	- Same idea as Assignment 4
-	- Post screen shots and explanation of how each reward could help the player advance in the game
-	- Post on Medium -->
+## Week 6 **Level Design**
+<!-- - [Video Games & Art](notes/art) -->
+- [Level Design](notes/level)
+- **Lab**: [Level Design](labs/3-1_Level_Design)
+- **Assignment 6**:
+	- Build a level in Godot
+	- Document the player's progress through the level
+	- Post screen shot or video on the Open Lab
 
-## Week 6 **Art**
-- [Video Games & Art](notes/art)
-<!-- - **Reading**: Find a game on <a href="https://itch.io/" target="blank">itch.io</a> to play -->
-
-<!-- - **Lab**
-	- Settings file and variables
-	- Start and death scene
-	- Build and reset functions
-	- Text
-	- [Lab](labs/{{site.semester}}/week6/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week6/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week6/lab.html) -->
-
-	
 ## Week 7 **Sound**
 - [Sound effects](notes/sound)
+- **Lab**: [Gameplay Sound Effects](labs/4-0_Gameplay_Sound_Effects)
+- **Lab**: [Background Music](labs/4-2_Background_Music)
+- **Assignment 7**:
+	- Add sound effects to player, obstacles and rewards
+	- Add background music or sound
 
-<!-- - **Lab**
-	- Sound with <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>
-	- Sound library <a href="https://raw.githubusercontent.com/processing/p5.js-sound/master/lib/p5.sound.js" target="blank">p5 sound library</a>
-	- Selecting random sounds/images
-	- Setting colliders
-	- Object distribution
-	- [Lab](labs/{{site.semester}}/week7/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week7/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week7/lab.html)
-- **Assignment 6: Sound Effects**
-	- Create sounds for the game
-		- Game start
-		- Player jump and land
-		- Player dies/loses
-		- Player hit by obstacle
-		- Player collects reward
-	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
-	- ~~Post sounds on Medium~~ Post on Blackboard, medium doesn't allow sound files -->
-
-## Week 8/9 **Midterm**
+## Week 8 **Midterm**
 - In class workshop
-- Create an [itch.io](https://itch.io/){:target="blank"} account
-- See Blackboard for rubric
+- Create an [itch.io](https://itch.io/){:target="_blank"} account
+- **Lab**: [Exporting a Build](labs/5-0_Exporting_a_Build)
+- **Lab**: [Publishing on Itch.io](labs/5-1_Publishing_on_Itch)
+- Publish a build of your game and post on Itch.io
 
-<!-- - **Lab:** Rewards
-	- [Lab](labs/{{site.semester}}/week8/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week8/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week8/lab.html) -->
-
-## Week 10 **User Testing**
+## Week 9 **User Testing**
 - [Browser Games](notes/browser)
 - [User Testing](notes/testing)
+- **Assignment 8**:
+	- Create a user testing form
+	- Playtest games and fill out user testing surveys in class
+
+## Week 10 **Emergence & Progression**
+- [Emergence & Progression](notes/emergence)
+- **Lab**: [Dialog Systems and Add-Ons](labs/1-7_Dialog_Systems_and_Add-Ons)
+
+## Week 11-13 **Advanced Topics**
+- **Lab**: [Checkpoints and Portals](labs/2-8_Checkpoints_and_Portals)
+- **Lab**: [Physics and Projectiles](labs/1-6_Projectile_Physics)
+- **Lab**: [Level Design 2](labs/3-3_Level_Design_2)
+
+## Week 14-15 **Final Project Workshop**
+- **Final Project Requirements**
+	- Godot game exported and published on Itch.io
+	- At least 2 levels
+	- Original art for all of the characters, items and scenery in the game
+	- Documentation on the Open Lab/Itch
+		- One video of gameplay
+		- 3 still images from the game
+		- Written description of the game
+	- Students can collaborate
+
 
 <!-- - **Assignment 7: User Testing Form**
 	- Create a user testing form
 	- Send the game and form to 5 users not in the class -->
 
-## Week 11 **User Testing Workshop**
-- [Emergence & Progression](notes/emergence)
-- Playtest games and fill out user testing surveys in class
 
-<!-- - **Lab: Progression**
-	- [Lab](labs/{{site.semester}}/week11/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week11/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week11/lab.html)
-- **Assignment 8: User Testing Report**
-	- Summarize feedback in Medium post
-	- Choose three things to work on for final -->
-
-<!-- 
-
-## Week 12 **Background Music**
-- **Lab: Background Music**
-	- [Free Music Archive](http://freemusicarchive.org/){:target="blank"} 
-	- [Wikimedia](https://commons.wikimedia.org/wiki/Category:Audio_files_of_music){:target="blank"} 
-	- [Audiotool](https://www.audiotool.com/app){:target="blank"}
-	- [Lab](labs/{{site.semester}}/week12/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week12/){:target="blank"} 
-	& [notes](labs/{{site.semester}}/week12/lab.html)
-
-## Week 13 **Labs**
-- New Rewards
-	- [Lab](labs/{{site.semester}}/week13/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week13/){:target="blank"}
-	& [notes](labs/{{site.semester}}/week13/lab.html)
-- Graphics + Sound for hitting obstacle/reward
-	- [Lab](labs/{{site.semester}}/week14/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week14/){:target="blank"}
-
-
-
-2018 labs
-- moving the character
-- reaction sprites
-- progression
-
-- **Lab**
-	- Physics
-	- [Lab](week10/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week10/lab)
-- **Final Project Pitch**
-	- Write a pitch for your final project
-	- Include images of the assets from your game
-	- What three features of your game are most important/unique?
-
-## Week 11 **Emergence & Progression**
-- **Lab**
-	- Levels
-	- Resetting game
-	- [Progressive Game Lab](week11/lab/)
-	- [Emergent Game Lab](week11/emerge/) - [Notes](week11/lab.html)
-- **Final Project Plan**
-	- Outline the levels or scenes in the game
-	- Chart how the game progresses or increases in difficulty
-	- Design interface for moving in between levels
-
-## Week 12 **User Testing**
-- **Lab**
-	- User interface
-	- [Lab](week12/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week12/lab)
-	- Background music with [Audiotool](https://www.audiotool.com/app) - [Non flash version](https://next.audiotool.com/)
-- **Assignment: User testing survey**
-	- Use Google Forms to create a survey for user testing
-	- We will review the surveys next week and then send to at least 5 testers
-	- Testing feedback will be incorporated into the final
-
-## Week 13 **Non-player Character & AI**
-- User testing workshop
-- **Lab**
-	- Enemy AI
-	- [Lab](week13/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week13/lab)
-	- Publishing games on itch.io
-- Pac-Man ghost AI
-	- <a href="https://www.youtube.com/watch?v=sQK7PmR8kpQ" target="blank">Ms. Pac-Man Tutorial: Ghost Behavior</a>
-	- <a href="http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior" target="blank">Understanding Pac-Man Ghost Behavior</a>
-	- <a href="http://www.gamasutra.com/view/feature/3938/the_pacman_dossier.php?print=1" target="blank">The Pac-Man Dossier</a>
-	- <a href="http://laweekly.blogs.com/joshuah_bearman/files/harpers_billy_mitchell.pdf" target="blank">The Perfect Game: Five years with the master of Pac-Man</a>
-- **Assignment: User testing**
-	- Send the user testing form and game to at least 5 players
-	- Document the feedback in a blog post
-	- Choose three things to work on for the final
-
-## Week 14/15 **Final Workshop**
-
-
-
-labs
-			17f							18f
-week 1		click Sprites 				click sprites	
-week 2		add sprites 				sprite sheets
-			move character.vel 			player.pos +=
-week 3		platform 					platform
-			gravity 					gravity
-			jump, speed, .isJumping		jump
-			loop clouds + bushes		collide ?
-			collide						spawn with timer 
-										or frameCount?
-week 4		no lab?
-week 5		group
-			loop walls
-			enemies
-			health
-week 6
-week 7
-week 8	
-
+<!--
 http://owenroberts.github.io/videogames/week8/index.html
 http://imranunit40.blogspot.com/2015/05/goals-challenges-and-rewards.html
 http://jeremycouillard.com/newMedia/gameDesign.html

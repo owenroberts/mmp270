@@ -11,7 +11,7 @@ label: Labs
 Add visible metrics to a game scene to show the score, number of items or lives.  It uses art created in the [Rewards](2-3_Rewards) art lab 
 
 ## 1. Setup
-- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Use your game project or download the [Default Project Template](./270_BlankTemplate.zip)
 - Download the [Assets](./270_Assets.zip) folder if needed
 - For artwork, you will need the rewards such as extra lives and items and any other icons you may want to use to represent in the metrics
 - We're going to rebuild the `Metrics.tscn` scene so delete the one in the default folder

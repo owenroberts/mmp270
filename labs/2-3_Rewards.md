@@ -17,7 +17,7 @@ This lab is good to pair with [Collecting Items](1-2_Collecting_Items).
 - Export sprite sheets to use in Godot
 
 ## 2. Add art to Godot
-- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Use your game project or download the [Default Project Template](./270_BlankTemplate.zip)
 - Download the [Assets](./270_Assets.zip) folder if you need to add the Item/Life scene to your project
 - For extra Items, duplicate the Item scene
 

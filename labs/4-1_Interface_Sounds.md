@@ -16,7 +16,7 @@ Add sounds to user interface elements in a Godot scene.
 	- Game Over and Win Game
 
 ## 2. Add SFX to Godot
-- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Use your game project or download the [Default Project Template](./270_BlankTemplate.zip)
 - Download the [Assets](./270_Assets.zip) folder if needed
 - Create a folder for `Audio` and copy your sound files
 - Find or Add an `AudioStreamPlayer` node for each sound effect in the StartMenu, GameOver and Instructions Scenes, and UIScene

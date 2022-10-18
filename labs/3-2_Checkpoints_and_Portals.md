@@ -12,7 +12,7 @@ Add checkpoints and portals into Godot.  Checkpoints save the progess of the pla
 This lab can be paired with the [Checkpoints and Portals](./2-8_Checkpoints_and_Portals) artist lab.
 
 ## 1. Setup Godot project
-- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Use your game project or download the [Default Project Template](./270_BlankTemplate.zip)
 - Download the [Assets](./270_Assets.zip) folder if needed
 - Use the DefaultScene or add on to the level created in the Level Design lab
 

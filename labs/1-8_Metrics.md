@@ -8,7 +8,7 @@ label: Labs
 Add Metrics to your Godot game to show the player lives or health and collected items.
 
 ## 1. Setup
-- Use your game project or download the [Default Project Template](./270_Template.zip)
+- Use your game project or download the [Default Project Template](./270_BlankTemplate.zip)
 - Download the [Assets](./270_Assets.zip) folder if you need any assets
 
 ## 2. Create the MetricsManager scene

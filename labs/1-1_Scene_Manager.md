@@ -10,8 +10,8 @@ label: Labs
 Add a SceneManager script to a Godot that communicates between the components of a scene.
 
 ## 1. Setting up the Godot Project
-- Start with the project created in the previous lab, or Download the [Default Project Template](./270_Template.zip) folder
-- Continue working with your PlayerController script from The Programming Intro lab or add the `PlayerSimple.gd` from [Assets](./270_Assets.zip) if needed
+- Start with the project created in the previous lab, or Download the [Default Project Template](./270_BlankTemplate.zip) folder
+- Continue working with your PlayerController script from The Programming Intro lab or add the `PlayerSimple.gd` from [Assets](./270_BlankAssets.zip) if needed
 - Use the DefaultSimple scene or a new scene and add a SceneManager node as the first node in the scene hierarchy
 
 ## 2. Create SceneManager.gd script
