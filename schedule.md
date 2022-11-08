@@ -104,8 +104,8 @@ title: Schedule
 ## Week 8 **Midterm**
 - In class workshop
 - Create an [itch.io](https://itch.io/){:target="_blank"} account
-- **Lab**: [Exporting a Build](labs/5-0_Exporting_a_Build)
-- **Lab**: [Publishing on Itch.io](labs/5-1_Publishing_on_Itch)
+- **Lab**: [Exporting a Build](labs/6-0_Exporting_a_Build)
+- **Lab**: [Publishing on Itch.io](labs/6-1_Publishing_on_Itch)
 - Publish a build of your game and post on Itch.io
 
 ## Week 9 **User Testing**
