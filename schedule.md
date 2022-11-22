@@ -78,6 +78,9 @@ title: Schedule
 - [Indie games](notes/indie)
 - **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
 - **Lab**: Enemies (Moving Obstacles)
+- **Class recordings**:
+	- [Indie games lecture](https://www.youtube.com/watch?v=jbPU-AcW77o&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=18){:target="_blank"}
+	- [Enemy Lab](https://www.youtube.com/watch?v=-HJ2MPZz2qM&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=20){:target="_blank"}
 - **Assignment 5**:
 	- Create art for a moving enemy
 	- Include idle, walking, attack and death animations
@@ -88,6 +91,10 @@ title: Schedule
 <!-- - [Video Games & Art](notes/art) -->
 - [Level Design](notes/level)
 - **Lab**: [Level Design](labs/3-1_Level_Design)
+- **Class recordings**
+	- [Level Design Lecture](https://www.youtube.com/watch?v=07O0Byjlgds&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=21){:target="_blank"}
+	- [Level Design Lab Part 1](https://www.youtube.com/watch?v=BO51iTwtQl0&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=22&t=321s){:target="_blank"}
+	- [Level Design Lab Part 2](https://www.youtube.com/watch?v=-8NkbplxWHE&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=23){:target="_blank"}
 - **Assignment 6**:
 	- Build a level in Godot
 	- Document the player's progress through the level
@@ -97,6 +104,10 @@ title: Schedule
 - [Sound effects](notes/sound)
 - **Lab**: [Gameplay Sound Effects](labs/4-0_Gameplay_Sound_Effects)
 - **Lab**: [Background Music](labs/4-2_Background_Music)
+- **Class Recordings**
+	- [Sound Desin Lecture](https://www.youtube.com/watch?v=HzPEKsjx-Cc&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=24){:target="_blank"}
+	- [Background Music](https://www.youtube.com/watch?v=VwBJigHceMU&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=25){:target="_blank"}
+	- [Gameplay Sound Effects](https://www.youtube.com/watch?v=mPjoMAs5TIk&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=26){:target="_blank"}
 - **Assignment 7**:
 	- Add sound effects to player, obstacles and rewards
 	- Add background music or sound
@@ -106,20 +117,31 @@ title: Schedule
 - Create an [itch.io](https://itch.io/){:target="_blank"} account
 - **Lab**: [Exporting a Build](labs/6-0_Exporting_a_Build)
 - **Lab**: [Publishing on Itch.io](labs/6-1_Publishing_on_Itch)
+- **Class recordings**
+	- [Exporting a Web Build](https://www.youtube.com/watch?v=TGYe8z_P0js&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=27){:target="_blank"}
+	- [Publishing on Itch.io](https://www.youtube.com/watch?v=X5i7lGkctCs&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=28){:target="_blank"}
 - Publish a build of your game and post on Itch.io
 
 ## Week 9 **User Testing**
 - [Browser Games](notes/browser)
 - [User Testing](notes/testing)
+- **Class recordings**
+	- [User Testing Lecture](https://www.youtube.com/watch?v=QV3btLD4uIM&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=29){:target="_blank"}
+	- [User Testing Lab](https://www.youtube.com/watch?v=TpEjMtzpBuQ&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=30){:target="_blank"}
+	- [Browser Games](https://www.youtube.com/watch?v=AW7K2c5xLlE&list=PLSqAxglrKGAwaEyt-ImmWqzkNPhi_thxh&index=31){:target="_blank"}
 - **Assignment 8**:
 	- Create a user testing form
 	- Playtest games and fill out user testing surveys in class
 
 ## Week 10 **Emergence & Progression**
 - [Emergence & Progression](notes/emergence)
+- **Lab**: [NPCs](2-5_NPCs)
 - **Lab**: [Dialog Systems and Add-Ons](labs/1-7_Dialog_Systems_and_Add-Ons)
 
 ## Week 11-13 **Advanced Topics**
+- **Lab**: [User Interface Design](labs/5-0_User_Interface_Design)
+- **Lab**: [User Interface Layout](labs/5-1_User_Interface_Layout)
+- **Lab**: [User Interface Metrics](labs/5-2_Metrics)
 - **Lab**: [Checkpoints and Portals](labs/2-8_Checkpoints_and_Portals)
 - **Lab**: [Physics and Projectiles](labs/1-6_Projectile_Physics)
 - **Lab**: [Level Design 2](labs/3-3_Level_Design_2)
