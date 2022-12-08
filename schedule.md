@@ -149,7 +149,6 @@ title: Schedule
 ## Week 14-15 **Final Project Workshop**
 - **Final Project Requirements**
 	- Godot game exported and published on Itch.io
-	- At least 2 levels
 	- Original art for all of the characters, items and scenery in the game
 	- Documentation on the Open Lab/Itch
 		- One video of gameplay
